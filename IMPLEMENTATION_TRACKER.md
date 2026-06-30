@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, and Reddit Community Builder passes complete. Next: Accessibility QA / service pages / form endpoint.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, and LinkedIn Content Creator passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -138,6 +138,7 @@
 - ✅ Social Media Strategist pass completed: social playbook, 30-day calendar, platform bios, content pillars, caption templates, hashtags, engagement rules, weekly measurement plan
 - ✅ Instagram Curator pass completed: Instagram-specific aesthetic, optimized bio, highlight system, 9-post grid launch plan, Reels scripts, carousel templates, Story prompts, hashtag sets, community rules
 - ✅ Reddit Community Builder pass completed: Reddit-safe community playbook, disclosure language, 90/10 rule, response bank, subreddit research targets, warm-up plan, reputation monitoring
+- ✅ LinkedIn Content Creator pass completed: owner-led LinkedIn playbook, profile headline/About drafts, content pillars, 30-day calendar, post drafts, carousel concept, engagement plan
 
 ---
 

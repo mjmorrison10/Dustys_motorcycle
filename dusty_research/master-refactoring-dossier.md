@@ -1425,3 +1425,30 @@ Reddit should be used carefully as a trust-building channel. The strategy is to 
 Do not market on Reddit like a brand. Participate like a helpful mechanic who happens to be affiliated with Dusty’s, and disclose that affiliation whenever the shop is mentioned.
 
 Full Reddit Community Builder report: `dusty_research/reddit_community_builder_report_2026-06-30.md`.
+
+---
+
+### Section 30: LinkedIn Content Strategy Pass (LinkedIn Content Creator)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 30.1 LinkedIn Strategy Decision
+
+LinkedIn should be owner-led thought leadership for Dusty as a veteran-owned local business and skilled-trades operator. It should not duplicate Instagram. The content should focus on honest diagnostics, small business lessons, rider education, local partnerships, and apprentice/craft standards.
+
+#### 30.2 Changes Implemented
+
+- Added `social_assets/dustys_linkedin_content_playbook.md`.
+- Added LinkedIn headline and About section drafts.
+- Added Featured section recommendations.
+- Added five LinkedIn content pillars.
+- Added 30-day LinkedIn content calendar.
+- Added four ready-to-post drafts with hook options.
+- Added carousel concept and engagement plan.
+
+#### 30.3 Core LinkedIn Position
+
+> I run a veteran-owned motorcycle repair shop in Orange, CA. I write about honest service, small business ownership, motorcycle safety, and what riders should know before approving repairs.
+
+Full LinkedIn Content Creator report: `dusty_research/linkedin_content_creator_report_2026-06-30.md`.

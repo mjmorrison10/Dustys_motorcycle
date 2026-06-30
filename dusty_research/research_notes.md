@@ -813,3 +813,40 @@ Reddit should be treated as a long-term trust channel, not a lead-spam channel. 
 Response templates for safety questions, mechanic-selection questions, used-bike buying, Orange/OC mechanic recommendations, chain noise, brake issues, huge repair quotes, and pre-purchase inspection value.
 
 Full report saved as: `dusty_research/reddit_community_builder_report_2026-06-30.md`.
+
+---
+
+## LinkedIn Content Creator Implementation Notes — 2026-06-30
+
+**Agency agent used:** LinkedIn Content Creator from the Agency Agents app corpus.
+
+### LinkedIn strategy
+
+LinkedIn should position Dusty as an owner/operator with a professional point of view about honest repair, small business, veteran-owned service, rider education, and skilled trades — not as a generic motorcycle content account.
+
+### Files added
+
+- `social_assets/dustys_linkedin_content_playbook.md`
+- `dusty_research/linkedin_content_creator_report_2026-06-30.md`
+
+### Playbook contents
+
+- LinkedIn positioning.
+- Target reader map.
+- Personal headline options.
+- About section draft.
+- Featured section recommendations.
+- Content pillars:
+  1. Honest Diagnostics
+  2. Small Business / Veteran-Owned
+  3. Rider Education
+  4. Local Orange County Community
+  5. Hiring / Training / Craft
+- Voice profile.
+- 30-day content calendar.
+- Four ready-to-post LinkedIn drafts.
+- Carousel concept.
+- Engagement plan.
+- LinkedIn metrics.
+
+Full report saved as: `dusty_research/linkedin_content_creator_report_2026-06-30.md`.
