@@ -1,0 +1,136 @@
+# Dusty's Motorcycle Website — Implementation Tracker
+
+**Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
+
+**Last updated**: 2026-06-30
+**Current phase**: Strategy & Offer Architecture complete. Next: SEO / Persona Walkthrough / UX.
+
+---
+
+## Legend
+
+| Status | Meaning |
+|--------|---------|
+| ☐ Not started | Action pending |
+| 🔄 In progress | Started but not complete |
+| ✅ Done | Complete |
+| ⏸ Blocked | Waiting on another task or decision |
+| ❌ Deprioritized | Explicitly not doing now |
+
+---
+
+## 🧠 Hivemind / Web Dev Team (Me)
+
+### NEED TO DO (Critical / Blocking Launch)
+
+| # | Task | Status | Notes | Agent Source |
+|---|------|--------|-------|--------------|
+| 1 | Build and deploy the lead-capture website | ✅ Done | Single-page site pushed to GitHub at `mjmorrison10/Dustys_motorcycle` | Business Strategist, Offer & Lead Gen |
+| 2 | Implement "Text or Book Online" primary CTA | ✅ Done | Hero, header, mobile nav, mobile sticky bar all updated | Offer & Lead Gen |
+| 3 | Add lead magnet section (Free Guides) | ✅ Done | Pre-Purchase Inspection + Ride-Ready Checklist placeholders | Offer & Lead Gen |
+| 4 | Add 3 guarantees section | ✅ Done | Honest Diagnosis, No Upsell, 30-min text-back | Offer & Lead Gen |
+| 5 | Add sticky mobile CTA bar | ✅ Done | Bottom-fixed "Text Dusty — Get a Quote" bar | Dossier Section 8 |
+| 6 | Update title/meta/OG tags for local SEO | ✅ Done | "Orange Traffic Circle" now in title, description, keywords | SEO, Dossier |
+| 7 | Update schema hours to Mon–Sun 9am–7pm | ✅ Done | LocalBusiness JSON-LD updated | Dossier |
+| 8 | Replace `YOUR_FORM_ID` with real form endpoint | ⏸ Blocked | Need Dusty to choose Formspree / Netlify / CRM | Offer & Lead Gen |
+| 9 | Add actual PDF lead magnet files | ⏸ Blocked | Need Dusty to confirm/approve content, then design/create | Offer & Lead Gen |
+| 10 | Set up conversion tracking (Google Analytics, event tags) | ☐ Not started | Tag phone, text, form, direction clicks | Analytics, SEO |
+| 11 | Run technical SEO audit (speed, mobile, accessibility) | ☐ Not started | Lighthouse + Core Web Vitals | SEO, QA |
+| 12 | Implement AEO/llms.txt for AI search visibility | ☐ Not started | ChatGPT/Claude/Perplexity should cite Dusty | AEO Foundations |
+
+### SHOULD DO (Important / Post-Launch Optimization)
+
+| # | Task | Status | Notes | Agent Source |
+|---|------|--------|-------|--------------|
+| 1 | Create service-specific landing pages | ☐ Not started | `/vintage-motorcycle-repair/`, `/pre-purchase-inspection/`, etc. | SEO Specialist |
+| 2 | Build blog content for local SEO keywords | ☐ Not started | Target "motorcycle repair Orange CA", "Santiago Canyon mechanic" | SEO Specialist, Content Creator |
+| 3 | Add review widgets or embed live Google/Yelp reviews | ☐ Not started | Reduces reliance on static testimonials | UX, CRO |
+| 4 | Add before/after photo gallery | ☐ Not started | Use Dusty's Instagram footage | Visual Storyteller |
+| 5 | Add online booking calendar integration | ☐ Not started | Calendly, Acuity, Square after form works | Offer & Lead Gen |
+| 6 | Create retargeting pixel infrastructure | ☐ Not started | Meta Pixel + Google Ads conversion setup | Paid Media |
+| 7 | A/B test hero headline and CTA color/copy | ☐ Not started | Once traffic is sufficient | Growth Hacker |
+| 8 | Build referral program landing page | ☐ Not started | $25 off for referrer and referee | Offer & Lead Gen |
+| 9 | Add financing/payment plan messaging for large rebuilds | ☐ Not started | Mention if Dusty offers this | Business Strategist |
+| 10 | Implement structured FAQPage schema | ☐ Not started | Boosts rich snippets | SEO Specialist |
+
+---
+
+## 👤 Dusty (Business Owner)
+
+### NEEDS TO DO (Critical / Blocking Launch)
+
+| # | Task | Status | Notes | Agent Source |
+|---|------|--------|-------|--------------|
+| 1 | Confirm exact current address is **130 S Lemon St, Orange, CA 92866** | ⏸ Pending | If this is correct, update all listings | Dossier, Research |
+| 2 | Fix address inconsistency on Facebook, Nextdoor, Birdeye | ☐ Not started | Change 975 N Elm St → 130 S Lemon St | Dossier, Research |
+| 3 | Confirm operating hours Mon–Sun 9am–7pm across all platforms | ⏸ Pending | Website now says Mon–Sun; Yelp says Mon–Sat | Dossier |
+| 4 | Set up auto-reply SMS for (714) 787-9453 | ☐ Not started | Critical for "30-minute text-back" guarantee | Offer & Lead Gen |
+| 5 | Choose and connect form endpoint (Formspree / Netlify / CRM) | ☐ Not started | Unblocks website form submission | Offer & Lead Gen |
+| 6 | Claim Birdeye profile (86 reviews unclaimed) | ☐ Not started | Biggest missed review opportunity | Business Strategist |
+| 7 | Verify/update Google Business Profile | ☐ Not started | Ensure hours, address, phone, photos current | SEO, Dossier |
+| 8 | Verify/update Yelp profile | ☐ Not started | Already claimed; confirm hours | SEO, Dossier |
+| 9 | Set up a business text line or answering service | ☐ Not started | Solves the core phone-tag problem | Business Strategist |
+| 10 | Publish a written warranty policy | ☐ Not started | Website currently states 90-day parts & labor | Dossier, Business Strategist |
+| 11 | Confirm pricing for common services for transparent quotes | ☐ Not started | Needed for honest/transparent pricing claims | Business Strategist |
+| 12 | Approve lead magnet content and guarantees | ☐ Not started | So we can create actual PDFs | Offer & Lead Gen |
+| 13 | Provide high-resolution logo (PNG transparent) | ☐ Not started | Currently using Yelp JPG | Research Notes |
+| 14 | Provide 5–10 additional shop photos | ☐ Not started | For richer gallery and social posts | Research Notes |
+
+### SHOULD DO (Growth / Marketing)
+
+| # | Task | Status | Notes | Agent Source |
+|---|------|--------|-------|--------------|
+| 1 | Set up review-request SMS/email after every service | ☐ Not started | Goal: 8–15 new reviews/month | Offer & Lead Gen |
+| 2 | Post 5 Google Business Profile photos/posts with CTAs | ☐ Not started | First 14-day action item | Offer & Lead Gen |
+| 3 | Post 3 Instagram repair videos with "Text Dusty" captions | ☐ Not started | First 14-day action item | Offer & Lead Gen |
+| 4 | Ask 20 past customers for reviews | ☐ Not started | Warm outreach phase | Offer & Lead Gen |
+| 5 | Reactivate Facebook with weekly posts | ☐ Not started | Drive traffic to website | Dossier |
+| 6 | Create/refresh Instagram content strategy | ☐ Not started | Use existing repair videos more strategically | Dossier |
+| 7 | Hire/train apprentice if lead volume grows | ☐ Not started | Decision gate at 90 days / ≥20 leads/month | Business Strategist |
+| 8 | Sponsor or partner with Orange riding clubs | ☐ Not started | Amplifier strategy | Offer & Lead Gen |
+| 9 | Leave business cards at local gear shops | ☐ Not started | Low-cost referral channel | Offer & Lead Gen |
+| 10 | Consider veteran/military community marketing | ☐ Not started | VA programs, military Facebook groups | Business Strategist |
+| 11 | Decide on paid ads budget and timeline | ☐ Not started | Only after organic conversion proven | Business Strategist |
+| 12 | Set up referral program ($25 off both sides) | ☐ Not started | Customer amplifier | Offer & Lead Gen |
+| 13 | Respond to all existing unanswered reviews | ☐ Not started | Builds trust and engagement | Customer Success |
+| 14 | Create seasonal content calendar (winterization, spring prep, etc.) | ☐ Not started | For email/SMS nurture | Email Strategist |
+
+---
+
+## 🤝 Both of Us (Collaborative)
+
+| # | Task | Status | Owner | Agent Source |
+|---|------|--------|-------|--------------|
+| 1 | Validate website copy with 5 rider customers | ☐ Not started | Both | Offer & Lead Gen |
+| 2 | Define exact service list and pricing for quotes | 🔄 In progress | Dusty provides; I format | Business Strategist |
+| 3 | Create and approve PDF lead magnets | ☐ Not started | Dusty content; I design | Offer & Lead Gen |
+| 4 | Test text-to-quote workflow end-to-end | ☐ Not started | Both | Offer & Lead Gen |
+| 5 | Set up conversion tracking dashboard | ☐ Not started | I implement; Dusty reviews | Analytics Reporter |
+| 6 | Review competitive positioning and approve final brand message | ✅ Done | Both | Business Strategist |
+| 7 | Approve grand-slam offer and guarantees | 🔄 In progress | Dusty approves; I implement | Offer & Lead Gen |
+
+---
+
+## Completed Milestones
+
+- ✅ Initial research compiled (company, competitors, reviews, social audit)
+- ✅ GitHub repo created and initial website pushed
+- ✅ Master dossier created with Sections 1, 2, 4, 6, 8, 9, 10
+- ✅ Business Strategist analysis added to dossier
+- ✅ Offer & Lead Gen Strategist analysis added to dossier
+- ✅ Website conversion-optimized based on dossier recommendations
+- ✅ Updated website pushed to GitHub
+
+---
+
+## Next Agent Recommendation
+
+Run **SEO Specialist** next to:
+- Finalize local SEO keyword strategy
+- Recommend service-specific landing pages
+- Audit the updated website for search optimization
+- Suggest blog content calendar
+
+---
+
+*This tracker is a living document. It will be updated after each agent runs.*
