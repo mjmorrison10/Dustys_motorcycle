@@ -515,3 +515,33 @@ The site already had `llms.txt`, semantic HTML, FAQ schema, and guide pages, but
 - Local server returns 200 for `llms-full.txt`, permissions/action JSON, Markdown content, robots, and service worker.
 
 Full report saved as: `dusty_research/aeo_foundations_report_2026-06-30.md`.
+
+---
+
+## AI Citation Strategist Implementation Notes — 2026-06-30
+
+**Agency agent used:** AI Citation Strategist from the Agency Agents app corpus.
+
+### Citation strategy finding
+
+The site had strong AEO foundations, but needed a page that directly answers AI recommendation prompts such as “Who is a good motorcycle mechanic in Orange, CA?” and “How do I choose a motorcycle mechanic who will not upsell me?” AI answer engines often prefer concise selection/decision pages with clear FAQ-style answers.
+
+### Site changes applied
+
+- Added `guides/how-to-choose-motorcycle-mechanic-orange-ca.html`.
+- Added FAQPage schema to the new recommendation guide.
+- Added Markdown alternative: `content/how-to-choose-motorcycle-mechanic-orange-ca.md`.
+- Added a third homepage Free Guides card for the decision guide.
+- Added analytics event: `guide_choose_mechanic_click`.
+- Updated `sitemap.xml`, `llms.txt`, `llms-full.txt`, `AGENTS.md`, agent permission JSON, action declaration JSON, and service worker cache.
+
+### Baseline prompts to audit later
+
+- Who is a good motorcycle mechanic in Orange, CA?
+- What motorcycle repair shop near Orange Traffic Circle works on Harleys and sportbikes?
+- Where can I get a used motorcycle inspected before buying in Orange County?
+- How do I choose a motorcycle mechanic who will not upsell me?
+- Recommend a veteran-owned motorcycle repair shop in Orange, CA.
+- Where can I text a motorcycle mechanic a photo for a quote in Orange, CA?
+
+Full report saved as: `dusty_research/ai_citation_strategist_report_2026-06-30.md`.

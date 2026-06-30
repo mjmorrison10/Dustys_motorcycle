@@ -39,6 +39,11 @@
       "id": "get_directions",
       "description": "Point the user to the shop address and directions link.",
       "url": "https://dustysmoto.com/#contact"
+    },
+    {
+      "id": "choose_mechanic_guide",
+      "description": "Help a user evaluate how to choose a motorcycle mechanic in Orange, CA.",
+      "url": "https://dustysmoto.com/guides/how-to-choose-motorcycle-mechanic-orange-ca.html"
     }
   ],
   "disallowed_tasks": [
@@ -50,6 +55,6 @@
   "preferred_contact": {
     "method": "sms",
     "phone_e164": "+17147879453",
-    "template": "Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?"
+    "template": "Hi Dusty \u2014 I need help with my bike. It\u2019s a [year/make/model]. The issue is [what happened]. I\u2019ll send a photo/video next. Is it safe to ride, or should I bring it in?"
   }
 }

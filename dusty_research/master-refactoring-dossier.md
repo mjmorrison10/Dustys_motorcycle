@@ -1136,3 +1136,39 @@ Agents may read, summarize, cite, and help compose a first text. Agents may not 
 - Review and update discovery files quarterly.
 
 Full AEO Foundations report: `dusty_research/aeo_foundations_report_2026-06-30.md`.
+
+---
+
+### Section 21: AI Citation Strategy Pass (AI Citation Strategist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 21.1 Citation Strategy Decision
+
+Dusty’s needed a citation-focused recommendation asset that directly answers AI prompt patterns, not only traditional SEO service/checklist pages.
+
+#### 21.2 Changes Implemented
+
+- Added `guides/how-to-choose-motorcycle-mechanic-orange-ca.html`.
+- Added `content/how-to-choose-motorcycle-mechanic-orange-ca.md`.
+- Added FAQPage schema to the new guide.
+- Added the decision guide to homepage Free Guides section.
+- Added `guide_choose_mechanic_click` event hook.
+- Updated sitemap, `llms.txt`, `llms-full.txt`, `AGENTS.md`, agent permissions, action declarations, and service worker cache.
+
+#### 21.3 Prompt Patterns Targeted
+
+- “Who is a good motorcycle mechanic in Orange, CA?”
+- “Best motorcycle repair shop near Orange Traffic Circle?”
+- “How do I choose a motorcycle mechanic who will not upsell me?”
+- “Where can I get a used motorcycle inspected in Orange County?”
+- “Where can I text a motorcycle mechanic a photo for a quote in Orange, CA?”
+
+#### 21.4 Remaining Citation Work
+
+- Recheck actual AI citation rates across ChatGPT, Claude, Gemini, and Perplexity after indexing.
+- Build dedicated pre-purchase inspection service page.
+- Strengthen third-party entity corroboration through GBP, Birdeye, Yelp, Apple Maps, Bing Places, Facebook, and Nextdoor cleanup.
+
+Full AI Citation Strategist report: `dusty_research/ai_citation_strategist_report_2026-06-30.md`.

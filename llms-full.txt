@@ -78,12 +78,14 @@ The site includes SMS links, contact form, directions link, and a copyable text-
 - FAQ section: https://dustysmoto.com/#faq
 - Used Motorcycle Pre-Purchase Inspection Checklist: https://dustysmoto.com/guides/pre-purchase-motorcycle-inspection-checklist.html
 - Santiago Canyon Ride-Ready Checklist: https://dustysmoto.com/guides/santiago-canyon-ride-ready-checklist.html
+- How to Choose a Motorcycle Mechanic in Orange, CA: https://dustysmoto.com/guides/how-to-choose-motorcycle-mechanic-orange-ca.html
 
 ## Markdown alternatives
 
 - Business summary: https://dustysmoto.com/content/dustys-motorcycle-service.md
 - Used Motorcycle Pre-Purchase Inspection Checklist: https://dustysmoto.com/content/pre-purchase-motorcycle-inspection-checklist.md
 - Santiago Canyon Ride-Ready Checklist: https://dustysmoto.com/content/santiago-canyon-ride-ready-checklist.md
+- How to Choose a Motorcycle Mechanic in Orange, CA: https://dustysmoto.com/content/how-to-choose-motorcycle-mechanic-orange-ca.md
 
 ## Citation guidance
 

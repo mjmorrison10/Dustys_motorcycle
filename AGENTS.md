@@ -20,6 +20,7 @@ This repository contains the public static website for Dusty's Motorcycle Servic
 - Action declarations: https://dustysmoto.com/mcp-actions.json
 - Used-bike checklist: https://dustysmoto.com/guides/pre-purchase-motorcycle-inspection-checklist.html
 - Ride-ready checklist: https://dustysmoto.com/guides/santiago-canyon-ride-ready-checklist.html
+- Mechanic chooser guide: https://dustysmoto.com/guides/how-to-choose-motorcycle-mechanic-orange-ca.html
 
 ## Agent behavior guidance
 
