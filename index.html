@@ -61,7 +61,13 @@
       --touch-target: 44px;
 
       --shadow: 0 10px 40px rgba(0,0,0,0.4);
+      --shadow-card: 0 14px 34px rgba(0,0,0,0.28);
+      --shadow-card-hover: 0 18px 44px rgba(0,0,0,0.38);
       --radius: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --transition-fast: 150ms ease;
+      --transition-normal: 280ms ease;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; scroll-padding-top: 96px; }
@@ -463,13 +469,15 @@
     .service-card {
       background: var(--charcoal);
       border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 10px;
+      border-radius: var(--radius-md);
       overflow: hidden;
-      transition: transform 0.3s, border-color 0.3s;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
     }
     .service-card:hover {
       transform: translateY(-6px);
       border-color: var(--orange);
+      box-shadow: var(--shadow-card-hover);
     }
     .service-img {
       height: 200px;
@@ -560,7 +568,7 @@
       padding: 28px;
       transition: transform 0.3s;
     }
-    .review-card:hover { transform: translateY(-4px); border-color: var(--orange); }
+    .review-card:hover { transform: translateY(-4px); border-color: var(--orange); box-shadow: var(--shadow-card-hover); }
     .review-stars { color: var(--orange); font-size: 1.1rem; margin-bottom: 14px; }
     .review-card p { color: var(--light-gray); font-size: 1rem; font-style: italic; margin-bottom: 18px; line-height: 1.55; }
     .review-author { font-weight: 700; color: var(--white); font-size: 0.95rem; }
@@ -746,6 +754,10 @@
       .form-row { grid-template-columns: 1fr; }
       .section { padding: 64px 0; }
       .services-grid[style] { grid-template-columns: 1fr !important; }
+      .ui-grid--2,
+      .ui-grid--3 { grid-template-columns: 1fr; }
+      .contact-actions { flex-direction: column; align-items: stretch; }
+      .contact-actions .btn { width: 100%; }
     }
     .mobile-nav {
       display: none;
@@ -887,21 +899,21 @@
         <h2>Not Sure What’s Wrong? <span class="accent">Start With a Text.</span></h2>
         <p>For riders who are busy, stranded, or just tired of shop runaround — here’s exactly what happens next.</p>
       </div>
-      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="review-card fade-up">
-          <div style="font-size: 2.2rem; margin-bottom: 14px;">📸</div>
-          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">1. Text a Photo</h3>
-          <p style="color: var(--gray); font-style: normal;">Send the bike year, make, model, and a quick photo or video of the issue. No perfect mechanic explanation needed.</p>
+      <div class="ui-grid ui-grid--3">
+        <div class="icon-card icon-card--center fade-up">
+          <div class="icon-card__icon" aria-hidden="true">📸</div>
+          <h3>1. Text a Photo</h3>
+          <p>Send the bike year, make, model, and a quick photo or video of the issue. No perfect mechanic explanation needed.</p>
         </div>
-        <div class="review-card fade-up">
-          <div style="font-size: 2.2rem; margin-bottom: 14px;">🧾</div>
-          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">2. Get a Straight Answer</h3>
-          <p style="color: var(--gray); font-style: normal;">Dusty will tell you if it sounds like a quick service, a diagnosis, or something that needs a shop visit.</p>
+        <div class="icon-card icon-card--center fade-up">
+          <div class="icon-card__icon" aria-hidden="true">🧾</div>
+          <h3>2. Get a Straight Answer</h3>
+          <p>Dusty will tell you if it sounds like a quick service, a diagnosis, or something that needs a shop visit.</p>
         </div>
-        <div class="review-card fade-up">
-          <div style="font-size: 2.2rem; margin-bottom: 14px;">🔧</div>
-          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">3. Approve Before We Wrench</h3>
-          <p style="color: var(--gray); font-style: normal;">No work starts until you know the plan. If something else comes up, you hear about it first.</p>
+        <div class="icon-card icon-card--center fade-up">
+          <div class="icon-card__icon" aria-hidden="true">🔧</div>
+          <h3>3. Approve Before We Wrench</h3>
+          <p>No work starts until you know the plan. If something else comes up, you hear about it first.</p>
         </div>
       </div>
       <div class="what-to-text fade-up" aria-labelledby="what-to-text-title">
@@ -986,17 +998,19 @@
         <p>Practical tools every rider in Orange County can use. Text or email us to get them instantly.</p>
       </div>
       <div class="services-grid" style="grid-template-columns: repeat(2, 1fr);">
-        <div class="service-card fade-up">
+        <div class="service-card guide-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_8.webp')"></div>
           <div class="service-body">
+            <span class="guide-badge">Printable guide</span>
             <h3>Pre-Purchase Inspection Checklist</h3>
             <p>Buying a used bike? Don't get stuck with someone else's headache. This printable checklist covers title, frame, tires, brakes, leaks, cold start, and seller red flags.</p>
             <a href="guides/pre-purchase-motorcycle-inspection-checklist.html" data-event="guide_pre_purchase_click">Open the Free Checklist →</a>
           </div>
         </div>
-        <div class="service-card fade-up">
+        <div class="service-card guide-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_7.webp')"></div>
           <div class="service-body">
+            <span class="guide-badge">Printable guide</span>
             <h3>Santiago Canyon Ride-Ready Checklist</h3>
             <p>Tires, chain, brakes, fluids, controls, lights — everything to check before you head up Santiago Canyon or anywhere else this weekend.</p>
             <a href="guides/santiago-canyon-ride-ready-checklist.html" data-event="guide_ride_ready_click">Open the Free Checklist →</a>
@@ -1012,21 +1026,21 @@
         <span class="subline">The Dusty Promise</span>
         <h2>Three Guarantees. <span class="accent">No Fine Print.</span></h2>
       </div>
-      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="review-card fade-up" style="text-align: center;">
-          <div style="font-size: 2.5rem; margin-bottom: 16px;">🔍</div>
-          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">Honest Diagnosis Guarantee</h3>
-          <p style="color: var(--gray);">If we can't find the problem, you don't pay for the diagnostic. No phantom repairs.</p>
+      <div class="ui-grid ui-grid--3">
+        <div class="icon-card icon-card--center fade-up">
+          <div class="icon-card__icon" aria-hidden="true">🔍</div>
+          <h3>Honest Diagnosis Guarantee</h3>
+          <p>If we can't find the problem, you don't pay for the diagnostic. No phantom repairs.</p>
         </div>
-        <div class="review-card fade-up" style="text-align: center;">
-          <div style="font-size: 2.5rem; margin-bottom: 16px;">🛡️</div>
-          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">No-Upsell Promise</h3>
-          <p style="color: var(--gray);">We quote before we wrench. If we find something else, we call first. No surprise charges.</p>
+        <div class="icon-card icon-card--center fade-up">
+          <div class="icon-card__icon" aria-hidden="true">🛡️</div>
+          <h3>No-Upsell Promise</h3>
+          <p>We quote before we wrench. If we find something else, we call first. No surprise charges.</p>
         </div>
-        <div class="review-card fade-up" style="text-align: center;">
-          <div style="font-size: 2.5rem; margin-bottom: 16px;">📱</div>
-          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">30-Minute Text-Back</h3>
-          <p style="color: var(--gray);">Text us during shop hours and we'll reply within 30 minutes. No phone tag.</p>
+        <div class="icon-card icon-card--center fade-up">
+          <div class="icon-card__icon" aria-hidden="true">📱</div>
+          <h3>30-Minute Text-Back</h3>
+          <p>Text us during shop hours and we'll reply within 30 minutes. No phone tag.</p>
         </div>
       </div>
     </div>
@@ -1211,9 +1225,11 @@
             <li><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>Mon–Sun: 9am – 7pm</li>
             <li><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:service@dustysmoto.com">service@dustysmoto.com</a></li>
           </ul>
-          <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="contact_sms_click">Text Dusty Now</a>
-          <a href="tel:7147879453" class="btn btn-secondary" style="margin-left: 12px;" data-event="contact_phone_call_click">Call (714) 787-9453</a>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" style="margin-left: 12px;" data-event="get_directions_click">Get Directions</a>
+          <div class="contact-actions">
+            <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="contact_sms_click">Text Dusty Now</a>
+            <a href="tel:7147879453" class="btn btn-secondary" data-event="contact_phone_call_click">Call (714) 787-9453</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" data-event="get_directions_click">Get Directions</a>
+          </div>
         </div>
         <div class="contact-form fade-up">
           <form id="serviceForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">

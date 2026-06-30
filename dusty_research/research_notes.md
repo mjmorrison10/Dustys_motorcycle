@@ -403,3 +403,44 @@ Dusty’s content should stay practical and no-BS. Best content pillars:
 5. Trust and anti-upsell proof.
 
 Full report saved as: `dusty_research/content_creator_report_2026-06-30.md`.
+
+---
+
+## UI Designer Implementation Notes — 2026-06-30
+
+**Agency agent used:** UI Designer from the Agency Agents app corpus.
+
+### UI finding
+
+The page had strong brand and UX structure, but several important sections still used one-off visual styling. The UI pass focused on consistency, reusable card components, cleaner guide presentation, and better CTA grouping.
+
+### Site changes applied
+
+- Added UI design tokens:
+  - `--shadow-card`
+  - `--shadow-card-hover`
+  - `--radius-md`
+  - `--radius-lg`
+  - `--transition-fast`
+  - `--transition-normal`
+- Added reusable grid utilities:
+  - `.ui-grid`
+  - `.ui-grid--2`
+  - `.ui-grid--3`
+- Added reusable icon card components:
+  - `.icon-card`
+  - `.icon-card--center`
+  - `.icon-card__icon`
+- Converted “How to Get Help Fast” cards to the new icon-card component.
+- Converted “Three Guarantees” cards to the new icon-card component.
+- Added `.guide-badge` and `.guide-card` styling for Free Guide cards.
+- Added `.contact-actions` so Text / Call / Directions CTAs are visually grouped and stack cleanly on mobile.
+- Improved service/review card elevation and hover consistency.
+
+### Remaining UI opportunities
+
+- Move more inline section-specific styles into reusable classes.
+- Create shared CSS for guide pages if additional guides are added.
+- Run visual QA at key breakpoints after deployment.
+
+Full report saved as: `dusty_research/ui_designer_report_2026-06-30.md`.

@@ -1039,3 +1039,33 @@ The “Free Guides” concepts were converted from placeholders into real rider-
 - Create short video captions/scripts from Dusty’s existing repair footage.
 
 Full Content Creator report: `dusty_research/content_creator_report_2026-06-30.md`.
+
+---
+
+### Section 18: UI Design System Pass (UI Designer)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 18.1 UI Design Decision
+
+The site should keep its rugged black/orange shop aesthetic, but the underlying interface needed more reusable visual components. The UI pass focused on consistency and extensibility rather than changing the brand direction.
+
+#### 18.2 Changes Implemented
+
+- Added card shadow, radius, and transition tokens.
+- Added reusable `.ui-grid` utilities.
+- Added reusable `.icon-card` component for process and guarantee cards.
+- Converted “How to Get Help Fast” cards to the new component system.
+- Converted “Three Guarantees” cards to the new component system.
+- Added `.guide-badge` / `.guide-card` treatment for Free Guide cards.
+- Added `.contact-actions` grouping for Contact section CTAs.
+- Improved service and review card hover/elevation consistency.
+
+#### 18.3 Remaining UI Work
+
+- Continue replacing inline styles with named component classes.
+- Extract shared guide-page CSS if the guide library grows.
+- Run visual QA at mobile/tablet/desktop breakpoints.
+
+Full UI Designer report: `dusty_research/ui_designer_report_2026-06-30.md`.
