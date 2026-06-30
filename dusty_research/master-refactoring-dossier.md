@@ -933,3 +933,39 @@ Core brand promise:
 - Ensure all listings and social profiles use the same NAP, hours, and brand promise.
 
 Full Brand Guardian report: `dusty_research/brand_guardian_report_2026-06-30.md`.
+
+---
+
+### Section 15: UX Architecture Foundation Pass (UX Architect)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 15.1 UX Architecture Decisions
+
+- Desktop navigation was simplified to reduce cognitive load and prioritize the primary conversion path.
+- Mobile navigation keeps FAQ visible because mobile riders may need quick reassurance before texting.
+- Accessibility and interaction state were treated as foundation, not polish.
+- CSS now has a more durable token layer for spacing, layout, and touch targets.
+
+#### 15.2 Changes Implemented
+
+- Added skip link and main content landmark.
+- Added hero `aria-labelledby` relationship.
+- Added strong keyboard focus states.
+- Added form focus styles and minimum touch targets.
+- Added `aria-controls` / `aria-expanded` to mobile menu control.
+- Added dynamic `aria-expanded` management to FAQ accordion buttons.
+- Added active desktop nav tracking with `aria-current="page"`.
+- Added fixed-header-safe anchor behavior.
+- Added reduced-motion support.
+- Simplified desktop nav to Services / How It Works / Why Dusty / Reviews / Contact.
+
+#### 15.3 Remaining UX Work
+
+- Replace inline section styles with named component classes.
+- Add a real form endpoint with accessible success/error states.
+- Run Lighthouse/axe in a browser environment after deployment.
+- Add a “What to text” mini-card or visual example if users still hesitate.
+
+Full UX Architect report: `dusty_research/ux_architect_report_2026-06-30.md`.

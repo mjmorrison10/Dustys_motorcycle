@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
   <title>Dusty's Motorcycle Service & Repair | Orange Traffic Circle, CA | Veteran-Owned</title>
   <meta name="description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle. Honest mechanic, no phone tag, fair pricing. Harley, sportbike, adventure, dirt bikes, ATVs. Text a photo for a quote. Mon–Sun 9am–7pm.">
   <meta name="keywords" content="motorcycle repair Orange CA, motorcycle mechanic Orange Traffic Circle, motorcycle service Orange, Harley repair Orange, sportbike service Orange, adventure bike maintenance, motorcycle tire change Orange, Santiago Canyon motorcycle mechanic, veteran owned motorcycle shop, pre purchase inspection Orange CA">
@@ -44,17 +45,53 @@
       --brand-font-headline: 'Oswald', Impact, sans-serif;
       --brand-font-body: 'Roboto', Arial, sans-serif;
 
+      /* UX Architect spacing, type, and layout scale */
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --container-max: 1200px;
+      --touch-target: 44px;
+
       --shadow: 0 10px 40px rgba(0,0,0,0.4);
       --radius: 6px;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+    :target { scroll-margin-top: 96px; }
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 2000;
+      transform: translateY(-160%);
+      background: var(--orange);
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+    .skip-link:focus { transform: translateY(0); }
+    :focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 3px;
+    }
     body {
       font-family: var(--brand-font-body);
       background: var(--black);
       color: var(--white);
       line-height: 1.6;
       overflow-x: hidden;
+      color-scheme: dark;
+      text-rendering: optimizeLegibility;
     }
     h1, h2, h3, h4, .brand, .btn {
       font-family: var(--brand-font-headline);
@@ -65,9 +102,9 @@
     img { max-width: 100%; display: block; }
     .container {
       width: 100%;
-      max-width: 1200px;
+      max-width: var(--container-max);
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 var(--space-6);
     }
     .section { padding: 96px 0; position: relative; }
     .section-alt { background: var(--near-black); }
@@ -101,6 +138,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
+      min-height: var(--touch-target);
       padding: 16px 32px;
       font-size: 1rem;
       font-weight: 600;
@@ -190,6 +228,9 @@
       align-items: center;
     }
     .nav-links a {
+      min-height: var(--touch-target);
+      display: inline-flex;
+      align-items: center;
       font-size: 0.9rem;
       font-weight: 500;
       text-transform: uppercase;
@@ -197,7 +238,8 @@
       color: var(--light-gray);
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--orange); }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--orange); }
     .nav-cta { display: flex; gap: 12px; }
     .nav-cta .btn { padding: 12px 20px; font-size: 0.85rem; }
     .mobile-menu-btn {
@@ -687,9 +729,19 @@
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     .mobile-nav .btn { width: 100%; justify-content: center; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
     <div class="container nav-wrap">
@@ -700,36 +752,32 @@
           <span class="logo-tagline">No-BS Moto Repair</span>
         </span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" aria-label="Primary navigation">
         <li><a href="#services">Services</a></li>
-        <li><a href="#lead-magnets">Free Guides</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#why">Why Dusty</a></li>
-        <li><a href="#guarantees">Guarantees</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-cta">
         <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="nav_sms_click">Text Dusty</a>
       </div>
-      <button class="mobile-menu-btn" aria-label="Open menu" id="menuBtn">☰</button>
+      <button class="mobile-menu-btn" aria-label="Open menu" id="menuBtn" aria-controls="mobileNav" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <nav class="mobile-nav" id="mobileNav">
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
     <a href="#services">Services</a>
-    <a href="#lead-magnets">Free Guides</a>
+    <a href="#how-it-works">How It Works</a>
     <a href="#why">Why Dusty</a>
-    <a href="#guarantees">Guarantees</a>
-    <a href="#about">About</a>
     <a href="#reviews">Reviews</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
     <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="mobile_nav_sms_click">Text (714) 787-9453</a>
   </nav>
 
-  <section class="hero" id="home">
+  <main id="main-content">
+  <section class="hero" id="home" aria-labelledby="hero-title">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
@@ -739,7 +787,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.8L19.2 19H4.8L12 5.8zM11 10v6h2v-6h-2z"/></svg>
             U.S. Veteran-Owned Shop
           </div>
-          <h1>Your bike's ready for the canyon. <span class="accent">Dusty's ready</span> when you are.</h1>
+          <h1 id="hero-title">Your bike's ready for the canyon. <span class="accent">Dusty's ready</span> when you are.</h1>
           <p class="lead">The honest mechanic at the Orange Traffic Circle. No phone tag. No surprises. Just real work on Harleys, sportbikes, adventure bikes, and everything in between.</p>
           <div class="seo-intro">
             <h2>Honest Motorcycle Repair &amp; Service in Orange, CA</h2>
@@ -1075,31 +1123,31 @@
       </div>
       <div class="faq-list fade-up">
         <div class="faq-item active">
-          <button class="faq-q">Do you work on Harley-Davidson, sport bikes, and dirt bikes? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <button class="faq-q" aria-expanded="true">Do you work on Harley-Davidson, sport bikes, and dirt bikes? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">Yes. From metric cruisers to American V-twins, sport bikes, vintage carbureted bikes, dirt bikes, and ATVs — we service all makes and eras.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Can I text a photo instead of calling? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <button class="faq-q" aria-expanded="false">Can I text a photo instead of calling? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">Yes. That is usually the fastest way to start. Text the year, make, model, what happened, and a photo or short video. Dusty can tell you whether it sounds like a quick service, a diagnostic visit, or something that needs a closer look.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">How do I get a quote before work starts? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <button class="faq-q" aria-expanded="false">How do I get a quote before work starts? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">Bring the bike by the shop or send details through our contact form. We'll inspect it and give you a clear written estimate before any work begins.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Do you offer pre-purchase inspections? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <button class="faq-q" aria-expanded="false">Do you offer pre-purchase inspections? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">Absolutely. A pre-purchase inspection is one of the best investments you can make when buying a used bike. We'll check the engine, frame, suspension, electrical, and give you a report.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">What if you can't find the problem? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <button class="faq-q" aria-expanded="false">What if you can't find the problem? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">We don't charge for phantom repairs. If we can't find the issue, we'll tell you straight — and we won't bill you for unnecessary work. That's the Dusty promise.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Where are you located and what are your hours? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <button class="faq-q" aria-expanded="false">Where are you located and what are your hours? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">We're at 130 S Lemon St, Orange, CA 92866, just minutes from the Orange Traffic Circle. Hours are Monday–Sunday, 9am–7pm. We recommend texting ahead to confirm.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Do you warranty your work? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <button class="faq-q" aria-expanded="false">Do you warranty your work? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">Yes. We stand behind our repairs with a 90-day parts and labor warranty. If something isn't right, bring it back and we'll make it right.</div>
         </div>
       </div>
@@ -1182,6 +1230,8 @@
   <section class="map-section">
     <iframe class="map-frame" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.1234567890123!2d-117.8554666!3d33.7872324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd77100a9f45f%3A0x7eb52d94336c580c!2sDUSTY'S%20motorcycle%20service%20and%20repair!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"></iframe>
   </section>
+
+  </main>
 
   <footer>
     <div class="container">
@@ -1460,12 +1510,15 @@
     const mobileNav = document.getElementById('mobileNav');
     menuBtn.addEventListener('click', () => {
       mobileNav.classList.toggle('active');
-      menuBtn.textContent = mobileNav.classList.contains('active') ? '✕' : '☰';
+      const isOpen = mobileNav.classList.contains('active');
+      menuBtn.textContent = isOpen ? '✕' : '☰';
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
     });
     document.querySelectorAll('#mobileNav a').forEach(link => {
       link.addEventListener('click', () => {
         mobileNav.classList.remove('active');
         menuBtn.textContent = '☰';
+        menuBtn.setAttribute('aria-expanded', 'false');
       });
     });
 
@@ -1474,8 +1527,15 @@
       btn.addEventListener('click', () => {
         const item = btn.parentElement;
         const isActive = item.classList.contains('active');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-        if (!isActive) item.classList.add('active');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('active');
+          const button = i.querySelector('.faq-q');
+          if (button) button.setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 
@@ -1490,6 +1550,25 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Active section state for desktop navigation
+    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+    const sectionMap = Array.from(navAnchors)
+      .map(link => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navAnchors.forEach(link => {
+            const isActive = link.getAttribute('href') === `#${entry.target.id}`;
+            link.classList.toggle('active', isActive);
+            if (isActive) link.setAttribute('aria-current', 'page');
+            else link.removeAttribute('aria-current');
+          });
+        }
+      });
+    }, { threshold: 0.35, rootMargin: '-120px 0px -50% 0px' });
+    sectionMap.forEach(section => navObserver.observe(section));
 
     // Dynamic year
     document.getElementById('year').textContent = new Date().getFullYear();

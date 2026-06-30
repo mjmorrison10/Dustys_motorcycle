@@ -293,3 +293,42 @@ Full report saved as: `dusty_research/persona_walkthrough_report_2026-06-30.md`.
 5. Standardize social bios and directory profiles around the same promise.
 
 Full report saved as: `dusty_research/brand_guardian_report_2026-06-30.md`.
+
+---
+
+## UX Architect Implementation Notes — 2026-06-30
+
+**Agency agent used:** UX Architect from the Agency Agents app corpus.
+
+### UX architecture findings
+
+- Desktop navigation had too many competing choices for a local repair lead-capture page.
+- Accessibility foundation needed improvements for keyboard users, screen-reader state, and reduced-motion preferences.
+- The CSS system needed durable spacing/touch/layout tokens for future service-page expansion.
+- FAQ and mobile menu interactions needed `aria-expanded` state management.
+
+### Site changes applied
+
+- Added UX design-system tokens:
+  - `--space-1` through `--space-20`
+  - `--container-max`
+  - `--touch-target`
+- Added skip link: “Skip to main content.”
+- Added `<main id="main-content">` landmark and hero `aria-labelledby` wiring.
+- Added visible `:focus-visible` states.
+- Added form control focus states.
+- Added fixed-header-safe anchor scrolling with `scroll-padding-top` and `scroll-margin-top`.
+- Simplified desktop nav to:
+  - Services
+  - How It Works
+  - Why Dusty
+  - Reviews
+  - Contact
+- Kept mobile nav slightly more detailed, including FAQ, because riders on phones often need objection-handling before texting.
+- Added `aria-controls` and dynamic `aria-expanded` to the mobile menu.
+- Added `aria-expanded` management to FAQ buttons.
+- Added active-section desktop nav behavior with `aria-current="page"`.
+- Added `prefers-reduced-motion` support.
+- Ensured footer sits outside the main landmark.
+
+Full report saved as: `dusty_research/ux_architect_report_2026-06-30.md`.
