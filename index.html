@@ -463,6 +463,76 @@
       font-weight: 700;
       font-size: 0.92rem;
     }
+    .prototype-builder {
+      display: grid;
+      gap: var(--space-4);
+      margin-top: var(--space-5);
+    }
+    .prototype-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+    .prototype-field label {
+      display: block;
+      margin-bottom: var(--space-2);
+      color: var(--white);
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .prototype-field input,
+    .prototype-field select,
+    .prototype-field textarea {
+      width: 100%;
+      min-height: var(--touch-target);
+      padding: 13px 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.48);
+      color: var(--white);
+      font: inherit;
+    }
+    .prototype-field textarea { min-height: 92px; resize: vertical; }
+    .prototype-field input:focus,
+    .prototype-field select:focus,
+    .prototype-field textarea:focus {
+      outline: none;
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(242,101,34,0.22);
+    }
+    .prototype-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+    }
+    .prototype-actions .btn { flex: 1 1 210px; }
+    .prototype-feedback {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+      padding-top: var(--space-2);
+      color: var(--gray);
+      font-size: 0.94rem;
+    }
+    .prototype-feedback button {
+      min-height: 38px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.06);
+      color: var(--white);
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .prototype-feedback button:hover,
+    .prototype-feedback button:focus-visible {
+      border-color: var(--orange);
+      color: var(--orange);
+    }
 
     /* Trust Bar */
     .trust-bar {
@@ -786,6 +856,9 @@
       .ui-grid--3 { grid-template-columns: 1fr; }
       .contact-actions { flex-direction: column; align-items: stretch; }
       .contact-actions .btn { width: 100%; }
+      .prototype-grid { grid-template-columns: 1fr; }
+      .prototype-actions { flex-direction: column; align-items: stretch; }
+      .prototype-actions .btn { width: 100%; }
     }
     .mobile-nav {
       display: none;
@@ -946,11 +1019,41 @@
         </div>
       </div>
       <div class="what-to-text fade-up" aria-labelledby="what-to-text-title">
-        <h3 id="what-to-text-title">What should I text?</h3>
-        <p>User hesitation usually happens right before the first message. Copy this if you’re not sure what to say.</p>
-        <code class="text-template" id="textTemplate">Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?</code>
-        <button type="button" class="btn btn-secondary" id="copyTextTemplate" data-event="copy_text_template_click" data-mcp-action="copy-first-text-template" data-mcp-description="Copy a suggested first text message to send Dusty with bike year, make, model, issue, and photo/video note.">Copy Text Template</button>
-        <div class="copy-status" id="copyStatus" role="status" aria-live="polite"></div>
+        <span class="guide-badge">Rapid prototype</span>
+        <h3 id="what-to-text-title">Build Your First Text to Dusty</h3>
+        <p>This quick prototype tests one idea: riders are more likely to contact Dusty when the site helps them compose the first message.</p>
+        <div class="prototype-builder" id="textBuilderPrototype" data-prototype="first-text-builder">
+          <div class="prototype-grid">
+            <div class="prototype-field">
+              <label for="protoBike">Bike</label>
+              <input id="protoBike" type="text" placeholder="e.g. 2018 Honda CBR500R" autocomplete="off">
+            </div>
+            <div class="prototype-field">
+              <label for="protoRideable">Can it ride?</label>
+              <select id="protoRideable">
+                <option value="not sure if it is safe to ride">Not sure</option>
+                <option value="it still runs and rides">It still rides</option>
+                <option value="it should not be ridden right now">Do not want to ride it</option>
+                <option value="I am looking at buying it">Buying used bike</option>
+              </select>
+            </div>
+          </div>
+          <div class="prototype-field">
+            <label for="protoIssue">What happened?</label>
+            <textarea id="protoIssue" placeholder="e.g. Chain noise, brake squeal, oil leak, won't start..."></textarea>
+          </div>
+          <code class="text-template" id="textTemplate">Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?</code>
+          <div class="prototype-actions">
+            <button type="button" class="btn btn-secondary" id="copyTextTemplate" data-event="copy_text_template_click" data-mcp-action="copy-first-text-template" data-mcp-description="Copy a suggested first text message to send Dusty with bike year, make, model, issue, and photo/video note.">Copy Text</button>
+            <a href="sms:7147879453?body=Hi%20Dusty%20%E2%80%94%20I%20need%20help%20with%20my%20bike." class="btn btn-primary" id="textBuilderSms" data-event="prototype_text_builder_sms_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-confirmed SMS using the text builder prototype message." data-mcp-requires-user-confirmation="true">Text This to Dusty</a>
+          </div>
+          <div class="copy-status" id="copyStatus" role="status" aria-live="polite"></div>
+          <div class="prototype-feedback" aria-label="Prototype feedback">
+            <span>Was this text builder helpful?</span>
+            <button type="button" data-prototype-feedback="yes" data-event="prototype_text_builder_helpful_yes">Yes</button>
+            <button type="button" data-prototype-feedback="no" data-event="prototype_text_builder_helpful_no">Not yet</button>
+          </div>
+        </div>
       </div>
       <div style="text-align: center; margin-top: 30px;" class="fade-up">
         <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="process_sms_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS after reading the three-step repair intake process." data-mcp-requires-user-confirmation="true">Text a Photo Now</a>
@@ -1707,6 +1810,43 @@
       $$('[data-event]').forEach(el => {
         el.addEventListener('click', () => pushEvent(el.dataset.event, { link_url: el.href || null }));
       });
+
+      const protoBike = $('#protoBike');
+      const protoIssue = $('#protoIssue');
+      const protoRideable = $('#protoRideable');
+      const textBuilderSms = $('#textBuilderSms');
+      const buildPrototypeText = () => {
+        const bike = protoBike?.value.trim() || '[year/make/model]';
+        const issue = protoIssue?.value.trim() || '[what happened]';
+        const rideable = protoRideable?.value || 'not sure if it is safe to ride';
+        return `Hi Dusty — I need help with my bike. It’s a ${bike}. The issue is ${issue}. I’ll send a photo/video next. ${rideable}. Should I ride it, or bring it in?`;
+      };
+      const updatePrototypeText = () => {
+        const text = buildPrototypeText();
+        const template = $('#textTemplate');
+        if (template) template.textContent = text;
+        if (textBuilderSms) textBuilderSms.href = `sms:7147879453?body=${encodeURIComponent(text)}`;
+        pushEvent('prototype_text_builder_update', {
+          has_bike: Boolean(protoBike?.value.trim()),
+          has_issue: Boolean(protoIssue?.value.trim()),
+          rideable_state: protoRideable?.value || null
+        });
+      };
+      [protoBike, protoIssue, protoRideable].filter(Boolean).forEach((field) => {
+        field.addEventListener('input', updatePrototypeText);
+        field.addEventListener('change', updatePrototypeText);
+      });
+      if (textBuilderSms) textBuilderSms.addEventListener('click', () => updatePrototypeText());
+      $$('[data-prototype-feedback]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const value = button.dataset.prototypeFeedback;
+          try { localStorage.setItem('dustys_text_builder_feedback', value); } catch (err) {}
+          pushEvent('prototype_text_builder_feedback', { value });
+          const status = $('#copyStatus');
+          if (status) status.textContent = value === 'yes' ? 'Thanks — we’ll keep this helper.' : 'Thanks — we’ll keep improving this helper.';
+        });
+      });
+      updatePrototypeText();
 
       const copyTextTemplate = $('#copyTextTemplate');
       const textTemplate = $('#textTemplate');

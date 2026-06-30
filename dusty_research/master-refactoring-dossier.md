@@ -1238,3 +1238,33 @@ Keep the project static and no-build, but harden the homepage JavaScript and add
 - Add automated smoke tests for JSON, sitemap, service worker, and required AEO files.
 
 Full Senior Developer report: `dusty_research/senior_developer_report_2026-06-30.md`.
+
+---
+
+### Section 24: Rapid Prototype — First Text Builder (Rapid Prototyper)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 24.1 Prototype Hypothesis
+
+A rider is more likely to contact Dusty if the site helps them compose the first text message instead of only telling them to text a photo.
+
+#### 24.2 MVP Built
+
+- Added “Build Your First Text to Dusty” prototype.
+- Inputs: bike, issue, rideability state.
+- Output: live generated first text and dynamic SMS link.
+- Added feedback collection with Yes / Not yet buttons.
+- Added prototype analytics events.
+- Added MCP action declaration for the text-builder helper.
+- Bumped service worker cache to `dustys-moto-v5`.
+
+#### 24.3 Success Criteria
+
+- Users interact with the builder.
+- Builder users click SMS or copy the generated text.
+- Positive feedback exceeds negative feedback.
+- The first messages Dusty receives contain better year/make/model and issue detail.
+
+Full Rapid Prototyper report: `dusty_research/rapid_prototyper_report_2026-06-30.md`.

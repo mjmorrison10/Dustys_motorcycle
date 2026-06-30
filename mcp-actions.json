@@ -65,6 +65,14 @@
       "label": "Copy first text template",
       "description": "Copy a suggested first text message so the user can paste it into SMS.",
       "requires_user_confirmation": false
+    },
+    {
+      "id": "use_text_builder_prototype",
+      "type": "client_side_helper",
+      "label": "Build first text to Dusty",
+      "description": "Use the homepage text builder prototype to compose a first SMS with bike details, issue, and rideability state.",
+      "requires_user_confirmation": true,
+      "url": "https://dustysmoto.com/#how-it-works"
     }
   ],
   "version": "1.0-draft",

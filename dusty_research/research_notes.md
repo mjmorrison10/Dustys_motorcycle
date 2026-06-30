@@ -603,3 +603,35 @@ The homepage had accumulated useful behavior from previous passes, but the inlin
 - Homepage and service worker serve locally.
 
 Full report saved as: `dusty_research/senior_developer_report_2026-06-30.md`.
+
+---
+
+## Rapid Prototyper Implementation Notes — 2026-06-30
+
+**Agency agent used:** Rapid Prototyper from the Agency Agents app corpus.
+
+### Prototype hypothesis
+
+Riders may understand “text a photo,” but still hesitate because they do not know exactly what to write. A tiny first-text builder can reduce hesitation and create measurable conversion signals.
+
+### Site changes applied
+
+- Added **Build Your First Text to Dusty** prototype in the “How to Get Help Fast” section.
+- Added inputs for:
+  - bike year / make / model,
+  - rideability state,
+  - issue description.
+- Added live generated SMS text and dynamic `sms:` link.
+- Added prototype feedback buttons:
+  - Yes
+  - Not yet
+- Added analytics events:
+  - `prototype_text_builder_update`
+  - `prototype_text_builder_sms_click`
+  - `prototype_text_builder_helpful_yes`
+  - `prototype_text_builder_helpful_no`
+  - `prototype_text_builder_feedback`
+- Added `use_text_builder_prototype` to MCP action declarations.
+- Bumped service worker cache to `dustys-moto-v5`.
+
+Full report saved as: `dusty_research/rapid_prototyper_report_2026-06-30.md`.
