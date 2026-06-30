@@ -664,3 +664,39 @@ The site had strong conversion mechanics, but needed a clearer visual narrative 
 - Bumped service worker cache to `dustys-moto-v6`.
 
 Full report saved as: `dusty_research/visual_storyteller_report_2026-06-30.md`.
+
+---
+
+## Image Prompt Engineer Implementation Notes — 2026-06-30
+
+**Agency agent used:** Image Prompt Engineer from the Agency Agents app corpus.
+
+### Visual prompt strategy
+
+Dusty’s trust depends on authenticity. The prompt strategy is not to replace real shop photography with AI images. The rule is: **real shop photos first; AI prompts for planning, mockups, non-deceptive illustrations, and campaign concepts only.**
+
+### Files added
+
+- `visual_assets/dustys_photo_prompt_library.md`
+- `dusty_research/image_prompt_engineer_report_2026-06-30.md`
+
+### Prompt library contents
+
+- Global visual style rules for Dusty’s brand.
+- Real-photo shot list:
+  1. hero shop environment,
+  2. text/photo diagnosis moment,
+  3. honest estimate / approve-before-wrenching detail,
+  4. used-bike inspection details,
+  5. Santiago Canyon ride-ready prep.
+- AI prompt templates for:
+  - website hero background concept,
+  - text-a-photo CTA image,
+  - used-bike inspection guide image,
+  - Santiago Canyon ride-ready image,
+  - no-upsell / honest diagnosis visual metaphor.
+- Negative prompts to avoid fake logos, fake text, distorted motorcycles, fake customers, dealership polish, and misleading AI proof.
+- Platform adaptations for Instagram, Google Business Profile, and website sections.
+- Prompt quality checklist.
+
+Full report saved as: `dusty_research/image_prompt_engineer_report_2026-06-30.md`.

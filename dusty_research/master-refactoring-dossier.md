@@ -1302,3 +1302,28 @@ The three-card story can become:
 - a future before/after gallery pattern.
 
 Full Visual Storyteller report: `dusty_research/visual_storyteller_report_2026-06-30.md`.
+
+---
+
+### Section 26: Image Prompt & Photo Direction Pass (Image Prompt Engineer)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 26.1 Visual Prompt Strategy
+
+Dusty’s visual credibility should come from real shop photography. AI image prompts should support planning, concepting, and non-deceptive illustrative content — not fake proof, fake customers, or fake repair scenes.
+
+#### 26.2 Changes Implemented
+
+- Added `visual_assets/dustys_photo_prompt_library.md`.
+- Added real photo shot list for hero, text-photo CTA, honest estimate, used-bike inspection, and ride-ready visuals.
+- Added structured AI prompt templates with subject, environment, lighting, camera/lens, aesthetic, aspect ratio, and negative prompts.
+- Added platform adaptation guidance for Instagram, Google Business Profile, and website use.
+- Added prompt quality checklist and authenticity guardrails.
+
+#### 26.3 Production Rule
+
+Use real photos for trust. Use AI prompts for planning, storyboarding, background concepts, or clearly illustrative assets only.
+
+Full Image Prompt Engineer report: `dusty_research/image_prompt_engineer_report_2026-06-30.md`.

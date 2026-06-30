@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, and Visual Storyteller passes complete. Next: Accessibility QA / service pages / form endpoint.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, and Image Prompt Engineer passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -134,6 +134,7 @@
 - ✅ Senior Developer pass completed: hardened JS IIFE, optional-element guards, analytics helper, scroll progress, rAF/passive scroll handling, button transition polish, service-worker cache v4
 - ✅ Rapid Prototyper pass completed: first-text builder MVP, dynamic SMS generation, prototype feedback buttons, validation events, MCP helper action, service-worker cache v5
 - ✅ Visual Storyteller pass completed: visual rider story section, three image story cards, reusable story components, art-direction guardrail, service-worker cache v6
+- ✅ Image Prompt Engineer pass completed: visual prompt/photo-direction library, real-photo shot list, AI prompt templates, negative prompts, platform adaptations, authenticity guardrails
 
 ---
 
