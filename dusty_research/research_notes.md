@@ -635,3 +635,32 @@ Riders may understand “text a photo,” but still hesitate because they do not
 - Bumped service worker cache to `dustys-moto-v5`.
 
 Full report saved as: `dusty_research/rapid_prototyper_report_2026-06-30.md`.
+
+---
+
+## Visual Storyteller Implementation Notes — 2026-06-30
+
+**Agency agent used:** Visual Storyteller from the Agency Agents app corpus.
+
+### Visual storytelling finding
+
+The site had strong conversion mechanics, but needed a clearer visual narrative arc. The rider story is: something feels off, Dusty gives a straight answer, the bike gets back to the road.
+
+### Site changes applied
+
+- Added new homepage section: **The Rider Story — From Weird Noise to Canyon-Ready**.
+- Added three visual story cards:
+  1. Something Feels Off
+  2. Get a Straight Answer
+  3. Ride Out Confident
+- Added reusable visual storytelling components:
+  - `.story-strip`
+  - `.story-card`
+  - `.story-card__overlay`
+  - `.story-card__label`
+  - `.story-caption`
+- Used real existing shop/rider imagery with lazy-loaded WebP images and accessible alt text.
+- Added visual art direction guardrail: use real shop photos, real bikes, and real rider moments; avoid dealership-style stock photography.
+- Bumped service worker cache to `dustys-moto-v6`.
+
+Full report saved as: `dusty_research/visual_storyteller_report_2026-06-30.md`.

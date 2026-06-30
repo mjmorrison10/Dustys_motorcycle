@@ -1268,3 +1268,37 @@ A rider is more likely to contact Dusty if the site helps them compose the first
 - The first messages Dusty receives contain better year/make/model and issue detail.
 
 Full Rapid Prototyper report: `dusty_research/rapid_prototyper_report_2026-06-30.md`.
+
+---
+
+### Section 25: Visual Storytelling Narrative Pass (Visual Storyteller)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 25.1 Visual Narrative Decision
+
+The website should visually show the rider journey, not only list services and CTAs. The core story arc is:
+
+1. Something feels off.
+2. Text Dusty and get a straight answer.
+3. Approve the plan and ride out confident.
+
+#### 25.2 Changes Implemented
+
+- Added `#visual-story` homepage section.
+- Added three image-driven story cards.
+- Added reusable story-card CSS components.
+- Added visual direction caption to protect the real-shop photography style.
+- Bumped service worker cache to `dustys-moto-v6`.
+
+#### 25.3 Cross-Platform Use
+
+The three-card story can become:
+
+- a 3-slide Instagram carousel,
+- a Google Business Profile post,
+- a short Reel storyboard,
+- a future before/after gallery pattern.
+
+Full Visual Storyteller report: `dusty_research/visual_storyteller_report_2026-06-30.md`.

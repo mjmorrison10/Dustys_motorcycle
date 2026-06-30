@@ -853,7 +853,10 @@
       .section { padding: 64px 0; }
       .services-grid[style] { grid-template-columns: 1fr !important; }
       .ui-grid--2,
-      .ui-grid--3 { grid-template-columns: 1fr; }
+      .ui-grid--3,
+      .story-strip { grid-template-columns: 1fr; }
+      .story-card,
+      .story-card img { min-height: 380px; }
       .contact-actions { flex-direction: column; align-items: stretch; }
       .contact-actions .btn { width: 100%; }
       .prototype-grid { grid-template-columns: 1fr; }
@@ -1158,6 +1161,43 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="visual-story" aria-labelledby="visual-story-title">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subline">The Rider Story</span>
+        <h2 id="visual-story-title">From Weird Noise to <span class="accent">Canyon-Ready</span></h2>
+        <p>A simple visual story: the problem shows up, Dusty gives a straight answer, and the bike gets back where it belongs — on the road.</p>
+      </div>
+      <div class="story-strip">
+        <article class="story-card fade-up">
+          <img src="images/yelp_6.webp" alt="Motorcycle front wheel and tire close-up before a ride-ready inspection" loading="lazy" decoding="async">
+          <div class="story-card__overlay">
+            <div class="story-card__label">Setup</div>
+            <h3>Something Feels Off</h3>
+            <p>A chain noise, brake squeal, leak, wobble, or used-bike red flag. You do not need the perfect mechanic words — just a photo and what changed.</p>
+          </div>
+        </article>
+        <article class="story-card fade-up">
+          <img src="images/yelp_4.webp" alt="Inside Dusty's Orange CA motorcycle repair shop where bikes are inspected" loading="lazy" decoding="async">
+          <div class="story-card__overlay">
+            <div class="story-card__label">Conflict</div>
+            <h3>Get a Straight Answer</h3>
+            <p>Text the bike, the issue, and a photo. Dusty tells you if it sounds like quick service, diagnosis, inspection, or a shop visit.</p>
+          </div>
+        </article>
+        <article class="story-card fade-up">
+          <img src="images/yelp_7.webp" alt="Dirt bike rider in the desert representing a bike ready to ride again" loading="lazy" decoding="async">
+          <div class="story-card__overlay">
+            <div class="story-card__label">Resolution</div>
+            <h3>Ride Out Confident</h3>
+            <p>No phantom repairs. No surprise wrenching. Approve the plan, get the bike sorted, and get back to the ride.</p>
+          </div>
+        </article>
+      </div>
+      <p class="story-caption fade-up"><strong>Visual direction:</strong> keep using real shop photos, real bikes, and real rider moments. The story should feel like Orange County garage truth — not dealership stock photography.</p>
     </div>
   </section>
 
