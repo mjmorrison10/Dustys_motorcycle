@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, and UX Architecture passes complete. Next: Content / AEO / Accessibility QA.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, and UX Research passes complete. Next: Content / AEO / Accessibility QA.
 
 ---
 
@@ -124,6 +124,7 @@
 - ✅ Persona Walkthrough CRO pass completed: text-photo CTA, prefilled SMS, 3-step help flow, form timing, form reassurance, text-photo FAQ/schema, mobile grid fix
 - ✅ Brand Guardian pass completed: brand foundation, CSS brand tokens, header lockup, text-photo meta alignment, schema slogan, brand protection rules
 - ✅ UX Architect pass completed: simplified nav, skip link, main landmark, focus states, ARIA menu/FAQ states, active nav, reduced-motion support, spacing/touch tokens
+- ✅ UX Researcher pass completed: text-template helper card, copy button with accessible status, `copy_text_template_click` event, reply-preference form field, 5-rider validation plan
 
 ---
 

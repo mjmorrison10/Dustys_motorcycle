@@ -332,3 +332,38 @@ Full report saved as: `dusty_research/brand_guardian_report_2026-06-30.md`.
 - Ensured footer sits outside the main landmark.
 
 Full report saved as: `dusty_research/ux_architect_report_2026-06-30.md`.
+
+---
+
+## UX Researcher Implementation Notes — 2026-06-30
+
+**Agency agent used:** UX Researcher from the Agency Agents app corpus.
+
+### Research basis
+
+No live users or analytics exports were available in the agent environment. This pass used triangulated evidence from:
+
+- customer/review themes in the research folder,
+- prior Persona Walkthrough findings,
+- UX Architect accessibility findings,
+- current site flow and source review.
+
+### Key research finding
+
+The biggest remaining first-contact friction is not credibility. The site already communicates trust well. The remaining hesitation is: **“What exactly should I text Dusty first?”** This is especially important for riders who are anxious, less mechanically confident, or trying to explain a noise/problem from a mobile phone.
+
+### Site changes applied
+
+- Added a **“What should I text?”** helper card in the “How to Get Help Fast” section.
+- Added a copyable first-message template:
+  - “Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?”
+- Added **Copy Text Template** button.
+- Added accessible copy feedback using `role="status"` and `aria-live="polite"`.
+- Added `copy_text_template_click` analytics event hook.
+- Added contact form field: **Best way to reply** with Text / Call / Email options.
+
+### Recommended validation
+
+Run a 5-rider usability test with tasks around contacting Dusty, knowing what to text, finding service fit, and understanding “no work starts without approval.” Connect GA4/GTM and monitor `copy_text_template_click` alongside SMS and form events.
+
+Full report saved as: `dusty_research/ux_researcher_report_2026-06-30.md`.

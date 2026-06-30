@@ -393,6 +393,43 @@
     }
     .hero-card .btn { width: 100%; }
 
+    .what-to-text {
+      max-width: 760px;
+      margin: var(--space-8) auto 0;
+      padding: var(--space-6);
+      border: 1px solid rgba(242,101,34,0.35);
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(242,101,34,0.12), rgba(255,255,255,0.04));
+      text-align: left;
+    }
+    .what-to-text h3 {
+      margin-bottom: var(--space-3);
+      font-size: 1.35rem;
+    }
+    .what-to-text p {
+      color: var(--light-gray);
+      margin-bottom: var(--space-4);
+    }
+    .text-template {
+      display: block;
+      padding: var(--space-4);
+      border-radius: var(--radius);
+      background: rgba(0,0,0,0.45);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white);
+      font-size: 0.98rem;
+      line-height: 1.55;
+      white-space: normal;
+      margin-bottom: var(--space-4);
+    }
+    .copy-status {
+      min-height: 1.4em;
+      margin-top: var(--space-3);
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
     /* Trust Bar */
     .trust-bar {
       background: var(--orange);
@@ -867,6 +904,13 @@
           <p style="color: var(--gray); font-style: normal;">No work starts until you know the plan. If something else comes up, you hear about it first.</p>
         </div>
       </div>
+      <div class="what-to-text fade-up" aria-labelledby="what-to-text-title">
+        <h3 id="what-to-text-title">What should I text?</h3>
+        <p>User hesitation usually happens right before the first message. Copy this if you’re not sure what to say.</p>
+        <code class="text-template" id="textTemplate">Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?</code>
+        <button type="button" class="btn btn-secondary" id="copyTextTemplate" data-event="copy_text_template_click">Copy Text Template</button>
+        <div class="copy-status" id="copyStatus" role="status" aria-live="polite"></div>
+      </div>
       <div style="text-align: center; margin-top: 30px;" class="fade-up">
         <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="process_sms_click">Text a Photo Now</a>
         <p style="color: var(--gray); margin-top: 12px; font-size: 0.95rem;">Best first text: “Year / make / model + what happened + one photo.”</p>
@@ -1190,6 +1234,14 @@
             <div class="form-group">
               <label for="bike">Bike Make / Model / Year</label>
               <input type="text" id="bike" name="bike" placeholder="e.g. 2018 Honda CBR500R">
+            </div>
+            <div class="form-group">
+              <label for="reply_preference">Best way to reply</label>
+              <select id="reply_preference" name="reply_preference">
+                <option value="text">Text me</option>
+                <option value="call">Call me</option>
+                <option value="email">Email me</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="timeline">How soon do you need help?</label>
@@ -1599,6 +1651,37 @@
         window.gtag('event', 'form_submit', { form_id: 'serviceForm' });
       }
     });
+
+
+    // Research-backed helper: reduce hesitation before first text
+    const copyTextTemplate = document.getElementById('copyTextTemplate');
+    const textTemplate = document.getElementById('textTemplate');
+    const copyStatus = document.getElementById('copyStatus');
+    if (copyTextTemplate && textTemplate && copyStatus) {
+      copyTextTemplate.addEventListener('click', async () => {
+        const text = textTemplate.textContent.trim();
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            const temp = document.createElement('textarea');
+            temp.value = text;
+            temp.setAttribute('readonly', '');
+            temp.style.position = 'absolute';
+            temp.style.left = '-9999px';
+            document.body.appendChild(temp);
+            temp.select();
+            document.execCommand('copy');
+            document.body.removeChild(temp);
+          }
+          copyStatus.textContent = 'Copied. Paste it into a text to Dusty and add your photo.';
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'copy_text_template_click' });
+        } catch (err) {
+          copyStatus.textContent = 'Could not copy automatically. You can still select the message above.';
+        }
+      });
+    }
 
     // Header shadow on scroll
     const header = document.querySelector('header');

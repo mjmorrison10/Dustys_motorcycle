@@ -969,3 +969,36 @@ Full Brand Guardian report: `dusty_research/brand_guardian_report_2026-06-30.md`
 - Add a “What to text” mini-card or visual example if users still hesitate.
 
 Full UX Architect report: `dusty_research/ux_architect_report_2026-06-30.md`.
+
+---
+
+### Section 16: UX Research Validation Pass (UX Researcher)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 16.1 Research Finding
+
+The remaining user friction is not primarily trust or relevance. It is first-contact confidence: many riders know they should text Dusty, but may hesitate because they do not know exactly what to say or what details matter.
+
+#### 16.2 Changes Implemented
+
+- Added **“What should I text?”** helper card under “How to Get Help Fast.”
+- Added copyable text-message template to reduce composition effort.
+- Added accessible `aria-live` copy-status feedback.
+- Added `copy_text_template_click` analytics event hook.
+- Added contact form field for reply preference: Text / Call / Email.
+
+#### 16.3 Validation Plan
+
+Recommended next research step: test the site with five actual riders. Key tasks:
+
+1. Find how to contact Dusty for a weird bike noise.
+2. Explain what information Dusty wants in the first text.
+3. Use the form and choose a reply preference.
+4. Find whether Dusty works on their type of bike.
+5. Find proof that Dusty will not upsell them.
+
+Track `copy_text_template_click`, SMS CTA clicks, form submissions, and mobile sticky CTA clicks once GA4/GTM is connected.
+
+Full UX Researcher report: `dusty_research/ux_researcher_report_2026-06-30.md`.
