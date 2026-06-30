@@ -1327,3 +1327,40 @@ Dusty’s visual credibility should come from real shop photography. AI image pr
 Use real photos for trust. Use AI prompts for planning, storyboarding, background concepts, or clearly illustrative assets only.
 
 Full Image Prompt Engineer report: `dusty_research/image_prompt_engineer_report_2026-06-30.md`.
+
+---
+
+### Section 27: Social Media Strategy Pass (Social Media Strategist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 27.1 Social Strategy Decision
+
+Dusty's social media should repeatedly prove one promise:
+
+> **Text a Photo. Get a Straight Answer.**
+
+The goal is not influencer-style motorcycle content. The goal is local trust, real shop proof, ride-ready safety education, used-bike buyer protection, and better-qualified text leads.
+
+#### 27.2 Changes Implemented
+
+- Added `social_assets/dustys_social_media_playbook.md`.
+- Added `social_assets/dustys_30_day_social_calendar.md`.
+- Added platform bio templates for Instagram, Facebook, and Google Business Profile.
+- Added content pillars, caption templates, hashtag set, engagement rules, and review request copy.
+- Added 12-post 30-day social calendar.
+
+#### 27.3 Core Content Pillars
+
+1. Real Repairs.
+2. No-BS Diagnosis.
+3. Ride-Ready Safety.
+4. Used-Bike Buyer Protection.
+5. Local Shop / Veteran-Owned.
+
+#### 27.4 Measurement Plan
+
+Track posts published, profile visits, calls/texts from social, website clicks, guide clicks, top-performing content, and leads mentioning social.
+
+Full Social Media Strategist report: `dusty_research/social_media_strategist_report_2026-06-30.md`.

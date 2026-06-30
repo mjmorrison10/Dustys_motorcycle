@@ -700,3 +700,41 @@ Dusty’s trust depends on authenticity. The prompt strategy is not to replace r
 - Prompt quality checklist.
 
 Full report saved as: `dusty_research/image_prompt_engineer_report_2026-06-30.md`.
+
+---
+
+## Social Media Strategist Implementation Notes — 2026-06-30
+
+**Agency agent used:** Social Media Strategist from the Agency Agents app corpus.
+
+### Social strategy
+
+Dusty's should use social media to prove the shop is real, local, honest, and easy to contact. The core campaign is: **Text a Photo. Get a Straight Answer.** This reinforces the website's text-first intake strategy and no-BS brand position.
+
+### Files added
+
+- `social_assets/dustys_social_media_playbook.md`
+- `social_assets/dustys_30_day_social_calendar.md`
+- `dusty_research/social_media_strategist_report_2026-06-30.md`
+
+### Playbook contents
+
+- Instagram, Facebook, and Google Business Profile bio templates.
+- Content pillars:
+  1. Real Repairs
+  2. No-BS Diagnosis
+  3. Ride-Ready Safety
+  4. Used-Bike Buyer Protection
+  5. Local Shop / Veteran-Owned
+- Posting cadence.
+- Hashtag set.
+- Caption templates.
+- Engagement rules.
+- Review request message.
+- Weekly measurement checklist.
+
+### 30-day calendar contents
+
+Created 12 ready-to-post social concepts across four weeks, including text-photo CTA education, Santiago Canyon prep, used-bike inspection tips, all-makes service proof, brake/chain safety posts, veteran-owned local trust, and review/social proof themes.
+
+Full report saved as: `dusty_research/social_media_strategist_report_2026-06-30.md`.
