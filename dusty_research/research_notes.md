@@ -258,3 +258,38 @@ Full report saved as: `dusty_research/seo_specialist_report_2026-06-30.md`.
 - Added mobile CSS override so inline card grids collapse correctly on phones.
 
 Full report saved as: `dusty_research/persona_walkthrough_report_2026-06-30.md`.
+
+---
+
+## Brand Guardian Implementation Notes — 2026-06-30
+
+**Agency agent used:** Brand Guardian from the Agency Agents app corpus.
+
+### Brand foundation clarified
+
+- **Core position:** The no-BS, veteran-owned neighborhood motorcycle mechanic at the Orange Traffic Circle.
+- **Brand promise:** No phone tag. No phantom repairs. No upsells. Text a photo, get a straight answer, approve before we wrench.
+- **Primary CTA language to protect:** “Text a photo for a quote.”
+- **Preferred tagline:** “No-BS Moto Repair” pending Dusty approval. Softer fallback: “Honest Moto Repair.”
+
+### Site changes applied
+
+- Added Brand Guardian design-token aliases in CSS for colors and typography.
+- Updated body/headline font declarations to use brand font tokens.
+- Added a stronger header lockup next to the circular logo:
+  - “Dusty’s”
+  - “No-BS Moto Repair”
+- Updated meta and Open Graph descriptions to match the text-photo conversion path.
+- Updated contact headline to “Text a Photo or Send the Form.”
+- Added structured-data slogan: “No phone tag. No phantom repairs. No upsells.”
+- Updated structured-data business description to reinforce the no-BS, veteran-owned, neighborhood mechanic positioning.
+
+### Brand protection guardrails
+
+1. Keep copy plainspoken and mechanic-like; avoid dealership/corporate language.
+2. Keep primary CTA text/photo-first unless analytics proves another path converts better.
+3. Use black/white/orange and real shop photography; avoid generic stock bike imagery.
+4. Keep all public NAP, hours, warranty, and response-time claims accurate.
+5. Standardize social bios and directory profiles around the same promise.
+
+Full report saved as: `dusty_research/brand_guardian_report_2026-06-30.md`.

@@ -894,3 +894,42 @@ The walkthrough used a high-intent local rider persona searching for a motorcycl
 - Connect real SMS auto-reply before leaning too heavily on the 30-minute text-back promise.
 
 Full walkthrough report: `dusty_research/persona_walkthrough_report_2026-06-30.md`.
+
+---
+
+### Section 14: Brand Guardian System Pass (Brand Guardian)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 14.1 Brand Positioning Locked
+
+Dusty’s brand should be protected as:
+
+> **The no-BS, veteran-owned neighborhood motorcycle mechanic at the Orange Traffic Circle.**
+
+Core brand promise:
+
+> **No phone tag. No phantom repairs. No upsells. Text a photo, get a straight answer, approve before we wrench.**
+
+#### 14.2 Implementation Changes
+
+- Added CSS brand token aliases for color and typography consistency.
+- Updated body/headline font declarations to use brand font tokens.
+- Added header lockup text beside the badge logo:
+  - “Dusty’s”
+  - “No-BS Moto Repair”
+- Updated meta description and Open Graph description from “Text or book online” to “Text a photo for a quote.”
+- Updated contact section headline to align with the text-photo conversion path.
+- Added schema slogan and updated schema business description to reinforce the brand position.
+
+#### 14.3 Brand Rules for Future Work
+
+- Keep language direct, honest, and mechanic-like.
+- Protect the black/white/orange visual system and real-shop photography style.
+- Keep CTAs specific and action-oriented.
+- Avoid generic dealership language.
+- Confirm “No-BS Moto Repair” with Dusty; if needed, use “Honest Moto Repair” as the softer fallback.
+- Ensure all listings and social profiles use the same NAP, hours, and brand promise.
+
+Full Brand Guardian report: `dusty_research/brand_guardian_report_2026-06-30.md`.

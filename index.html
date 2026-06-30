@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dusty's Motorcycle Service & Repair | Orange Traffic Circle, CA | Veteran-Owned</title>
-  <meta name="description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle. Honest mechanic, no phone tag, fair pricing. Harley, sportbike, adventure, dirt bikes, ATVs. Text or book online. Mon–Sun 9am–7pm.">
+  <meta name="description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle. Honest mechanic, no phone tag, fair pricing. Harley, sportbike, adventure, dirt bikes, ATVs. Text a photo for a quote. Mon–Sun 9am–7pm.">
   <meta name="keywords" content="motorcycle repair Orange CA, motorcycle mechanic Orange Traffic Circle, motorcycle service Orange, Harley repair Orange, sportbike service Orange, adventure bike maintenance, motorcycle tire change Orange, Santiago Canyon motorcycle mechanic, veteran owned motorcycle shop, pre purchase inspection Orange CA">
   <meta property="og:title" content="Dusty's Motorcycle Service & Repair | Orange Traffic Circle, CA">
-  <meta property="og:description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle. No phone tag, no upsell. Text or book online. Harley, sportbike, adventure, dirt bikes. Mon–Sun 9am–7pm.">
+  <meta property="og:description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle. No phone tag, no upsell. Text a photo for a quote. Harley, sportbike, adventure, dirt bikes. Mon–Sun 9am–7pm.">
   <meta property="og:type" content="business.business">
   <meta property="og:image" content="https://dustysmoto.com/images/hero_bg.jpg">
   <meta property="og:url" content="https://dustysmoto.com">
@@ -31,20 +31,33 @@
       --metal: #c0c0c0;
       --red: #c41e3a;
       --success: #22c55e;
+
+      /* Brand Guardian system tokens */
+      --brand-primary: var(--orange);
+      --brand-primary-dark: var(--orange-dark);
+      --brand-ink: var(--black);
+      --brand-surface: var(--near-black);
+      --brand-panel: var(--charcoal);
+      --brand-steel: var(--metal);
+      --brand-muted: var(--gray);
+      --brand-paper: var(--white);
+      --brand-font-headline: 'Oswald', Impact, sans-serif;
+      --brand-font-body: 'Roboto', Arial, sans-serif;
+
       --shadow: 0 10px 40px rgba(0,0,0,0.4);
       --radius: 6px;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: var(--brand-font-body);
       background: var(--black);
       color: var(--white);
       line-height: 1.6;
       overflow-x: hidden;
     }
     h1, h2, h3, h4, .brand, .btn {
-      font-family: 'Oswald', sans-serif;
+      font-family: var(--brand-font-headline);
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
@@ -150,6 +163,25 @@
     .logo img {
       height: 56px;
       width: auto;
+    }
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+    .logo-name {
+      font-family: var(--brand-font-headline);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 1.05rem;
+      color: var(--white);
+    }
+    .logo-tagline {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      font-weight: 700;
     }
     .nav-links {
       display: flex;
@@ -477,7 +509,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-family: 'Roboto', sans-serif;
+      font-family: var(--brand-font-body);
     }
     .faq-q svg { width: 22px; height: 22px; fill: var(--orange); transition: transform 0.3s; }
     .faq-item.active .faq-q svg { transform: rotate(180deg); }
@@ -622,6 +654,7 @@
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .nav-cta { display: none; }
+      .logo-text { display: none; }
       .mobile-menu-btn { display: block; }
       .hero h1 { font-size: 2.5rem; }
       .hero-ctas { flex-direction: column; }
@@ -660,8 +693,12 @@
 
   <header>
     <div class="container nav-wrap">
-      <a href="#" class="logo">
+      <a href="#" class="logo" aria-label="Dusty's Motorcycle Service & Repair home">
         <img src="images/yelp_2.webp" alt="Dusty's Motorcycle Service & Repair Logo" width="160" height="160">
+        <span class="logo-text" aria-hidden="true">
+          <span class="logo-name">Dusty's</span>
+          <span class="logo-tagline">No-BS Moto Repair</span>
+        </span>
       </a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
@@ -1074,8 +1111,8 @@
       <div class="contact-grid">
         <div class="contact-info fade-up">
           <span class="subline" style="color: var(--orange); font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem; margin-bottom: 12px; display: inline-block;">NO PHONE TAG REQUIRED</span>
-          <h2>Text or Book Online. <span class="accent">We'll Get Back to You Fast.</span></h2>
-          <p>Call, text, or fill out the form. Walk-ins are welcome near the Orange Circle. We usually reply within 30 minutes during shop hours.</p>
+          <h2>Text a Photo or Send the Form. <span class="accent">We'll Get Back to You Fast.</span></h2>
+          <p>Text a photo first, call, or fill out the form. Walk-ins are welcome near the Orange Circle. We usually reply within 30 minutes during shop hours.</p>
           <ul class="contact-details">
             <li><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.02.76-.23 1.03l-2.2 2.2z"/></svg><a href="tel:7147879453">(714) 787-9453</a></li>
             <li><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>130 S Lemon St, Orange, CA 92866</li>
@@ -1197,6 +1234,7 @@
 
   <script type="application/ld+json">
   
+  
   {
       "@context": "https://schema.org",
       "@graph": [
@@ -1205,7 +1243,7 @@
               "@id": "https://dustysmoto.com/#business",
               "name": "Dusty's Motorcycle Service & Repair",
               "alternateName": "Dusty's Motorcycle Repair",
-              "description": "Veteran-owned motorcycle repair and service shop in Orange, CA near the Orange Traffic Circle. Services include maintenance, diagnostics, Harley repair, sportbike service, dirt bike and ATV repair, vintage motorcycle repair, tire mounting and balancing, and pre-purchase inspections.",
+              "description": "Veteran-owned motorcycle repair and service shop in Orange, CA near the Orange Traffic Circle. Dusty's is the no-BS neighborhood motorcycle mechanic for maintenance, diagnostics, Harley repair, sportbike service, dirt bike and ATV repair, vintage motorcycle repair, tire mounting and balancing, and pre-purchase inspections.",
               "image": [
                   "https://dustysmoto.com/images/hero_bg.jpg",
                   "https://dustysmoto.com/images/yelp_2.jpg"
@@ -1323,7 +1361,8 @@
                   "@type": "AggregateRating",
                   "ratingValue": "4.5",
                   "reviewCount": "86"
-              }
+              },
+              "slogan": "No phone tag. No phantom repairs. No upsells."
           },
           {
               "@type": "WebSite",
@@ -1411,6 +1450,7 @@
           }
       ]
   }
+  
   
   </script>
 
