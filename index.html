@@ -13,6 +13,7 @@
   <meta property="og:url" content="https://dustysmoto.com">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://dustysmoto.com/">
+  <link rel="preload" as="image" href="images/hero_bg.webp" type="image/webp">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -214,7 +215,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: url('images/hero_bg.jpg') center center / cover no-repeat;
+      background: url('images/hero_bg.webp') center center / cover no-repeat;
       z-index: 0;
     }
     .hero-overlay {
@@ -258,7 +259,27 @@
       font-size: 1.25rem;
       color: var(--light-gray);
       max-width: 560px;
-      margin-bottom: 36px;
+      margin-bottom: 18px;
+    }
+    .seo-intro {
+      margin: 0 0 26px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--orange);
+      background: rgba(0,0,0,0.34);
+      border-radius: 0 10px 10px 0;
+      max-width: 760px;
+    }
+    .seo-intro h2 {
+      font-size: clamp(1.2rem, 2.2vw, 1.75rem);
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: var(--white);
+    }
+    .seo-intro p {
+      color: var(--light-gray);
+      font-size: 0.98rem;
+      line-height: 1.55;
+      margin: 0;
     }
     .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
     .trust-mini {
@@ -639,7 +660,7 @@
   <header>
     <div class="container nav-wrap">
       <a href="#" class="logo">
-        <img src="images/yelp_2.jpg" alt="Dusty's Motorcycle Service & Repair Logo">
+        <img src="images/yelp_2.webp" alt="Dusty's Motorcycle Service & Repair Logo" width="160" height="160">
       </a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
@@ -667,7 +688,7 @@
     <a href="#reviews">Reviews</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
-    <a href="sms:7147879453" class="btn btn-primary">Text (714) 787-9453</a>
+    <a href="sms:7147879453" class="btn btn-primary" data-event="hero_sms_click">Text (714) 787-9453</a>
   </nav>
 
   <section class="hero" id="home">
@@ -682,13 +703,17 @@
           </div>
           <h1>Your bike's ready for the canyon. <span class="accent">Dusty's ready</span> when you are.</h1>
           <p class="lead">The honest mechanic at the Orange Traffic Circle. No phone tag. No surprises. Just real work on Harleys, sportbikes, adventure bikes, and everything in between.</p>
+          <div class="seo-intro">
+            <h2>Honest Motorcycle Repair &amp; Service in Orange, CA</h2>
+            <p>Dusty's Motorcycle Service &amp; Repair is a veteran-owned motorcycle mechanic in Orange, CA near the Orange Traffic Circle, serving Harley-Davidson, sportbike, adventure, vintage, dirt bike, and ATV riders headed through Chapman Ave and Santiago Canyon.</p>
+          </div>
           <div class="hero-location" style="color: var(--light-gray); font-size: 1rem; margin-bottom: 24px; display: flex; align-items: center; gap: 10px;">
             <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: var(--orange);"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             Mon–Sun • 9am–7pm • 130 S Lemon St, Orange, CA
           </div>
           <div class="hero-ctas">
-            <a href="#contact" class="btn btn-primary">Text or Book Online</a>
-            <a href="tel:7147879453" class="btn btn-secondary">Call (714) 787-9453</a>
+            <a href="#contact" class="btn btn-primary" data-event="hero_text_or_book_click">Text or Book Online</a>
+            <a href="tel:7147879453" class="btn btn-secondary" data-event="hero_phone_call_click">Call (714) 787-9453</a>
           </div>
           <div class="trust-mini">
             <div><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.6 Yelp · 4.5 Google</div>
@@ -703,7 +728,7 @@
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Get an honest quote within 30 minutes during shop hours.</li>
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>No phantom repairs. No upsells. Just real work.</li>
           </ul>
-          <a href="sms:7147879453" class="btn btn-primary">Text (714) 787-9453</a>
+          <a href="sms:7147879453" class="btn btn-primary" data-event="hero_sms_click">Text (714) 787-9453</a>
         </div>
       </div>
     </div>
@@ -741,7 +766,7 @@
       </div>
       <div class="services-grid">
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_5.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_5.webp')"></div>
           <div class="service-body">
             <h3>Routine Maintenance</h3>
             <p>Oil changes, chain service, brake fluid, valve checks, and scheduled maintenance for cruisers, sportbikes, and 2024 adventure bikes like the Honda NC750X DCT.</p>
@@ -749,7 +774,7 @@
           </div>
         </div>
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_6.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_6.webp')"></div>
           <div class="service-body">
             <h3>Tires, Brakes & Chains</h3>
             <p>Tire mount and balance, brake pads, chain adjustment, and walk-in quick services to get you back on the road fast.</p>
@@ -757,7 +782,7 @@
           </div>
         </div>
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_1.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_1.webp')"></div>
           <div class="service-body">
             <h3>Performance & Repairs</h3>
             <p>Diagnostics, fork seals, clutch work, carb tuning, exhaust, and electrical troubleshooting. No upselling. Ever.</p>
@@ -765,7 +790,7 @@
           </div>
         </div>
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_4.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_4.webp')"></div>
           <div class="service-body">
             <h3>Full Rebuilds & Custom</h3>
             <p>Engine rebuilds, restorations, custom projects, and vintage carburetor work from a mechanic who actually loves old bikes.</p>
@@ -773,7 +798,7 @@
           </div>
         </div>
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_8.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_8.webp')"></div>
           <div class="service-body">
             <h3>Dirt Bike & Off-Road</h3>
             <p>Suspension, top-end rebuilds, track prep, and maintenance for motocross, enduro, and dual-sport machines.</p>
@@ -781,7 +806,7 @@
           </div>
         </div>
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_7.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_7.webp')"></div>
           <div class="service-body">
             <h3>Pre-Purchase Inspections</h3>
             <p>Buying used? Don't get stuck with someone else's problem. We inspect the bike before you hand over cash.</p>
@@ -801,7 +826,7 @@
       </div>
       <div class="services-grid" style="grid-template-columns: repeat(2, 1fr);">
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_8.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_8.webp')"></div>
           <div class="service-body">
             <h3>Pre-Purchase Inspection Checklist</h3>
             <p>Buying a used bike? Don't get stuck with someone else's headache. This checklist covers engine, frame, suspension, electrical, and the questions to ask the seller.</p>
@@ -809,7 +834,7 @@
           </div>
         </div>
         <div class="service-card fade-up">
-          <div class="service-img" style="background-image: url('images/yelp_7.jpg')"></div>
+          <div class="service-img" style="background-image: url('images/yelp_7.webp')"></div>
           <div class="service-body">
             <h3>Santiago Canyon Ride-Ready Checklist</h3>
             <p>Tires, chain, brakes, fluids, lights — everything to check before you head up Santiago Canyon or anywhere else this weekend.</p>
@@ -850,7 +875,7 @@
     <div class="container">
       <div class="why-grid">
         <div class="why-img fade-up">
-          <img src="images/yelp_3.jpg" alt="Clean motorcycle repair shop interior in Orange, CA">
+          <img src="images/yelp_3.webp" alt="Clean motorcycle repair shop interior at Dusty's Motorcycle Service & Repair in Orange, CA" loading="lazy" decoding="async">
         </div>
         <div class="fade-up">
           <span class="subline">Why Riders Choose Dusty</span>
@@ -919,7 +944,7 @@
           </div>
         </div>
         <div class="why-img fade-up">
-          <img src="images/yelp_4.jpg" alt="Inside Dusty's clean motorcycle repair garage in Orange, CA">
+          <img src="images/yelp_4.webp" alt="Inside Dusty's motorcycle repair garage near the Orange Traffic Circle in Orange, CA" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -1021,9 +1046,9 @@
             <li><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>Mon–Sun: 9am – 7pm</li>
             <li><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:service@dustysmoto.com">service@dustysmoto.com</a></li>
           </ul>
-          <a href="sms:7147879453" class="btn btn-primary">Text Dusty Now</a>
-          <a href="tel:7147879453" class="btn btn-secondary" style="margin-left: 12px;">Call (714) 787-9453</a>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" style="margin-left: 12px;">Get Directions</a>
+          <a href="sms:7147879453" class="btn btn-primary" data-event="contact_sms_click">Text Dusty Now</a>
+          <a href="tel:7147879453" class="btn btn-secondary" style="margin-left: 12px;" data-event="contact_phone_call_click">Call (714) 787-9453</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" style="margin-left: 12px;" data-event="get_directions_click">Get Directions</a>
         </div>
         <div class="contact-form fade-up">
           <form id="serviceForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -1078,7 +1103,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="images/yelp_2.jpg" alt="Dusty's Motorcycle Service & Repair Logo">
+          <img src="images/yelp_2.webp" alt="Dusty's Motorcycle Service & Repair Logo" width="160" height="160">
           <p>Veteran-owned motorcycle repair in Orange, CA. Honest work, fair pricing, and all makes & models. Ride in, ride out.</p>
           <div class="socials">
             <a href="https://www.instagram.com/dustysmotorcycleservice/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
@@ -1126,33 +1151,124 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MotorcycleRepair",
-    "name": "Dusty's Motorcycle Service & Repair",
-    "image": "https://dustysmoto.com/images/hero_bg.jpg",
-    "url": "https://dustysmoto.com",
-    "telephone": "+17147879453",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "130 S Lemon St",
-      "addressLocality": "Orange",
-      "addressRegion": "CA",
-      "postalCode": "92866",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 33.7872324,
-      "longitude": -117.8554666
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "19:00" }
-    ],
-    "priceRange": "$",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "86"
-    }
+    "@graph": [
+      {
+        "@type": "MotorcycleRepair",
+        "@id": "https://dustysmoto.com/#business",
+        "name": "Dusty's Motorcycle Service & Repair",
+        "alternateName": "Dusty's Motorcycle Repair",
+        "description": "Veteran-owned motorcycle repair and service shop in Orange, CA near the Orange Traffic Circle. Services include maintenance, diagnostics, Harley repair, sportbike service, dirt bike and ATV repair, vintage motorcycle repair, tire mounting and balancing, and pre-purchase inspections.",
+        "image": [
+          "https://dustysmoto.com/images/hero_bg.jpg",
+          "https://dustysmoto.com/images/yelp_2.jpg"
+        ],
+        "logo": "https://dustysmoto.com/images/yelp_2.jpg",
+        "url": "https://dustysmoto.com/",
+        "telephone": "+17147879453",
+        "email": "service@dustysmoto.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "130 S Lemon St",
+          "addressLocality": "Orange",
+          "addressRegion": "CA",
+          "postalCode": "92866",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.7872324,
+          "longitude": -117.8554666
+        },
+        "areaServed": [
+          "Orange, CA",
+          "Orange County, CA",
+          "Santiago Canyon",
+          "Anaheim, CA",
+          "Santa Ana, CA",
+          "Tustin, CA"
+        ],
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "19:00" }
+        ],
+        "priceRange": "$",
+        "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Motorcycle repair services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorcycle maintenance and tune-ups" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorcycle diagnostics and troubleshooting" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Harley-Davidson repair" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sportbike service" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dirt bike and ATV repair" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pre-purchase motorcycle inspections" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorcycle tire mounting and balancing" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vintage motorcycle repair and carburetor work" } }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "86"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://dustysmoto.com/#website",
+        "url": "https://dustysmoto.com/",
+        "name": "Dusty's Motorcycle Service & Repair",
+        "publisher": { "@id": "https://dustysmoto.com/#business" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://dustysmoto.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dustysmoto.com/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://dustysmoto.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you work on Harley-Davidson, sport bikes, and dirt bikes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. From metric cruisers to American V-twins, sport bikes, vintage carbureted bikes, dirt bikes, and ATVs, Dusty's services all makes and eras." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get a quote before work starts?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Bring the bike by the shop or send details through the contact form. Dusty's inspects it and gives you a clear written estimate before work begins." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer pre-purchase inspections?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. A pre-purchase inspection checks major items including the engine, frame, suspension, electrical system, and overall condition before you buy a used motorcycle." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if you can't find the problem?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dusty's does not charge for phantom repairs. If the issue cannot be found, Dusty's will tell you straight and will not bill you for unnecessary work." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are you located and what are your hours?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dusty's Motorcycle Service & Repair is at 130 S Lemon St, Orange, CA 92866, minutes from the Orange Traffic Circle. Current website hours are Monday through Sunday, 9am to 7pm; text ahead to confirm." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you warranty your work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dusty's stands behind repairs with the warranty terms shown on the website. If something is not right, bring it back and Dusty's will make it right." }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -1205,6 +1321,24 @@
       }
     });
 
+
+    // Analytics-ready CTA event hooks (works when GA4/GTM is added later)
+    window.dataLayer = window.dataLayer || [];
+    document.querySelectorAll('[data-event]').forEach(el => {
+      el.addEventListener('click', () => {
+        window.dataLayer.push({ event: el.dataset.event, link_url: el.href || null });
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', el.dataset.event, { link_url: el.href || null });
+        }
+      });
+    });
+    form.addEventListener('submit', () => {
+      window.dataLayer.push({ event: 'form_submit', form_id: 'serviceForm' });
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'form_submit', { form_id: 'serviceForm' });
+      }
+    });
+
     // Header shadow on scroll
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
@@ -1217,7 +1351,7 @@
   </script>
 
   <div class="mobile-cta-bar">
-    <a href="sms:7147879453" class="btn">Text Dusty — Get a Quote</a>
+    <a href="sms:7147879453" class="btn" data-event="mobile_cta_bar_click">Text Dusty — Get a Quote</a>
   </div>
 </body>
 </html>

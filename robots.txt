@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://dustysmoto.com/sitemap.xml
+
+# LLM info: https://dustysmoto.com/llms.txt

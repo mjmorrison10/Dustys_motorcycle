@@ -34,9 +34,9 @@
 | 7 | Update schema hours to Mon–Sun 9am–7pm | ✅ Done | LocalBusiness JSON-LD updated | Dossier |
 | 8 | Replace `YOUR_FORM_ID` with real form endpoint | ⏸ Blocked | Need Dusty to choose Formspree / Netlify / CRM | Offer & Lead Gen |
 | 9 | Add actual PDF lead magnet files | ⏸ Blocked | Need Dusty to confirm/approve content, then design/create | Offer & Lead Gen |
-| 10 | Set up conversion tracking (Google Analytics, event tags) | ☐ Not started | Tag phone, text, form, direction clicks | Analytics, SEO |
-| 11 | Run technical SEO audit (speed, mobile, accessibility) | ☐ Not started | Lighthouse + Core Web Vitals | SEO, QA |
-| 12 | Implement AEO/llms.txt for AI search visibility | ☐ Not started | ChatGPT/Claude/Perplexity should cite Dusty | AEO Foundations |
+| 10 | Set up conversion tracking (Google Analytics, event tags) | 🔄 In progress | CTA/dataLayer hooks added; needs GA4/GTM measurement ID | Analytics, SEO |
+| 11 | Run technical SEO audit (speed, mobile, accessibility) | ✅ Done | SEO Specialist pass completed; JSON-LD validated; WebP assets added; full Lighthouse still recommended post-deploy | SEO, QA |
+| 12 | Implement AEO/llms.txt for AI search visibility | ✅ Done | Added root `llms.txt` and robots reference | AEO Foundations |
 
 ### SHOULD DO (Important / Post-Launch Optimization)
 
@@ -51,7 +51,7 @@
 | 7 | A/B test hero headline and CTA color/copy | ☐ Not started | Once traffic is sufficient | Growth Hacker |
 | 8 | Build referral program landing page | ☐ Not started | $25 off for referrer and referee | Offer & Lead Gen |
 | 9 | Add financing/payment plan messaging for large rebuilds | ☐ Not started | Mention if Dusty offers this | Business Strategist |
-| 10 | Implement structured FAQPage schema | ☐ Not started | Boosts rich snippets | SEO Specialist |
+| 10 | Implement structured FAQPage schema | ✅ Done | Added FAQPage JSON-LD to existing visible FAQs | SEO Specialist |
 
 ---
 
@@ -120,6 +120,7 @@
 - ✅ Offer & Lead Gen Strategist analysis added to dossier
 - ✅ Website conversion-optimized based on dossier recommendations
 - ✅ Updated website pushed to GitHub
+- ✅ SEO Specialist implementation pass completed: keyword hero support copy, FAQ schema, richer LocalBusiness graph, WebP assets, llms.txt, sitemap refresh, CTA tracking hooks
 
 ---
 

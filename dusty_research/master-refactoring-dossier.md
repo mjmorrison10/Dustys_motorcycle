@@ -817,3 +817,39 @@ Dusty's website has a solid technical foundation and strong local positioning. T
 ---
 
 *Section 11 added by SEO Specialist agent. Next recommended agent: **Persona Walkthrough Specialist** to validate conversion flow, or **Content Creator** to produce blog/service pages.*
+
+---
+
+### Section 12: SEO Implementation Pass (SEO Specialist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 12.1 Implemented Fast Wins
+
+- Added visible local SEO support copy below the hero H1: “Honest Motorcycle Repair & Service in Orange, CA.”
+- Expanded JSON-LD into a structured `@graph` with `MotorcycleRepair`, `WebSite`, `BreadcrumbList`, and `FAQPage` entities.
+- Added `FAQPage` schema matching the existing visible FAQ content.
+- Added service catalog schema for maintenance, diagnostics, Harley repair, sportbike service, dirt bike/ATV repair, pre-purchase inspections, tire service, and vintage motorcycle work.
+- Converted site JPG assets to WebP and updated visible image references for improved payload size.
+- Preloaded the WebP hero image.
+- Added root `llms.txt` to support AI-search and agent discovery.
+- Updated `sitemap.xml` freshness and added an `llms.txt` reference in `robots.txt`.
+- Added analytics-ready CTA event hooks for future GA4/GTM implementation.
+
+#### 12.2 Validation
+
+- JSON-LD parses successfully.
+- Page still has exactly one H1.
+- Referenced local image files exist.
+- SEO changes are limited to site files, image assets, and research documentation.
+
+#### 12.3 Remaining SEO Blockers
+
+- Google Business Profile verification and optimization.
+- Birdeye claim and review-request workflow.
+- Address/hours cleanup across Facebook, Nextdoor, Yelp, Apple Maps, Bing Places, and other local citations.
+- Google Search Console and GA4/GTM setup.
+- Future service landing pages should be created with a cannibalization map before implementation.
+
+Full implementation report: `dusty_research/seo_specialist_report_2026-06-30.md`.

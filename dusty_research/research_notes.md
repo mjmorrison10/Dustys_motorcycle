@@ -170,3 +170,53 @@
 
 ---
 *Report compiled by the Hivemind Web Development Company — CEO, Market Research, UX/UI, Content, SEO, and Sales Strategy teams.*
+
+---
+
+## SEO Specialist Implementation Notes — 2026-06-30
+
+**Agency agent used:** SEO Specialist from the Agency Agents app corpus.
+
+### Site changes applied
+
+- Added a visible keyword-rich hero support block: **“Honest Motorcycle Repair & Service in Orange, CA.”**
+- Added richer JSON-LD as a single `@graph` containing:
+  - `MotorcycleRepair`
+  - `WebSite`
+  - `BreadcrumbList`
+  - `FAQPage`
+  - service catalog offers for maintenance, diagnostics, Harley repair, sportbike service, dirt bike/ATV repair, pre-purchase inspections, tire service, and vintage carburetor work.
+- Added `FAQPage` schema for the existing on-page FAQ content.
+- Added WebP versions of all current JPG site images and updated visible site references to use WebP.
+- Added hero image preload for `images/hero_bg.webp`.
+- Added `llms.txt` for AI-search/AEO readiness.
+- Updated `sitemap.xml` lastmod to `2026-06-30` and changed frequency to weekly.
+- Added `robots.txt` reference comment for `https://dustysmoto.com/llms.txt`.
+- Added analytics-ready `data-event` hooks for CTA clicks and form submit events. These are ready for GA4/GTM once the measurement ID is available.
+
+### SEO rationale
+
+- The homepage now retains the emotional “canyon” headline while adding exact local relevance for **motorcycle repair Orange CA** and **motorcycle service Orange CA** within the first hero content block.
+- FAQ schema gives Google/AI systems cleaner Q&A extraction from the visible FAQ content.
+- WebP image references reduce payload weight, especially the hero image (`322 KB JPG` → `188 KB WebP`).
+- `llms.txt` gives AI agents a concise source of truth for Dusty’s business identity, services, location, and citation summary.
+
+### Remaining owner/platform tasks
+
+1. Claim/verify Google Business Profile and set canonical NAP: **Dusty's Motorcycle Service & Repair, 130 S Lemon St, Orange, CA 92866, (714) 787-9453**.
+2. Claim Birdeye profile and preserve the 86-review equity.
+3. Correct Facebook, Nextdoor, Apple Maps, Bing Places, and any citation using the old `975 N Elm St` address.
+4. Confirm official hours. Website currently says Mon–Sun 9am–7pm; Yelp appears to show Sunday closed.
+5. Add Google Search Console and submit `https://dustysmoto.com/sitemap.xml`.
+6. Add GA4/GTM and map CTA events:
+   - `hero_text_or_book_click`
+   - `hero_phone_call_click`
+   - `hero_sms_click`
+   - `contact_sms_click`
+   - `contact_phone_call_click`
+   - `get_directions_click`
+   - `mobile_cta_bar_click`
+   - `form_submit`
+7. Build service-specific landing pages only after keyword ownership is mapped so the homepage keeps broad local terms and new pages target distinct long-tail service intent.
+
+Full report saved as: `dusty_research/seo_specialist_report_2026-06-30.md`.
