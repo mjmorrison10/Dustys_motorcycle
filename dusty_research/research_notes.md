@@ -1,0 +1,172 @@
+# Dusty's Motorcycle Service & Repair — Research Intelligence Report
+
+## Company Overview
+
+| Field | Data |
+|-------|------|
+| **Business Name** | DUSTY'S Motorcycle Service & Repair |
+| **Owner** | Dustin D. ("Dusty") |
+| **Phone** | (714) 787-9453 |
+| **Primary Address** | 130 S Lemon St, Orange, CA 92866 |
+| **Alternate / Old Address** | 975 N Elm St, Orange, CA 92867 (appears on Facebook, Nextdoor, Birdeye — needs correction) |
+| **Website** | dustysmoto.com (live but not fetchable via our agent; content confirmed via search index) |
+| **Google Business Site** | dustysmotorcycleserviceandrepair.business.site (currently returning 404) |
+| **Instagram** | @dustysmotorcycleservice (blocked to unauthenticated agents) |
+| **Facebook** | facebook.com/orangemotorcyclerepair (blocked to unauthenticated agents; snippet shows 975 N Elm St, Sep 2024 post, 2 reactions) |
+| **Yelp** | Claimed, 4.6 stars, 25 reviews |
+| **Google Maps** | 4.5 stars, veteran-owned badge, 130 S Lemon St |
+| **Nextdoor** | 1 neighbor recommendation, 975 N Elm St listing (outdated) |
+| **Birdeye** | 4.5 stars, 86 reviews (unclaimed profile) |
+
+## Owner Profile
+
+- **Dustin D.** is the owner and lead mechanic.
+- **U.S. Military Veteran** — highlighted in customer reviews and Google Maps "veteran-owned" badge.
+- Reputation: honest, humble, knowledgeable, fair pricing, no upselling, quick turnaround, excellent communication in-person.
+- Known for going above and beyond (e.g., tightening loose bolts, adjusting clutch cables, topping fluids at no extra charge).
+- Has a loyal following from LA, OC, and beyond.
+
+## Brand Assets
+
+- **Logo**: Circular black-and-white badge: "Dusty's — Motorcycle Service & Repair — Orange, CA" with crossed wrenches.
+- **Color Palette**: Black, white, silver/metallic, accent orange (from the Harley photo and the orange in the logo's environment).
+- **Photography Style**: Real garage shots, checkered floors, Harleys on lifts, dirt bikes, ATVs, action wheelie shot.
+- **Tone**: Straight-talking, no-BS, honest, veteran-owned, local.
+
+## Services (from dustysmoto.com + reviews)
+
+- Regular & Scheduled Maintenance
+- Pre-Purchase Inspections
+- Performance Modifications
+- Tire Mounting & Balancing
+- Testing & Tuning
+- Troubleshooting / Diagnostics
+- Full Rebuilds
+- Custom Projects
+- Carburetor work (vintage 70s bikes — Kawasaki Z1, etc.)
+- All makes: Metric (Japanese) and Imperial (American V-twins), sport bikes, cruisers, dirt bikes, ATVs
+
+## Hours
+
+- ** dustysmoto.com**: Mon–Sun, 9am–7pm
+- **Yelp**: Mon–Sat 9am–7pm, Sun Closed
+- **Google Maps**: Fri 9am–7pm, Sat 9am–7pm (full schedule not fully visible)
+- **Recommendation**: Confirm exact hours and standardize across all listings. Current discrepancy creates confusion.
+
+## Reputation & Review Highlights
+
+### Positive Themes (from Yelp, Google, Birdeye, Nextdoor)
+- "Honest work. Support a local business."
+- "Dusty is a good dude. Also a Veteran! He runs a clean shop. Good communication, and got my bike done quickly."
+- "Dusty probably saved me $1000 with his suggestions for repair."
+- "Searched on Google for a Motorcycle repair shop, Dusty was open and he actually answers the phone!"
+- "He isn't good at answering his phone, but you can go down to him." (Nextdoor)
+- "The one that does a lot of work for me super close to the Orange Circle."
+- "He did two sets of CV carbs for me and they worked enough for me to finish jetting."
+- "Fair, honest, affordable, and he doesn't take advantage of you."
+- "Clean shop, good communication, quick turnaround."
+- "Works on all brands including Yamaha, Harley-Davidson, sport bikes."
+- "Expert on vintage project bikes ('78 project bike, '76 Kawasaki Z1)."
+
+### Pain Points / Opportunities
+- **Phone responsiveness**: Multiple reviews say Dusty is hard to reach by phone/voicemail. **Website must emphasize text / online booking / walk-ins.**
+- **Address inconsistency**: 130 S Lemon St vs 975 N Elm St. **Critical cleanup task.**
+- **Hours inconsistency**: Website says 7 days; Yelp says 6 days. **Needs standardization.**
+- **No visible warranty / financing**: Competitors promote warranties and financing. **Add service guarantee.**
+- **No online booking**: Yelp says "Get a quote" but no booking. **Add instant booking form.**
+- **Limited social proof on website**: Reviews live on 3rd parties; **pull them into the site.**
+- **Instagram/Facebook inaccessible**: Could be private or inactive. **Recommendation: open them, post consistently.**
+
+## Competitive Landscape — Motorcycle Repair
+
+| Competitor | Location | Rating | Reviews | Strengths | Weaknesses |
+|------------|----------|--------|---------|-----------|------------|
+| **Fast Performance Cycles** | 965 N Batavia St, Orange | 5.0 | 16–17 | Harley pickup/delivery 25 mi, family shop, car body work, quick response | Small review base, mixed auto/moto focus |
+| **Inside Line Moto** | 1523 W Struck Ave, Orange | 4.8 | 25 | KTM specialist, 20+ yrs combined, certified KTM tech | KTM/dirtbike niche, less general appeal |
+| **Pedro's Motorcycle Repair** | 1706 W 1st St, Santa Ana | 4.1–4.2 | 28–31 | 30+ yrs experience, pickup service, all brands | Lower rating, Santa Ana location |
+| **Kings Garage** | 9052 Garden Grove Blvd, Garden Grove | 4.5 | 65–69 | Owner Rich, auto+moto, trusted, fair | Garden Grove, not Orange |
+| **Gustin Motorsports** | Costa Mesa | 4.9 | 101–107 | High rating, vintage, dyno tuning, fast response | Costa Mesa, booked 1+ month, labor not cheap |
+| **Mach 1 Motorcycles** | 133 Industrial Way, Costa Mesa | 4.4–4.6 | 122–164 | Long-established, race prep, custom fab, Ducati/Triumph | Costa Mesa, cash-only complaint, busy |
+| **SoCal SuperBikes** | Garden Grove | 4.5+ | 50+ | Dealer-style service, tuning | Garden Grove, not personal shop |
+| **MotogpWerks** | Anaheim | 4.5+ | 27 | Performance/sport bike focus | Anaheim, niche |
+| **Maniac's Motorcycle Repair Zone** | Santa Ana | 4.5+ | 25 | Parts + repair + dealer | Santa Ana |
+| **M/S Service And Repair** | Irvine | 4.5+ | 36 | Metric bikes, Irvine base | Irvine |
+
+## Competitive Landscape — Auto Repair (Market Intelligence)
+
+- **Britton's Automotive** (Huntington Beach): Best of OC winner, family-owned 40+ years, free online quotes, 3yr/36k warranty.
+- **ExperTec** (Costa Mesa/Huntington Beach): 8x Best of OC, financing, 3yr/36k warranty, 12-month roadside assistance.
+- **Karco Specialties** (Orange): ASE certified, 2yr/24k warranty, all-ASE-certified staff.
+- **Corner 3 Garage** (Laguna Hills): Honest, appointment-only, not cheapest.
+- **Tashmo Auto Center** (various): Trustworthy, fair pricing.
+
+### Lessons for Dusty's Website
+1. **Promote a written warranty** on repairs (e.g., 90-day / 3-month parts & labor).
+2. **Offer free written estimates** before work begins.
+3. **Add online booking / text-a-mechanic** to solve phone-tag problem.
+4. **Highlight veteran-owned** status as a trust anchor.
+5. **Show transparent pricing** examples or a "no surprise" guarantee.
+6. **Pre-purchase inspections** are a high-value, low-competition service — promote heavily.
+7. **Add financing or payment plans** for larger rebuilds/customs.
+
+## Differentiation Strategy
+
+### Core Brand Promise
+> **"Orange County's Honest Motorcycle Mechanic — Veteran-Owned, Fair-Priced, No Upsell."**
+
+### Key Differentiators
+1. **Veteran-Owned** — trust, discipline, integrity.
+2. **Honest Diagnosis Guarantee** — if Dusty can't find a problem, you don't pay for phantom repairs.
+3. **All Makes & Eras** — metric cruisers, Harleys, sport bikes, vintage carbureted bikes, dirt bikes, ATVs.
+4. **Pre-Purchase Inspection Specialists** — save buyers from bad deals.
+5. **Local Orange Shop** — near the Orange Circle, walk-ins welcome.
+6. **Transparent Pricing** — quote before work, no hidden fees.
+7. **Quick Turnaround** — owner-operated, hands-on.
+
+## Website Objectives
+
+1. **Crush local competition** by out-ranking them in local SEO.
+2. **Convert visitors** via phone, text, and online booking CTAs.
+3. **Solve the phone problem** with prominent text/online options.
+4. **Build trust instantly** with veteran badge, reviews, and owner story.
+5. **Showcase real shop photography** (not stock) to prove authenticity.
+6. **Standardize NAP** (Name, Address, Phone) to fix local SEO inconsistencies.
+
+## Recommended Tech Stack
+
+- **Single-page HTML5** with embedded CSS/JS for portability.
+- **Schema.org LocalBusiness** markup for Google rich snippets.
+- **Open Graph / Twitter Card** meta tags.
+- **Google Maps embed** with verified address.
+- **Lazy-loaded images** for performance.
+- **Mobile-first responsive design**.
+- **Conversion tracking classes** on all CTAs.
+
+## Image Inventory
+
+| File | Description | Proposed Use |
+|------|-------------|--------------|
+| yelp_1.jpg | ATVs/quad bikes parked outside | ATV/UTV service section |
+| yelp_2.jpg | Dusty's circular logo | Header, favicon source, footer |
+| yelp_3.jpg | Clean shop interior, Harleys on lifts | Hero / About / Trust section |
+| yelp_4.jpg | Wide shop interior, checkered floor | Services / Gallery |
+| yelp_5.jpg | Cruisers/choppers in parking lot | V-Twin / Harley service section |
+| yelp_6.jpg | Yamaha dirt bike front wheel | Dirt bike / off-road section |
+| yelp_7.jpg | Dirt bike wheelie in desert | Adventure / off-road hero accent |
+| yelp_8.jpg | Honda CRF race bike in shop | Race / performance section |
+
+## Outstanding Questions / Action Items for the Owner
+
+1. Confirm exact current address and update all listings (Facebook, Nextdoor, Birdeye, Google, Yelp) to 130 S Lemon St.
+2. Confirm exact operating hours and standardize across platforms.
+3. Provide founding year / years of experience for "trusted since" messaging.
+4. Provide high-resolution logo file (PNG with transparent background).
+5. Provide 5–10 additional shop photos for richer gallery.
+6. Confirm service warranty terms (e.g., 90-day parts & labor).
+7. Decide on online booking tool (Square, Calendly, Acuity, or simple form).
+8. Set up business text line or call-answering service to fix phone responsiveness.
+9. Create/refresh Instagram and Facebook content strategy.
+10. Claim and optimize Birdeye profile (86 reviews currently unclaimed).
+
+---
+*Report compiled by the Hivemind Web Development Company — CEO, Market Research, UX/UI, Content, SEO, and Sales Strategy teams.*
