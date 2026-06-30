@@ -853,3 +853,44 @@ Dusty's website has a solid technical foundation and strong local positioning. T
 - Future service landing pages should be created with a cannibalization map before implementation.
 
 Full implementation report: `dusty_research/seo_specialist_report_2026-06-30.md`.
+
+---
+
+### Section 13: Persona Walkthrough CRO Pass (Persona Walkthrough Specialist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 13.1 Persona Simulated
+
+The walkthrough used a high-intent local rider persona searching for a motorcycle mechanic in Orange, CA before a weekend ride. The persona had high motivation but high anxiety around hidden costs, phone tag, and not knowing whether the bike was safe to ride.
+
+#### 13.2 Key Findings
+
+- The site already communicated local trust, real shop credibility, veteran ownership, and no-upsell positioning well.
+- The primary conversion friction was **first-step ambiguity**: a rider wanted to text a photo immediately, not choose between vague “text or book online” options.
+- The page needed an earlier “what happens next” sequence before long service browsing.
+- The form needed to reduce anxiety by stating that submission does not authorize work.
+
+#### 13.3 Changes Implemented
+
+- Primary hero CTA changed to **“Text a Photo for a Quote.”**
+- Major SMS CTAs now include prefilled message text to lower effort.
+- Added **How to Get Help Fast** 3-step section:
+  1. Text a Photo
+  2. Get a Straight Answer
+  3. Approve Before We Wrench
+- Added form urgency/timing field.
+- Added form reassurance: “No work starts from this form.”
+- Added visible FAQ and schema for texting a photo instead of calling.
+- Updated mobile sticky CTA copy for stronger intent match.
+- Added mobile CSS override to force inline card grids to collapse to one column on small screens.
+
+#### 13.4 Remaining CRO Opportunities
+
+- Move the strongest “Dusty didn’t charge me” review closer to the top.
+- Add a visual “what to text” example.
+- Measure CTA click events after GA4/GTM is connected.
+- Connect real SMS auto-reply before leaning too heavily on the 30-minute text-back promise.
+
+Full walkthrough report: `dusty_research/persona_walkthrough_report_2026-06-30.md`.

@@ -633,6 +633,7 @@
       .footer-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .section { padding: 64px 0; }
+      .services-grid[style] { grid-template-columns: 1fr !important; }
     }
     .mobile-nav {
       display: none;
@@ -673,7 +674,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="sms:7147879453" class="btn btn-primary">Text Dusty</a>
+        <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="nav_sms_click">Text Dusty</a>
       </div>
       <button class="mobile-menu-btn" aria-label="Open menu" id="menuBtn">☰</button>
     </div>
@@ -688,7 +689,7 @@
     <a href="#reviews">Reviews</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
-    <a href="sms:7147879453" class="btn btn-primary" data-event="hero_sms_click">Text (714) 787-9453</a>
+    <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="mobile_nav_sms_click">Text (714) 787-9453</a>
   </nav>
 
   <section class="hero" id="home">
@@ -712,8 +713,8 @@
             Mon–Sun • 9am–7pm • 130 S Lemon St, Orange, CA
           </div>
           <div class="hero-ctas">
-            <a href="#contact" class="btn btn-primary" data-event="hero_text_or_book_click">Text or Book Online</a>
-            <a href="tel:7147879453" class="btn btn-secondary" data-event="hero_phone_call_click">Call (714) 787-9453</a>
+            <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="hero_text_photo_click">Text a Photo for a Quote</a>
+            <a href="#contact" class="btn btn-secondary" data-event="hero_form_click">Use Online Form</a>
           </div>
           <div class="trust-mini">
             <div><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 4.6 Yelp · 4.5 Google</div>
@@ -728,7 +729,7 @@
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Get an honest quote within 30 minutes during shop hours.</li>
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>No phantom repairs. No upsells. Just real work.</li>
           </ul>
-          <a href="sms:7147879453" class="btn btn-primary" data-event="hero_sms_click">Text (714) 787-9453</a>
+          <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="hero_card_sms_click">Text (714) 787-9453</a>
         </div>
       </div>
     </div>
@@ -756,6 +757,37 @@
       </div>
     </div>
   </div>
+
+  <section class="section section-alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subline">How to Get Help Fast</span>
+        <h2>Not Sure What’s Wrong? <span class="accent">Start With a Text.</span></h2>
+        <p>For riders who are busy, stranded, or just tired of shop runaround — here’s exactly what happens next.</p>
+      </div>
+      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="review-card fade-up">
+          <div style="font-size: 2.2rem; margin-bottom: 14px;">📸</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">1. Text a Photo</h3>
+          <p style="color: var(--gray); font-style: normal;">Send the bike year, make, model, and a quick photo or video of the issue. No perfect mechanic explanation needed.</p>
+        </div>
+        <div class="review-card fade-up">
+          <div style="font-size: 2.2rem; margin-bottom: 14px;">🧾</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">2. Get a Straight Answer</h3>
+          <p style="color: var(--gray); font-style: normal;">Dusty will tell you if it sounds like a quick service, a diagnosis, or something that needs a shop visit.</p>
+        </div>
+        <div class="review-card fade-up">
+          <div style="font-size: 2.2rem; margin-bottom: 14px;">🔧</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">3. Approve Before We Wrench</h3>
+          <p style="color: var(--gray); font-style: normal;">No work starts until you know the plan. If something else comes up, you hear about it first.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 30px;" class="fade-up">
+        <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="process_sms_click">Text a Photo Now</a>
+        <p style="color: var(--gray); margin-top: 12px; font-size: 0.95rem;">Best first text: “Year / make / model + what happened + one photo.”</p>
+      </div>
+    </div>
+  </section>
 
   <section class="section" id="services">
     <div class="container">
@@ -1010,6 +1042,10 @@
           <div class="faq-a">Yes. From metric cruisers to American V-twins, sport bikes, vintage carbureted bikes, dirt bikes, and ATVs — we service all makes and eras.</div>
         </div>
         <div class="faq-item">
+          <button class="faq-q">Can I text a photo instead of calling? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          <div class="faq-a">Yes. That is usually the fastest way to start. Text the year, make, model, what happened, and a photo or short video. Dusty can tell you whether it sounds like a quick service, a diagnostic visit, or something that needs a closer look.</div>
+        </div>
+        <div class="faq-item">
           <button class="faq-q">How do I get a quote before work starts? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="faq-a">Bring the bike by the shop or send details through our contact form. We'll inspect it and give you a clear written estimate before any work begins.</div>
         </div>
@@ -1046,7 +1082,7 @@
             <li><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>Mon–Sun: 9am – 7pm</li>
             <li><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:service@dustysmoto.com">service@dustysmoto.com</a></li>
           </ul>
-          <a href="sms:7147879453" class="btn btn-primary" data-event="contact_sms_click">Text Dusty Now</a>
+          <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="contact_sms_click">Text Dusty Now</a>
           <a href="tel:7147879453" class="btn btn-secondary" style="margin-left: 12px;" data-event="contact_phone_call_click">Call (714) 787-9453</a>
           <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" style="margin-left: 12px;" data-event="get_directions_click">Get Directions</a>
         </div>
@@ -1071,6 +1107,16 @@
               <input type="text" id="bike" name="bike" placeholder="e.g. 2018 Honda CBR500R">
             </div>
             <div class="form-group">
+              <label for="timeline">How soon do you need help?</label>
+              <select id="timeline" name="timeline" required>
+                <option value="">Select timing...</option>
+                <option value="today">Today / ASAP</option>
+                <option value="this-week">This week</option>
+                <option value="planning-ahead">Planning ahead</option>
+                <option value="pre-purchase">Before I buy a used bike</option>
+              </select>
+            </div>
+            <div class="form-group">
               <label for="service">Service Needed</label>
               <select id="service" name="service" required>
                 <option value="">Select a service...</option>
@@ -1088,6 +1134,7 @@
               <textarea id="message" name="message" placeholder="Tell us about the issue, symptoms, or project..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%">SEND DUSTY A MESSAGE</button>
+            <p class="form-note"><strong>No work starts from this form.</strong> You’ll get a reply first, then a clear estimate before any wrenching begins.</p>
             <p class="form-note">We usually reply within 30 minutes during shop hours. For urgent needs, call or text (714) 787-9453.</p>
           </form>
         </div>
@@ -1149,127 +1196,222 @@
   </footer>
 
   <script type="application/ld+json">
+  
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MotorcycleRepair",
-        "@id": "https://dustysmoto.com/#business",
-        "name": "Dusty's Motorcycle Service & Repair",
-        "alternateName": "Dusty's Motorcycle Repair",
-        "description": "Veteran-owned motorcycle repair and service shop in Orange, CA near the Orange Traffic Circle. Services include maintenance, diagnostics, Harley repair, sportbike service, dirt bike and ATV repair, vintage motorcycle repair, tire mounting and balancing, and pre-purchase inspections.",
-        "image": [
-          "https://dustysmoto.com/images/hero_bg.jpg",
-          "https://dustysmoto.com/images/yelp_2.jpg"
-        ],
-        "logo": "https://dustysmoto.com/images/yelp_2.jpg",
-        "url": "https://dustysmoto.com/",
-        "telephone": "+17147879453",
-        "email": "service@dustysmoto.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "130 S Lemon St",
-          "addressLocality": "Orange",
-          "addressRegion": "CA",
-          "postalCode": "92866",
-          "addressCountry": "US"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 33.7872324,
-          "longitude": -117.8554666
-        },
-        "areaServed": [
-          "Orange, CA",
-          "Orange County, CA",
-          "Santiago Canyon",
-          "Anaheim, CA",
-          "Santa Ana, CA",
-          "Tustin, CA"
-        ],
-        "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "19:00" }
-        ],
-        "priceRange": "$",
-        "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Motorcycle repair services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorcycle maintenance and tune-ups" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorcycle diagnostics and troubleshooting" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Harley-Davidson repair" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sportbike service" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dirt bike and ATV repair" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pre-purchase motorcycle inspections" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorcycle tire mounting and balancing" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vintage motorcycle repair and carburetor work" } }
-          ]
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.5",
-          "reviewCount": "86"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://dustysmoto.com/#website",
-        "url": "https://dustysmoto.com/",
-        "name": "Dusty's Motorcycle Service & Repair",
-        "publisher": { "@id": "https://dustysmoto.com/#business" },
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://dustysmoto.com/#breadcrumb",
-        "itemListElement": [
+      "@context": "https://schema.org",
+      "@graph": [
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://dustysmoto.com/"
+              "@type": "MotorcycleRepair",
+              "@id": "https://dustysmoto.com/#business",
+              "name": "Dusty's Motorcycle Service & Repair",
+              "alternateName": "Dusty's Motorcycle Repair",
+              "description": "Veteran-owned motorcycle repair and service shop in Orange, CA near the Orange Traffic Circle. Services include maintenance, diagnostics, Harley repair, sportbike service, dirt bike and ATV repair, vintage motorcycle repair, tire mounting and balancing, and pre-purchase inspections.",
+              "image": [
+                  "https://dustysmoto.com/images/hero_bg.jpg",
+                  "https://dustysmoto.com/images/yelp_2.jpg"
+              ],
+              "logo": "https://dustysmoto.com/images/yelp_2.jpg",
+              "url": "https://dustysmoto.com/",
+              "telephone": "+17147879453",
+              "email": "service@dustysmoto.com",
+              "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "130 S Lemon St",
+                  "addressLocality": "Orange",
+                  "addressRegion": "CA",
+                  "postalCode": "92866",
+                  "addressCountry": "US"
+              },
+              "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 33.7872324,
+                  "longitude": -117.8554666
+              },
+              "areaServed": [
+                  "Orange, CA",
+                  "Orange County, CA",
+                  "Santiago Canyon",
+                  "Anaheim, CA",
+                  "Santa Ana, CA",
+                  "Tustin, CA"
+              ],
+              "openingHoursSpecification": [
+                  {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": [
+                          "Monday",
+                          "Tuesday",
+                          "Wednesday",
+                          "Thursday",
+                          "Friday",
+                          "Saturday",
+                          "Sunday"
+                      ],
+                      "opens": "09:00",
+                      "closes": "19:00"
+                  }
+              ],
+              "priceRange": "$",
+              "paymentAccepted": [
+                  "Cash",
+                  "Credit Card",
+                  "Debit Card"
+              ],
+              "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Motorcycle repair services",
+                  "itemListElement": [
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Motorcycle maintenance and tune-ups"
+                          }
+                      },
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Motorcycle diagnostics and troubleshooting"
+                          }
+                      },
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Harley-Davidson repair"
+                          }
+                      },
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Sportbike service"
+                          }
+                      },
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Dirt bike and ATV repair"
+                          }
+                      },
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Pre-purchase motorcycle inspections"
+                          }
+                      },
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Motorcycle tire mounting and balancing"
+                          }
+                      },
+                      {
+                          "@type": "Offer",
+                          "itemOffered": {
+                              "@type": "Service",
+                              "name": "Vintage motorcycle repair and carburetor work"
+                          }
+                      }
+                  ]
+              },
+              "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.5",
+                  "reviewCount": "86"
+              }
+          },
+          {
+              "@type": "WebSite",
+              "@id": "https://dustysmoto.com/#website",
+              "url": "https://dustysmoto.com/",
+              "name": "Dusty's Motorcycle Service & Repair",
+              "publisher": {
+                  "@id": "https://dustysmoto.com/#business"
+              },
+              "inLanguage": "en-US"
+          },
+          {
+              "@type": "BreadcrumbList",
+              "@id": "https://dustysmoto.com/#breadcrumb",
+              "itemListElement": [
+                  {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://dustysmoto.com/"
+                  }
+              ]
+          },
+          {
+              "@type": "FAQPage",
+              "@id": "https://dustysmoto.com/#faq",
+              "mainEntity": [
+                  {
+                      "@type": "Question",
+                      "name": "Do you work on Harley-Davidson, sport bikes, and dirt bikes?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Yes. From metric cruisers to American V-twins, sport bikes, vintage carbureted bikes, dirt bikes, and ATVs, Dusty's services all makes and eras."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "Can I text a photo instead of calling?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Yes. Text the year, make, model, what happened, and a photo or short video. Dusty can tell you whether it sounds like a quick service, a diagnostic visit, or something that needs a closer look."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "How do I get a quote before work starts?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Bring the bike by the shop or send details through the contact form. Dusty's inspects it and gives you a clear written estimate before work begins."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "Do you offer pre-purchase inspections?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Yes. A pre-purchase inspection checks major items including the engine, frame, suspension, electrical system, and overall condition before you buy a used motorcycle."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "What if you can't find the problem?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Dusty's does not charge for phantom repairs. If the issue cannot be found, Dusty's will tell you straight and will not bill you for unnecessary work."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "Where are you located and what are your hours?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Dusty's Motorcycle Service & Repair is at 130 S Lemon St, Orange, CA 92866, minutes from the Orange Traffic Circle. Current website hours are Monday through Sunday, 9am to 7pm; text ahead to confirm."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "Do you warranty your work?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Dusty's stands behind repairs with the warranty terms shown on the website. If something is not right, bring it back and Dusty's will make it right."
+                      }
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://dustysmoto.com/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Do you work on Harley-Davidson, sport bikes, and dirt bikes?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. From metric cruisers to American V-twins, sport bikes, vintage carbureted bikes, dirt bikes, and ATVs, Dusty's services all makes and eras." }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I get a quote before work starts?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Bring the bike by the shop or send details through the contact form. Dusty's inspects it and gives you a clear written estimate before work begins." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer pre-purchase inspections?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. A pre-purchase inspection checks major items including the engine, frame, suspension, electrical system, and overall condition before you buy a used motorcycle." }
-          },
-          {
-            "@type": "Question",
-            "name": "What if you can't find the problem?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Dusty's does not charge for phantom repairs. If the issue cannot be found, Dusty's will tell you straight and will not bill you for unnecessary work." }
-          },
-          {
-            "@type": "Question",
-            "name": "Where are you located and what are your hours?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Dusty's Motorcycle Service & Repair is at 130 S Lemon St, Orange, CA 92866, minutes from the Orange Traffic Circle. Current website hours are Monday through Sunday, 9am to 7pm; text ahead to confirm." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you warranty your work?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Dusty's stands behind repairs with the warranty terms shown on the website. If something is not right, bring it back and Dusty's will make it right." }
-          }
-        ]
-      }
-    ]
+      ]
   }
+  
   </script>
 
   <script>
@@ -1351,7 +1493,7 @@
   </script>
 
   <div class="mobile-cta-bar">
-    <a href="sms:7147879453" class="btn" data-event="mobile_cta_bar_click">Text Dusty — Get a Quote</a>
+    <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn" data-event="mobile_cta_bar_click">Text a Photo — Get a Quote</a>
   </div>
 </body>
 </html>

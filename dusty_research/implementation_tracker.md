@@ -121,16 +121,17 @@
 - ✅ Website conversion-optimized based on dossier recommendations
 - ✅ Updated website pushed to GitHub
 - ✅ SEO Specialist implementation pass completed: keyword hero support copy, FAQ schema, richer LocalBusiness graph, WebP assets, llms.txt, sitemap refresh, CTA tracking hooks
+- ✅ Persona Walkthrough CRO pass completed: text-photo CTA, prefilled SMS, 3-step help flow, form timing, form reassurance, text-photo FAQ/schema, mobile grid fix
 
 ---
 
 ## Next Agent Recommendation
 
-Run **SEO Specialist** next to:
-- Finalize local SEO keyword strategy
-- Recommend service-specific landing pages
-- Audit the updated website for search optimization
-- Suggest blog content calendar
+Run **UX Architect** or **Content Creator** next to:
+- tighten mobile layout and accessibility after the CRO changes
+- create the first service-specific landing page
+- produce the actual PDF/checklist lead magnets
+- validate the new text-photo CTA with real riders
 
 ---
 

@@ -220,3 +220,41 @@
 7. Build service-specific landing pages only after keyword ownership is mapped so the homepage keeps broad local terms and new pages target distinct long-tail service intent.
 
 Full report saved as: `dusty_research/seo_specialist_report_2026-06-30.md`.
+
+---
+
+## Persona Walkthrough Implementation Notes — 2026-06-30
+
+**Agency agent used:** Persona Walkthrough Specialist from the Agency Agents app corpus.
+
+### Persona simulated
+
+- **Persona:** Chris, 38M Orange County rider.
+- **Search intent:** `motorcycle mechanic Orange CA open today`.
+- **Situation:** Bike has a chain/brake noise before a weekend Santiago Canyon ride.
+- **Primary fears:** Hidden costs, being upsold, not getting a response, not knowing whether the bike is safe to ride.
+- **Contact threshold:** A low-friction text/photo path with clear reassurance that no work starts without approval.
+
+### CRO findings
+
+- Above-fold trust was strong, but the original primary CTA **“Text or Book Online”** was slightly ambiguous for a rider who wants to text a photo immediately.
+- The page had strong trust/review content, but needed an earlier “what happens next” process section to reduce first-contact anxiety.
+- The contact form needed timing context and reassurance that submitting the form does not authorize work.
+- Mobile conversion path should emphasize text/photo first, because the persona’s motivation is high but patience is low.
+
+### Site changes applied
+
+- Changed primary hero CTA to **“Text a Photo for a Quote.”**
+- Added prefilled SMS body to major SMS CTAs.
+- Added **“How to Get Help Fast”** 3-step section:
+  1. Text a Photo
+  2. Get a Straight Answer
+  3. Approve Before We Wrench
+- Added contact form field: **“How soon do you need help?”**
+- Added contact form reassurance: **“No work starts from this form.”**
+- Added FAQ: **“Can I text a photo instead of calling?”**
+- Updated FAQPage JSON-LD for the new FAQ.
+- Updated mobile sticky CTA to **“Text a Photo — Get a Quote.”**
+- Added mobile CSS override so inline card grids collapse correctly on phones.
+
+Full report saved as: `dusty_research/persona_walkthrough_report_2026-06-30.md`.
