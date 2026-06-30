@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, and UI Designer passes complete. Next: AEO / Accessibility QA / service pages.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, and Frontend Developer passes complete. Next: AEO / Accessibility QA / service pages.
 
 ---
 
@@ -127,6 +127,7 @@
 - ✅ UX Researcher pass completed: text-template helper card, copy button with accessible status, `copy_text_template_click` event, reply-preference form field, 5-rider validation plan
 - ✅ Content Creator pass completed: two real printable guide pages, homepage guide links, guide analytics events, sitemap/llms updates, 90-day content calendar
 - ✅ UI Designer pass completed: reusable icon cards, guide badges, contact action group, card elevation tokens, hover consistency, reduced inline visual styling
+- ✅ Frontend Developer pass completed: manifest, service worker, PWA icons, guide-page event tracking, guide prefetch, content-visibility render optimization
 
 ---
 

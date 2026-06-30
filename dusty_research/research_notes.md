@@ -444,3 +444,36 @@ The page had strong brand and UX structure, but several important sections still
 - Run visual QA at key breakpoints after deployment.
 
 Full report saved as: `dusty_research/ui_designer_report_2026-06-30.md`.
+
+---
+
+## Frontend Developer Implementation Notes — 2026-06-30
+
+**Agency agent used:** Frontend Developer from the Agency Agents app corpus.
+
+### Frontend finding
+
+The site should remain a lightweight static project, but it needed practical progressive enhancement for repeat-visit performance, guide-page tracking, and mobile installability metadata.
+
+### Site changes applied
+
+- Added `manifest.webmanifest` for app metadata / installability.
+- Added `sw.js` service worker for same-origin static-shell caching.
+- Added generated PWA icons:
+  - `images/icon-192.png`
+  - `images/icon-512.png`
+- Added manifest links to homepage and guide pages.
+- Added service worker registration to homepage and guide pages.
+- Added guide-page analytics listener for `[data-event]` elements so `guide_sms_click` can be measured.
+- Added homepage prefetch links for both guide pages.
+- Added `content-visibility: auto` and `contain-intrinsic-size` to `.section` for long-page render optimization.
+
+### Validation
+
+- JSON-LD still parses.
+- Sitemap XML still parses.
+- Manifest JSON parses.
+- Service worker, manifest, homepage, and guide pages serve locally.
+- PWA icon dimensions validated at 192x192 and 512x512.
+
+Full report saved as: `dusty_research/frontend_developer_report_2026-06-30.md`.

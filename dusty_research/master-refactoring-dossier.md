@@ -1069,3 +1069,34 @@ The site should keep its rugged black/orange shop aesthetic, but the underlying 
 - Run visual QA at mobile/tablet/desktop breakpoints.
 
 Full UI Designer report: `dusty_research/ui_designer_report_2026-06-30.md`.
+
+---
+
+### Section 19: Frontend Performance & Progressive Enhancement Pass (Frontend Developer)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 19.1 Frontend Architecture Decision
+
+Keep the site as a no-build static project, but add progressive frontend enhancements that improve repeat-visit performance and technical maturity without increasing deployment complexity.
+
+#### 19.2 Changes Implemented
+
+- Added `manifest.webmanifest`.
+- Added `sw.js` service worker for static-shell caching.
+- Added `images/icon-192.png` and `images/icon-512.png` generated from the existing Dusty’s logo.
+- Added manifest links and service worker registration to homepage and guide pages.
+- Added guide-page event tracking for `[data-event]` elements.
+- Added prefetch links for guide pages from the homepage.
+- Added `content-visibility: auto` and `contain-intrinsic-size` to `.section` for long-page render optimization.
+
+#### 19.3 Remaining Frontend Work
+
+- Run Lighthouse after deployment.
+- Add real form endpoint and accessible success/error UI.
+- Extract shared guide CSS if guide library expands.
+- Add responsive `srcset` for future large images.
+- Bump service worker cache version when assets change.
+
+Full Frontend Developer report: `dusty_research/frontend_developer_report_2026-06-30.md`.

@@ -8,6 +8,7 @@
   <meta name="description" content="Free Santiago Canyon ride-ready motorcycle checklist from Dusty's Motorcycle Service & Repair in Orange, CA. Check tires, brakes, chain, fluids, controls, lights, and ride red flags before heading out.">
   <link rel="canonical" href="https://dustysmoto.com/guides/santiago-canyon-ride-ready-checklist.html">
   <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="manifest" href="../manifest.webmanifest">
   <style>
     :root{--black:#0a0a0a;--near:#111;--panel:#1a1a1a;--white:#fff;--muted:#b8b8b8;--gray:#8a8a8a;--orange:#f26522;--orange-dark:#d94f1e;--border:rgba(255,255,255,.12);--radius:10px;--max:980px;--shadow:0 10px 40px rgba(0,0,0,.35)}
     *{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,Roboto,sans-serif;background:var(--black);color:var(--white);line-height:1.65}a{color:inherit}img{max-width:100%;display:block}.wrap{max-width:var(--max);margin:0 auto;padding:28px 22px 80px}.top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 0 32px}.brand{display:flex;align-items:center;gap:14px;text-decoration:none}.brand img{width:64px;height:64px;border-radius:50%}.brand strong{font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:1.35rem}.brand span{display:block;color:var(--orange);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:13px 20px;border-radius:7px;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font-weight:800;background:var(--orange);color:var(--white)}.btn:hover{background:var(--orange-dark)}.btn.secondary{background:transparent;border:2px solid var(--white)}.hero{padding:44px 0 30px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:linear-gradient(135deg,rgba(242,101,34,.1),transparent)}.eyebrow{color:var(--orange);text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:.82rem;margin-bottom:10px}h1,h2,h3{font-family:Impact,Arial Black,sans-serif;text-transform:uppercase;letter-spacing:.035em;line-height:1.08}h1{font-size:clamp(2.2rem,7vw,4.4rem);max-width:880px}h2{font-size:clamp(1.55rem,4vw,2.3rem);margin:48px 0 18px}h3{font-size:1.15rem;margin:22px 0 10px}.lead{font-size:1.16rem;color:#e7e7e7;max-width:780px;margin:18px 0 0}.notice{background:linear-gradient(135deg,rgba(242,101,34,.16),rgba(255,255,255,.04));border:1px solid rgba(242,101,34,.42);border-radius:var(--radius);padding:20px;margin:28px 0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}ul{padding-left:20px;color:var(--muted)}li{margin:8px 0}.checklist{list-style:none;padding-left:0}.checklist li{position:relative;padding-left:34px;color:#e5e5e5}.checklist li:before{content:'☐';position:absolute;left:0;top:0;color:var(--orange);font-weight:900}.red{border-left:4px solid #c41e3a}.green{border-left:4px solid #22c55e}.cta{margin-top:42px;padding:28px;border-radius:var(--radius);background:var(--near);border:1px solid var(--border);display:grid;grid-template-columns:1.4fr .8fr;gap:22px;align-items:center}.small{color:var(--gray);font-size:.92rem}.print-note{margin-top:18px;color:var(--gray)}@media(max-width:760px){.top,.cta{grid-template-columns:1fr;display:grid}.grid{grid-template-columns:1fr}.top .btn{width:100%}.brand strong{font-size:1rem}}@media print{body{background:#fff;color:#111}.wrap{max-width:none;padding:0}.top .btn,.cta .btn,.print-note{display:none}.card,.notice,.cta{box-shadow:none;border-color:#999;background:#fff;color:#111}ul,.checklist li,.lead,.small{color:#111}.brand span,.eyebrow,.checklist li:before{color:#000}a{text-decoration:none}}
@@ -16,7 +17,7 @@
 <body>
   <main class="wrap">
     <div class="top">
-      <a class="brand" href="../index.html" aria-label="Back to Dusty's homepage"><img src="../images/yelp_2.webp" alt="Dusty's Motorcycle Service & Repair logo"><span><strong>Dusty's</strong><span>No-BS Moto Repair</span></span></a>
+      <a class="brand" href="../index.html" aria-label="Back to Dusty's homepage"><img src="../images/yelp_2.webp" alt="Dusty's Motorcycle Service & Repair logo" width="160" height="160" decoding="async"><span><strong>Dusty's</strong><span>No-BS Moto Repair</span></span></a>
       <a class="btn" href="sms:7147879453?body=Hi%20Dusty%2C%20I%20want%20to%20make%20sure%20my%20bike%20is%20ride-ready%20for%20Santiago%20Canyon.%20Can%20you%20help%3F" data-event="guide_sms_click">Text Dusty for a Ride Check</a>
     </div>
 
@@ -98,5 +99,23 @@
     </div>
     <p class="print-note">Tip: use your browser's Print option to save this checklist as a PDF.</p>
   </main>
+
+  <script>
+    // guideDataLayer: lightweight analytics hooks and optional service worker registration
+    window.dataLayer = window.dataLayer || [];
+    document.querySelectorAll('[data-event]').forEach((el) => {
+      el.addEventListener('click', () => {
+        window.dataLayer.push({ event: el.dataset.event, link_url: el.href || null });
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', el.dataset.event, { link_url: el.href || null });
+        }
+      });
+    });
+    if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      });
+    }
+  </script>
 </body>
 </html>
