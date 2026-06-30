@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dusty's Motorcycle Service & Repair | Orange, CA | Veteran-Owned</title>
-  <meta name="description" content="Veteran-owned motorcycle repair in Orange, CA. Honest diagnosis, fair pricing, all makes & models. Maintenance, rebuilds, performance, pre-purchase inspections, tire mounting. Call or text (714) 787-9453.">
-  <meta name="keywords" content="motorcycle repair Orange CA, motorcycle mechanic Orange, veteran owned motorcycle shop, Harley repair, sport bike repair, dirt bike repair, ATV repair, pre purchase inspection, carburetor tuning, custom motorcycle Orange">
-  <meta property="og:title" content="Dusty's Motorcycle Service & Repair | Orange, CA">
-  <meta property="og:description" content="Veteran-owned motorcycle repair. Honest, fair, no upsell. All makes & models. Call or text (714) 787-9453.">
+  <title>Dusty's Motorcycle Service & Repair | Orange Traffic Circle, CA | Veteran-Owned</title>
+  <meta name="description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle. Honest mechanic, no phone tag, fair pricing. Harley, sportbike, adventure, dirt bikes, ATVs. Text or book online. Mon–Sun 9am–7pm.">
+  <meta name="keywords" content="motorcycle repair Orange CA, motorcycle mechanic Orange Traffic Circle, motorcycle service Orange, Harley repair Orange, sportbike service Orange, adventure bike maintenance, motorcycle tire change Orange, Santiago Canyon motorcycle mechanic, veteran owned motorcycle shop, pre purchase inspection Orange CA">
+  <meta property="og:title" content="Dusty's Motorcycle Service & Repair | Orange Traffic Circle, CA">
+  <meta property="og:description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle. No phone tag, no upsell. Text or book online. Harley, sportbike, adventure, dirt bikes. Mon–Sun 9am–7pm.">
   <meta property="og:type" content="business.business">
   <meta property="og:image" content="https://dustysmoto.com/images/hero_bg.jpg">
   <meta property="og:url" content="https://dustysmoto.com">
@@ -174,6 +174,32 @@
       color: var(--white);
       font-size: 1.8rem;
       cursor: pointer;
+    }
+
+    /* Sticky Mobile CTA Bar */
+    .mobile-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 1001;
+      background: var(--orange);
+      padding: 12px 16px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    }
+    .mobile-cta-bar .btn {
+      width: 100%;
+      padding: 14px 20px;
+      font-size: 1rem;
+      background: var(--white);
+      color: var(--black);
+      border: none;
+    }
+    .mobile-cta-bar .btn:hover {
+      background: var(--light-gray);
+    }
+    @media (max-width: 768px) {
+      .mobile-cta-bar { display: block; }
+      body { padding-bottom: 70px; }
     }
 
     /* Hero */
@@ -617,14 +643,16 @@
       </a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
+        <li><a href="#lead-magnets">Free Guides</a></li>
         <li><a href="#why">Why Dusty</a></li>
+        <li><a href="#guarantees">Guarantees</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="tel:7147879453" class="btn btn-primary">Call Now</a>
+        <a href="sms:7147879453" class="btn btn-primary">Text Dusty</a>
       </div>
       <button class="mobile-menu-btn" aria-label="Open menu" id="menuBtn">☰</button>
     </div>
@@ -632,12 +660,14 @@
 
   <nav class="mobile-nav" id="mobileNav">
     <a href="#services">Services</a>
+    <a href="#lead-magnets">Free Guides</a>
     <a href="#why">Why Dusty</a>
+    <a href="#guarantees">Guarantees</a>
     <a href="#about">About</a>
     <a href="#reviews">Reviews</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
-    <a href="tel:7147879453" class="btn btn-primary">Call (714) 787-9453</a>
+    <a href="sms:7147879453" class="btn btn-primary">Text (714) 787-9453</a>
   </nav>
 
   <section class="hero" id="home">
@@ -650,10 +680,14 @@
             <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.8L19.2 19H4.8L12 5.8zM11 10v6h2v-6h-2z"/></svg>
             U.S. Veteran-Owned Shop
           </div>
-          <h1>Orange County's <span class="accent">Honest</span> Motorcycle Mechanic</h1>
-          <p class="lead">No upsells. No phantom repairs. Just straight talk, fair pricing, and expert wrench work on everything from vintage carbureted bikes to modern sport bikes and Harleys.</p>
+          <h1>Your bike's ready for the canyon. <span class="accent">Dusty's ready</span> when you are.</h1>
+          <p class="lead">The honest mechanic at the Orange Traffic Circle. No phone tag. No surprises. Just real work on Harleys, sportbikes, adventure bikes, and everything in between.</p>
+          <div class="hero-location" style="color: var(--light-gray); font-size: 1rem; margin-bottom: 24px; display: flex; align-items: center; gap: 10px;">
+            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: var(--orange);"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Mon–Sun • 9am–7pm • 130 S Lemon St, Orange, CA
+          </div>
           <div class="hero-ctas">
-            <a href="#contact" class="btn btn-primary">Book a Service</a>
+            <a href="#contact" class="btn btn-primary">Text or Book Online</a>
             <a href="tel:7147879453" class="btn btn-secondary">Call (714) 787-9453</a>
           </div>
           <div class="trust-mini">
@@ -663,13 +697,13 @@
           </div>
         </div>
         <div class="hero-card">
-          <h3>Get a Free Estimate</h3>
+          <h3>Text Dusty, Get Sorted</h3>
           <ul>
-            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Tell us what your bike needs — maintenance, repair, or custom work.</li>
-            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>We diagnose honestly and quote before any work begins.</li>
-            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Ride in, ride out, with clear communication every step.</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Snap a photo of your bike and the issue.</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Get an honest quote within 30 minutes during shop hours.</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>No phantom repairs. No upsells. Just real work.</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Request Service</a>
+          <a href="sms:7147879453" class="btn btn-primary">Text (714) 787-9453</a>
         </div>
       </div>
     </div>
@@ -679,20 +713,20 @@
     <div class="container">
       <div class="trust-bar-grid">
         <div class="trust-bar-item">
-          <h4>4.6</h4>
-          <p>Yelp Rating</p>
+          <h4>Harley</h4>
+          <p>Sportbike • Adventure</p>
         </div>
         <div class="trust-bar-item">
-          <h4>4.5</h4>
-          <p>Google Rating</p>
+          <h4>Oil Changes</h4>
+          <p>Tires • Brakes</p>
         </div>
         <div class="trust-bar-item">
-          <h4>All</h4>
-          <p>Makes & Models</p>
+          <h4>Fork Seals</h4>
+          <p>Clutch • Chain Work</p>
         </div>
         <div class="trust-bar-item">
-          <h4>100%</h4>
-          <p>No Upsell Promise</p>
+          <h4>No Upselling</h4>
+          <p>Ever.</p>
         </div>
       </div>
     </div>
@@ -702,57 +736,111 @@
     <div class="container">
       <div class="section-header fade-up">
         <span class="subline">What We Fix</span>
-        <h2>From Daily Riders to <span class="accent">Vintage Projects</span></h2>
-        <p>Metric, Imperial, carbureted, fuel-injected, street, dirt, or ATV. If it has two wheels (or four), we wrench on it.</p>
+        <h2>Every Kind of Bike. <span class="accent">No Upselling. Ever.</span></h2>
+        <p>Harley, sportbike, adventure, dirt bike, vintage, or ATV — if it has two wheels, we wrench on it. Old-school honesty on every job.</p>
       </div>
       <div class="services-grid">
         <div class="service-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_5.jpg')"></div>
           <div class="service-body">
-            <h3>Maintenance & Tune-Ups</h3>
-            <p>Oil changes, chain service, brake fluid, valve checks, carb syncing, and scheduled maintenance for every make.</p>
+            <h3>Routine Maintenance</h3>
+            <p>Oil changes, chain service, brake fluid, valve checks, and scheduled maintenance for cruisers, sportbikes, and 2024 adventure bikes like the Honda NC750X DCT.</p>
             <a href="#contact">Schedule Maintenance →</a>
           </div>
         </div>
         <div class="service-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_6.jpg')"></div>
           <div class="service-body">
-            <h3>Dirt Bike & Off-Road</h3>
-            <p>Suspension, top-end rebuilds, carb tuning, and track prep for motocross, enduro, and dual-sport machines.</p>
-            <a href="#contact">Book Off-Road Service →</a>
+            <h3>Tires, Brakes & Chains</h3>
+            <p>Tire mount and balance, brake pads, chain adjustment, and walk-in quick services to get you back on the road fast.</p>
+            <a href="#contact">Book Tire / Brake Service →</a>
           </div>
         </div>
         <div class="service-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_1.jpg')"></div>
           <div class="service-body">
-            <h3>ATV / Quad Service</h3>
-            <p>Carb rebuilds, axle work, driveline service, and diagnostics for sport and utility quads.</p>
-            <a href="#contact">Get ATV Help →</a>
+            <h3>Performance & Repairs</h3>
+            <p>Diagnostics, fork seals, clutch work, carb tuning, exhaust, and electrical troubleshooting. No upselling. Ever.</p>
+            <a href="#contact">Get a Repair Quote →</a>
           </div>
         </div>
         <div class="service-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_4.jpg')"></div>
           <div class="service-body">
             <h3>Full Rebuilds & Custom</h3>
-            <p>Engine rebuilds, performance mods, electrical troubleshooting, custom projects, and restorations.</p>
+            <p>Engine rebuilds, restorations, custom projects, and vintage carburetor work from a mechanic who actually loves old bikes.</p>
             <a href="#contact">Start a Custom Build →</a>
           </div>
         </div>
         <div class="service-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_8.jpg')"></div>
           <div class="service-body">
-            <h3>Performance & Tuning</h3>
-            <p>Testing, tuning, exhaust work, jetting, and performance modifications to make your bike feel brand new.</p>
-            <a href="#contact">Build Performance →</a>
+            <h3>Dirt Bike & Off-Road</h3>
+            <p>Suspension, top-end rebuilds, track prep, and maintenance for motocross, enduro, and dual-sport machines.</p>
+            <a href="#contact">Book Off-Road Service →</a>
           </div>
         </div>
         <div class="service-card fade-up">
           <div class="service-img" style="background-image: url('images/yelp_7.jpg')"></div>
           <div class="service-body">
             <h3>Pre-Purchase Inspections</h3>
-            <p>Buying used? We'll inspect the bike before you hand over cash — saving you from hidden headaches.</p>
+            <p>Buying used? Don't get stuck with someone else's problem. We inspect the bike before you hand over cash.</p>
             <a href="#contact">Book Inspection →</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="lead-magnets">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subline">Free Guides</span>
+        <h2>Get These Free. <span class="accent">No Spam.</span></h2>
+        <p>Practical tools every rider in Orange County can use. Text or email us to get them instantly.</p>
+      </div>
+      <div class="services-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="service-card fade-up">
+          <div class="service-img" style="background-image: url('images/yelp_8.jpg')"></div>
+          <div class="service-body">
+            <h3>Pre-Purchase Inspection Checklist</h3>
+            <p>Buying a used bike? Don't get stuck with someone else's headache. This checklist covers engine, frame, suspension, electrical, and the questions to ask the seller.</p>
+            <a href="sms:7147879453?body=Send%20me%20the%20pre-purchase%20inspection%20checklist">Text Me the Checklist →</a>
+          </div>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-img" style="background-image: url('images/yelp_7.jpg')"></div>
+          <div class="service-body">
+            <h3>Santiago Canyon Ride-Ready Checklist</h3>
+            <p>Tires, chain, brakes, fluids, lights — everything to check before you head up Santiago Canyon or anywhere else this weekend.</p>
+            <a href="sms:7147879453?body=Send%20me%20the%20Santiago%20Canyon%20ride-ready%20checklist">Text Me the Checklist →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guarantees">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="subline">The Dusty Promise</span>
+        <h2>Three Guarantees. <span class="accent">No Fine Print.</span></h2>
+      </div>
+      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="review-card fade-up" style="text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 16px;">🔍</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">Honest Diagnosis Guarantee</h3>
+          <p style="color: var(--gray);">If we can't find the problem, you don't pay for the diagnostic. No phantom repairs.</p>
+        </div>
+        <div class="review-card fade-up" style="text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 16px;">🛡️</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">No-Upsell Promise</h3>
+          <p style="color: var(--gray);">We quote before we wrench. If we find something else, we call first. No surprise charges.</p>
+        </div>
+        <div class="review-card fade-up" style="text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 16px;">📱</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">30-Minute Text-Back</h3>
+          <p style="color: var(--gray);">Text us during shop hours and we'll reply within 30 minutes. No phone tag.</p>
         </div>
       </div>
     </div>
@@ -808,8 +896,8 @@
       <div class="about-grid">
         <div class="fade-up">
           <span class="subline">Meet Dusty</span>
-          <h2>A Mechanic Who Treats Your Bike <span class="accent">Like His Own</span></h2>
-          <p>Dusty is a U.S. military veteran and lifelong rider who turned his passion into a shop. Located just minutes from the Orange Circle, his garage has become a go-to spot for riders who are tired of dealership prices and upsell pressure.</p>
+          <h2>The Neighborhood Mechanic at the <span class="accent">Gateway to Every Ride</span></h2>
+          <p>Dusty is a U.S. military veteran and lifelong rider who runs a shop right off Chapman Ave, minutes from the Orange Traffic Circle — the gateway to Santiago Canyon. His garage is where riders go when they're tired of dealership prices, upsell pressure, and phone tag.</p>
           <p>Whether it's a 1976 Kawasaki Z1 carb rebuild, a Harley-Davidson tune-up, or a pre-purchase inspection on a used sport bike, Dusty brings the same discipline: diagnose right, fix it once, and charge fairly.</p>
           <div class="about-stats">
             <div class="about-stat">
@@ -910,7 +998,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q">Where are you located and what are your hours? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
-          <div class="faq-a">We're at 130 S Lemon St, Orange, CA 92866, just minutes from the Orange Circle. Hours are typically Monday–Saturday, 9am–7pm. We recommend calling or texting ahead to confirm.</div>
+          <div class="faq-a">We're at 130 S Lemon St, Orange, CA 92866, just minutes from the Orange Traffic Circle. Hours are Monday–Sunday, 9am–7pm. We recommend texting ahead to confirm.</div>
         </div>
         <div class="faq-item">
           <button class="faq-q">Do you warranty your work? <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
@@ -924,16 +1012,17 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info fade-up">
-          <span class="subline">Let's Wrench</span>
-          <h2>Book Your Service <span class="accent">Today</span></h2>
-          <p>Call, text, or fill out the form. Walk-ins are welcome near the Orange Circle. We'll get your bike sorted and you back on the road.</p>
+          <span class="subline" style="color: var(--orange); font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem; margin-bottom: 12px; display: inline-block;">NO PHONE TAG REQUIRED</span>
+          <h2>Text or Book Online. <span class="accent">We'll Get Back to You Fast.</span></h2>
+          <p>Call, text, or fill out the form. Walk-ins are welcome near the Orange Circle. We usually reply within 30 minutes during shop hours.</p>
           <ul class="contact-details">
             <li><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.02.76-.23 1.03l-2.2 2.2z"/></svg><a href="tel:7147879453">(714) 787-9453</a></li>
             <li><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>130 S Lemon St, Orange, CA 92866</li>
-            <li><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>Mon–Sat: 9am – 7pm</li>
+            <li><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>Mon–Sun: 9am – 7pm</li>
             <li><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:service@dustysmoto.com">service@dustysmoto.com</a></li>
           </ul>
-          <a href="tel:7147879453" class="btn btn-primary">Call or Text Now</a>
+          <a href="sms:7147879453" class="btn btn-primary">Text Dusty Now</a>
+          <a href="tel:7147879453" class="btn btn-secondary" style="margin-left: 12px;">Call (714) 787-9453</a>
           <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" style="margin-left: 12px;">Get Directions</a>
         </div>
         <div class="contact-form fade-up">
@@ -973,8 +1062,8 @@
               <label for="message">Describe what you need</label>
               <textarea id="message" name="message" placeholder="Tell us about the issue, symptoms, or project..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%">Request Free Estimate</button>
-            <p class="form-note">We typically respond within a few hours during business hours. For urgent needs, call or text directly.</p>
+            <button type="submit" class="btn btn-primary" style="width:100%">SEND DUSTY A MESSAGE</button>
+            <p class="form-note">We usually reply within 30 minutes during shop hours. For urgent needs, call or text (714) 787-9453.</p>
           </form>
         </div>
       </div>
@@ -1011,6 +1100,8 @@
           <h4>Company</h4>
           <ul>
             <li><a href="#about">About Dusty</a></li>
+            <li><a href="#lead-magnets">Free Guides</a></li>
+            <li><a href="#guarantees">Guarantees</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -1054,8 +1145,7 @@
       "longitude": -117.8554666
     },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "19:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "19:00" }
     ],
     "priceRange": "$",
     "aggregateRating": {
@@ -1125,5 +1215,9 @@
       }
     });
   </script>
+
+  <div class="mobile-cta-bar">
+    <a href="sms:7147879453" class="btn">Text Dusty — Get a Quote</a>
+  </div>
 </body>
 </html>
