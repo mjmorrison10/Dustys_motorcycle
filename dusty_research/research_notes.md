@@ -545,3 +545,31 @@ The site had strong AEO foundations, but needed a page that directly answers AI 
 - Where can I text a motorcycle mechanic a photo for a quote in Orange, CA?
 
 Full report saved as: `dusty_research/ai_citation_strategist_report_2026-06-30.md`.
+
+---
+
+## Agentic Search Optimizer Implementation Notes — 2026-06-30
+
+**Agency agent used:** Agentic Search Optimizer from the Agency Agents app corpus.
+
+### Agentic task-completion finding
+
+The site already had AEO discovery files and action JSON, but the page DOM did not yet expose enough declarative task metadata for browser agents. The main high-value tasks are: text Dusty a photo, open the guide pages, copy the first-text template, get directions, and submit the service inquiry form.
+
+### Site changes applied
+
+- Added `<link rel="mcp-actions" href="mcp-actions.json">` to the homepage.
+- Added `data-mcp-action` and `data-mcp-description` to major SMS CTAs.
+- Added declarative WebMCP-style metadata to the contact form:
+  - `data-mcp-action="submit-service-inquiry"`
+  - `data-mcp-params`
+  - field-level `data-mcp-param` and descriptions.
+- Added MCP metadata to guide links, copy-template button, and directions link.
+- Added optional `navigator.mcpActions.register()` progressive enhancement for compatible browser agents.
+- Expanded `mcp-actions.json` and `.well-known/mcp-actions.json` with draft spec note, declarative form action, blocked endpoint status, SMS fallback, and copy-template action.
+
+### Remaining blocker
+
+The form still points to `YOUR_FORM_ID`, so service-form completion remains blocked until a real endpoint is configured. Agents should prefer the user-confirmed SMS action until then.
+
+Full report saved as: `dusty_research/agentic_search_optimizer_report_2026-06-30.md`.

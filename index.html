@@ -17,6 +17,7 @@
   <link rel="preload" as="image" href="images/hero_bg.webp" type="image/webp">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="mcp-actions" href="mcp-actions.json">
   <link rel="alternate" type="text/markdown" href="content/dustys-motorcycle-service.md" title="AI-readable business summary">
   <link rel="alternate" type="text/plain" href="llms.txt" title="LLM summary">
   <link rel="alternate" type="text/plain" href="llms-full.txt" title="Full AI context">
@@ -816,7 +817,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="nav_sms_click">Text Dusty</a>
+        <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="nav_sms_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS to Dusty for motorcycle repair help." data-mcp-requires-user-confirmation="true">Text Dusty</a>
       </div>
       <button class="mobile-menu-btn" aria-label="Open menu" id="menuBtn" aria-controls="mobileNav" aria-expanded="false">☰</button>
     </div>
@@ -829,7 +830,7 @@
     <a href="#reviews">Reviews</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
-    <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="mobile_nav_sms_click">Text (714) 787-9453</a>
+    <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="mobile_nav_sms_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS to Dusty for motorcycle repair help." data-mcp-requires-user-confirmation="true">Text (714) 787-9453</a>
   </nav>
 
   <main id="main-content">
@@ -854,7 +855,7 @@
             Mon–Sun • 9am–7pm • 130 S Lemon St, Orange, CA
           </div>
           <div class="hero-ctas">
-            <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="hero_text_photo_click">Text a Photo for a Quote</a>
+            <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="hero_text_photo_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS to text Dusty a photo for a motorcycle repair quote." data-mcp-requires-user-confirmation="true">Text a Photo for a Quote</a>
             <a href="#contact" class="btn btn-secondary" data-event="hero_form_click">Use Online Form</a>
           </div>
           <div class="trust-mini">
@@ -870,7 +871,7 @@
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Get an honest quote within 30 minutes during shop hours.</li>
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>No phantom repairs. No upsells. Just real work.</li>
           </ul>
-          <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="hero_card_sms_click">Text (714) 787-9453</a>
+          <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="hero_card_sms_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS to Dusty with bike details and issue description." data-mcp-requires-user-confirmation="true">Text (714) 787-9453</a>
         </div>
       </div>
     </div>
@@ -927,11 +928,11 @@
         <h3 id="what-to-text-title">What should I text?</h3>
         <p>User hesitation usually happens right before the first message. Copy this if you’re not sure what to say.</p>
         <code class="text-template" id="textTemplate">Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?</code>
-        <button type="button" class="btn btn-secondary" id="copyTextTemplate" data-event="copy_text_template_click">Copy Text Template</button>
+        <button type="button" class="btn btn-secondary" id="copyTextTemplate" data-event="copy_text_template_click" data-mcp-action="copy-first-text-template" data-mcp-description="Copy a suggested first text message to send Dusty with bike year, make, model, issue, and photo/video note.">Copy Text Template</button>
         <div class="copy-status" id="copyStatus" role="status" aria-live="polite"></div>
       </div>
       <div style="text-align: center; margin-top: 30px;" class="fade-up">
-        <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="process_sms_click">Text a Photo Now</a>
+        <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="process_sms_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS after reading the three-step repair intake process." data-mcp-requires-user-confirmation="true">Text a Photo Now</a>
         <p style="color: var(--gray); margin-top: 12px; font-size: 0.95rem;">Best first text: “Year / make / model + what happened + one photo.”</p>
       </div>
     </div>
@@ -1011,7 +1012,7 @@
             <span class="guide-badge">Printable guide</span>
             <h3>Pre-Purchase Inspection Checklist</h3>
             <p>Buying a used bike? Don't get stuck with someone else's headache. This printable checklist covers title, frame, tires, brakes, leaks, cold start, and seller red flags.</p>
-            <a href="guides/pre-purchase-motorcycle-inspection-checklist.html" data-event="guide_pre_purchase_click">Open the Free Checklist →</a>
+            <a href="guides/pre-purchase-motorcycle-inspection-checklist.html" data-event="guide_pre_purchase_click" data-mcp-action="open-pre-purchase-checklist" data-mcp-description="Open the used motorcycle pre-purchase inspection checklist.">Open the Free Checklist →</a>
           </div>
         </div>
         <div class="service-card guide-card fade-up">
@@ -1020,7 +1021,7 @@
             <span class="guide-badge">Printable guide</span>
             <h3>Santiago Canyon Ride-Ready Checklist</h3>
             <p>Tires, chain, brakes, fluids, controls, lights — everything to check before you head up Santiago Canyon or anywhere else this weekend.</p>
-            <a href="guides/santiago-canyon-ride-ready-checklist.html" data-event="guide_ride_ready_click">Open the Free Checklist →</a>
+            <a href="guides/santiago-canyon-ride-ready-checklist.html" data-event="guide_ride_ready_click" data-mcp-action="open-ride-ready-checklist" data-mcp-description="Open the Santiago Canyon ride-ready motorcycle checklist.">Open the Free Checklist →</a>
           </div>
         </div>
         <div class="service-card guide-card fade-up">
@@ -1029,7 +1030,7 @@
             <span class="guide-badge">AI answer guide</span>
             <h3>How to Choose a Motorcycle Mechanic</h3>
             <p>Comparing shops in Orange, CA? Use this no-BS guide to evaluate reviews, estimates, all-makes capability, text/photo intake, and upsell risk.</p>
-            <a href="guides/how-to-choose-motorcycle-mechanic-orange-ca.html" data-event="guide_choose_mechanic_click">Open the Decision Guide →</a>
+            <a href="guides/how-to-choose-motorcycle-mechanic-orange-ca.html" data-event="guide_choose_mechanic_click" data-mcp-action="open-choose-mechanic-guide" data-mcp-description="Open the guide on how to choose a motorcycle mechanic in Orange, CA.">Open the Decision Guide →</a>
           </div>
         </div>
       </div>
@@ -1242,34 +1243,37 @@
             <li><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:service@dustysmoto.com">service@dustysmoto.com</a></li>
           </ul>
           <div class="contact-actions">
-            <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="contact_sms_click">Text Dusty Now</a>
+            <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn btn-primary" data-event="contact_sms_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS from the contact section." data-mcp-requires-user-confirmation="true">Text Dusty Now</a>
             <a href="tel:7147879453" class="btn btn-secondary" data-event="contact_phone_call_click">Call (714) 787-9453</a>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" data-event="get_directions_click">Get Directions</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=130+S+Lemon+St,+Orange,+CA+92866" class="btn btn-secondary" data-event="get_directions_click" data-mcp-action="get-directions" data-mcp-description="Open Google Maps directions to Dusty's Motorcycle Service & Repair at 130 S Lemon St, Orange, CA.">Get Directions</a>
           </div>
         </div>
         <div class="contact-form fade-up">
-          <form id="serviceForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form id="serviceForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+            data-mcp-action="submit-service-inquiry"
+            data-mcp-description="Submit a motorcycle service inquiry to Dusty. Provide name, phone, reply preference, timing, service needed, bike year/make/model, and issue description. No work is authorized by submitting this form."
+            data-mcp-params='{"required":["name","phone","timeline","service"],"optional":["email","bike","reply_preference","message"],"notes":"Form endpoint is pending until YOUR_FORM_ID is replaced; agents should prefer user-initiated SMS until the endpoint is live."}'>
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your name">
+                <input type="text" id="name" name="name" required placeholder="Your name" data-mcp-param="name" data-mcp-description="Full name of the person requesting motorcycle service.">
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" required placeholder="(714) 555-1234">
+                <input type="tel" id="phone" name="phone" required placeholder="(714) 555-1234" data-mcp-param="phone" data-mcp-description="Phone number for Dusty to reply by text or call.">
               </div>
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@email.com">
+              <input type="email" id="email" name="email" placeholder="you@email.com" data-mcp-param="email" data-mcp-description="Optional email address for reply.">
             </div>
             <div class="form-group">
               <label for="bike">Bike Make / Model / Year</label>
-              <input type="text" id="bike" name="bike" placeholder="e.g. 2018 Honda CBR500R">
+              <input type="text" id="bike" name="bike" placeholder="e.g. 2018 Honda CBR500R" data-mcp-param="bike" data-mcp-description="Motorcycle year, make, and model.">
             </div>
             <div class="form-group">
               <label for="reply_preference">Best way to reply</label>
-              <select id="reply_preference" name="reply_preference">
+              <select id="reply_preference" name="reply_preference" data-mcp-param="reply_preference" data-mcp-description="Preferred reply channel: text, call, or email.">
                 <option value="text">Text me</option>
                 <option value="call">Call me</option>
                 <option value="email">Email me</option>
@@ -1277,7 +1281,7 @@
             </div>
             <div class="form-group">
               <label for="timeline">How soon do you need help?</label>
-              <select id="timeline" name="timeline" required>
+              <select id="timeline" name="timeline" required data-mcp-param="timeline" data-mcp-description="How soon the rider needs help.">
                 <option value="">Select timing...</option>
                 <option value="today">Today / ASAP</option>
                 <option value="this-week">This week</option>
@@ -1287,7 +1291,7 @@
             </div>
             <div class="form-group">
               <label for="service">Service Needed</label>
-              <select id="service" name="service" required>
+              <select id="service" name="service" required data-mcp-param="service" data-mcp-description="Type of motorcycle service requested.">
                 <option value="">Select a service...</option>
                 <option value="maintenance">Maintenance / Tune-Up</option>
                 <option value="repair">Repair / Diagnostics</option>
@@ -1300,9 +1304,9 @@
             </div>
             <div class="form-group">
               <label for="message">Describe what you need</label>
-              <textarea id="message" name="message" placeholder="Tell us about the issue, symptoms, or project..."></textarea>
+              <textarea id="message" name="message" placeholder="Tell us about the issue, symptoms, or project..." data-mcp-param="message" data-mcp-description="Description of the issue, symptoms, project, or question."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%">SEND DUSTY A MESSAGE</button>
+            <button type="submit" class="btn btn-primary" style="width:100%" data-mcp-submit="true" data-mcp-description="Submit the service inquiry form. This does not authorize repair work.">SEND DUSTY A MESSAGE</button>
             <p class="form-note"><strong>No work starts from this form.</strong> You’ll get a reply first, then a clear estimate before any wrenching begins.</p>
             <p class="form-note">We usually reply within 30 minutes during shop hours. For urgent needs, call or text (714) 787-9453.</p>
           </form>
@@ -1725,6 +1729,29 @@
       }
     });
 
+    // WebMCP progressive enhancement for browser agents (draft support varies)
+    if ('mcpActions' in navigator) {
+      try {
+        navigator.mcpActions.register({
+          id: 'compose-sms-quote-request',
+          name: 'Text Dusty a Photo for a Quote',
+          description: 'Prepare a user-confirmed SMS to Dusty with bike year, make, model, issue description, and photo/video note.',
+          parameters: {
+            type: 'object',
+            required: ['bike', 'issue'],
+            properties: {
+              bike: { type: 'string', description: 'Motorcycle year, make, and model' },
+              issue: { type: 'string', description: 'What happened or what the rider needs help with' },
+              rideable: { type: 'string', description: 'Whether the bike is currently safe or possible to ride' }
+            }
+          }
+        });
+      } catch (err) {
+        // WebMCP support is optional; declarative attributes remain available.
+      }
+    }
+
+
     // Progressive enhancement: cache static shell for repeat visitors
     if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
       window.addEventListener('load', () => {
@@ -1737,7 +1764,7 @@
   </script>
 
   <div class="mobile-cta-bar">
-    <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn" data-event="mobile_cta_bar_click">Text a Photo — Get a Quote</a>
+    <a href="sms:7147879453?body=Hi%20Dusty%2C%20I%20need%20help%20with%20my%20bike.%20I%27ll%20send%20a%20photo%20and%20the%20year%2Fmake%2Fmodel." class="btn" data-event="mobile_cta_bar_click" data-mcp-action="compose-sms-quote-request" data-mcp-description="Open a user-initiated SMS from the sticky mobile CTA." data-mcp-requires-user-confirmation="true">Text a Photo — Get a Quote</a>
   </div>
 </body>
 </html>

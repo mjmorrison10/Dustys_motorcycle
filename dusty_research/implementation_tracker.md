@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, and AI Citation passes complete. Next: Agentic Search / Accessibility QA / service pages.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, and Agentic Search passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -130,6 +130,7 @@
 - ✅ Frontend Developer pass completed: manifest, service worker, PWA icons, guide-page event tracking, guide prefetch, content-visibility render optimization
 - ✅ AEO Foundations Architect pass completed: AI-aware robots, llms-full, Markdown alternatives, agent permissions, action declarations, AGENTS.md, service-worker AEO cache updates
 - ✅ AI Citation Strategist pass completed: citation-focused mechanic chooser guide, Markdown alternative, FAQ schema, homepage guide card, prompt audit baseline, AEO discovery/action updates
+- ✅ Agentic Search Optimizer pass completed: linked MCP actions, declarative data-mcp attributes for SMS/guides/directions/form, field param metadata, imperative MCP progressive enhancement, action manifest hardening
 
 ---
 

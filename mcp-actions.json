@@ -4,6 +4,30 @@
   "site": "https://dustysmoto.com/",
   "actions": [
     {
+      "id": "submit-service-inquiry",
+      "type": "declarative_form",
+      "method": "POST",
+      "label": "Submit motorcycle service inquiry",
+      "endpoint": "https://formspree.io/f/YOUR_FORM_ID",
+      "status": "blocked_until_form_endpoint_configured",
+      "description": "Submit a motorcycle service inquiry to Dusty. No repair work is authorized by submitting the form.",
+      "parameters": {
+        "required": [
+          "name",
+          "phone",
+          "timeline",
+          "service"
+        ],
+        "optional": [
+          "email",
+          "bike",
+          "reply_preference",
+          "message"
+        ]
+      },
+      "recommended_fallback_action": "compose_sms_quote_request"
+    },
+    {
       "id": "compose_sms_quote_request",
       "type": "user_initiated_sms",
       "label": "Text Dusty a photo for a quote",
@@ -34,6 +58,15 @@
       "type": "navigate",
       "label": "Open how to choose a motorcycle mechanic guide",
       "url": "https://dustysmoto.com/guides/how-to-choose-motorcycle-mechanic-orange-ca.html"
+    },
+    {
+      "id": "copy_first_text_template",
+      "type": "client_side_copy",
+      "label": "Copy first text template",
+      "description": "Copy a suggested first text message so the user can paste it into SMS.",
+      "requires_user_confirmation": false
     }
-  ]
+  ],
+  "version": "1.0-draft",
+  "spec_note": "WebMCP is draft/emerging; these declarations are progressive hints for compatible browser agents."
 }

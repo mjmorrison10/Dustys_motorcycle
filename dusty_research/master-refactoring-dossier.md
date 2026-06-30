@@ -1172,3 +1172,39 @@ Dusty’s needed a citation-focused recommendation asset that directly answers A
 - Strengthen third-party entity corroboration through GBP, Birdeye, Yelp, Apple Maps, Bing Places, Facebook, and Nextdoor cleanup.
 
 Full AI Citation Strategist report: `dusty_research/ai_citation_strategist_report_2026-06-30.md`.
+
+---
+
+### Section 22: Agentic Search / WebMCP Readiness Pass (Agentic Search Optimizer)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 22.1 Agentic Search Decision
+
+The site should not only be discoverable/citable by AI systems; it should expose the main user tasks in a machine-readable way so browser agents can guide users through them safely.
+
+#### 22.2 Task Flows Covered
+
+- Text Dusty a photo for a quote.
+- Open pre-purchase checklist.
+- Open ride-ready checklist.
+- Open mechanic chooser guide.
+- Copy first-text template.
+- Get directions.
+- Submit service inquiry form.
+
+#### 22.3 Changes Implemented
+
+- Added `<link rel="mcp-actions" href="mcp-actions.json">`.
+- Added declarative MCP attributes to SMS CTAs.
+- Added declarative MCP attributes to guide links and directions link.
+- Added declarative MCP metadata to contact form and fields.
+- Added optional `navigator.mcpActions.register()` progressive enhancement.
+- Updated `mcp-actions.json` and `.well-known/mcp-actions.json` with richer task declarations and honest form-endpoint status.
+
+#### 22.4 Remaining Blocker
+
+The contact form cannot be fully agent-completable until `YOUR_FORM_ID` is replaced with a real endpoint. The manifest marks this as blocked and recommends SMS fallback.
+
+Full Agentic Search Optimizer report: `dusty_research/agentic_search_optimizer_report_2026-06-30.md`.
