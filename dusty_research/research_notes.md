@@ -367,3 +367,39 @@ The biggest remaining first-contact friction is not credibility. The site alread
 Run a 5-rider usability test with tasks around contacting Dusty, knowing what to text, finding service fit, and understanding “no work starts without approval.” Connect GA4/GTM and monitor `copy_text_template_click` alongside SMS and form events.
 
 Full report saved as: `dusty_research/ux_researcher_report_2026-06-30.md`.
+
+---
+
+## Content Creator Implementation Notes — 2026-06-30
+
+**Agency agent used:** Content Creator from the Agency Agents app corpus.
+
+### Content strategy finding
+
+The site already had strong lead-magnet concepts, but the “Free Guides” section still behaved like a placeholder. The best next content move was to turn those concepts into real, useful rider-facing assets that build trust, support SEO, and create natural text-first CTAs.
+
+### Site/content changes applied
+
+- Created `guides/pre-purchase-motorcycle-inspection-checklist.html`.
+  - Covers title/VIN checks, seller red flags, frame/crash signs, leaks, wear items, cold start, test ride checks, and buyer questions.
+- Created `guides/santiago-canyon-ride-ready-checklist.html`.
+  - Covers tires, brakes, chain, controls, fluids, lights, pack list, and “do not ride” warning signs before a canyon ride.
+- Updated homepage Free Guides cards to link to the real guide pages.
+- Added guide click analytics events:
+  - `guide_pre_purchase_click`
+  - `guide_ride_ready_click`
+  - `guide_sms_click`
+- Updated `sitemap.xml` with both guide URLs.
+- Updated `llms.txt` with both guide URLs.
+
+### Content direction
+
+Dusty’s content should stay practical and no-BS. Best content pillars:
+
+1. Ride-ready safety.
+2. Used-bike buyer protection.
+3. No-BS mechanic education.
+4. Orange / Santiago Canyon local relevance.
+5. Trust and anti-upsell proof.
+
+Full report saved as: `dusty_research/content_creator_report_2026-06-30.md`.

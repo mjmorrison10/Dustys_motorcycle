@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, and UX Research passes complete. Next: Content / AEO / Accessibility QA.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, and Content Creator passes complete. Next: AEO / Accessibility QA / service pages.
 
 ---
 
@@ -33,7 +33,7 @@
 | 6 | Update title/meta/OG tags for local SEO | ✅ Done | "Orange Traffic Circle" now in title, description, keywords | SEO, Dossier |
 | 7 | Update schema hours to Mon–Sun 9am–7pm | ✅ Done | LocalBusiness JSON-LD updated | Dossier |
 | 8 | Replace `YOUR_FORM_ID` with real form endpoint | ⏸ Blocked | Need Dusty to choose Formspree / Netlify / CRM | Offer & Lead Gen |
-| 9 | Add actual PDF lead magnet files | ⏸ Blocked | Need Dusty to confirm/approve content, then design/create | Offer & Lead Gen |
+| 9 | Add actual PDF lead magnet files | 🔄 In progress | Draft printable HTML guide assets created; PDF design/export still optional after Dusty approval | Offer & Lead Gen, Content Creator |
 | 10 | Set up conversion tracking (Google Analytics, event tags) | 🔄 In progress | CTA/dataLayer hooks added; needs GA4/GTM measurement ID | Analytics, SEO |
 | 11 | Run technical SEO audit (speed, mobile, accessibility) | ✅ Done | SEO Specialist pass completed; JSON-LD validated; WebP assets added; full Lighthouse still recommended post-deploy | SEO, QA |
 | 12 | Implement AEO/llms.txt for AI search visibility | ✅ Done | Added root `llms.txt` and robots reference | AEO Foundations |
@@ -125,6 +125,7 @@
 - ✅ Brand Guardian pass completed: brand foundation, CSS brand tokens, header lockup, text-photo meta alignment, schema slogan, brand protection rules
 - ✅ UX Architect pass completed: simplified nav, skip link, main landmark, focus states, ARIA menu/FAQ states, active nav, reduced-motion support, spacing/touch tokens
 - ✅ UX Researcher pass completed: text-template helper card, copy button with accessible status, `copy_text_template_click` event, reply-preference form field, 5-rider validation plan
+- ✅ Content Creator pass completed: two real printable guide pages, homepage guide links, guide analytics events, sitemap/llms updates, 90-day content calendar
 
 ---
 

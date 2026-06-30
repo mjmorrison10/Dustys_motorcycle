@@ -1002,3 +1002,40 @@ Recommended next research step: test the site with five actual riders. Key tasks
 Track `copy_text_template_click`, SMS CTA clicks, form submissions, and mobile sticky CTA clicks once GA4/GTM is connected.
 
 Full UX Researcher report: `dusty_research/ux_researcher_report_2026-06-30.md`.
+
+---
+
+### Section 17: Content Creator Lead Magnet Pass (Content Creator)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 17.1 Content Strategy Decision
+
+The “Free Guides” concepts were converted from placeholders into real rider-facing content assets. This supports SEO, trust-building, and text-first lead generation.
+
+#### 17.2 Changes Implemented
+
+- Added `guides/pre-purchase-motorcycle-inspection-checklist.html`.
+- Added `guides/santiago-canyon-ride-ready-checklist.html`.
+- Updated homepage lead magnet cards to link to the real guides.
+- Added analytics hooks for guide clicks and guide SMS CTAs.
+- Updated `sitemap.xml` with both guide pages.
+- Updated `llms.txt` with both guide pages.
+
+#### 17.3 Content Pillars
+
+1. Ride-ready safety.
+2. Used-bike buyer protection.
+3. No-BS mechanic education.
+4. Orange / Santiago Canyon local relevance.
+5. Trust and anti-upsell proof.
+
+#### 17.4 Remaining Content Work
+
+- Turn HTML guides into designed PDFs if Dusty wants gated downloads.
+- Build the first service landing page for pre-purchase inspections.
+- Publish the 90-day GBP/social content calendar.
+- Create short video captions/scripts from Dusty’s existing repair footage.
+
+Full Content Creator report: `dusty_research/content_creator_report_2026-06-30.md`.
