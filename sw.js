@@ -1,9 +1,15 @@
-const CACHE_NAME = 'dustys-moto-v1';
+const CACHE_NAME = 'dustys-moto-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.webmanifest',
   '/llms.txt',
+  '/content/santiago-canyon-ride-ready-checklist.md',
+  '/content/pre-purchase-motorcycle-inspection-checklist.md',
+  '/content/dustys-motorcycle-service.md',
+  '/mcp-actions.json',
+  '/agent-permissions.json',
+  '/llms-full.txt',
   '/sitemap.xml',
   '/robots.txt',
   '/images/favicon.png',

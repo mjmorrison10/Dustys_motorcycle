@@ -1100,3 +1100,39 @@ Keep the site as a no-build static project, but add progressive frontend enhance
 - Bump service worker cache version when assets change.
 
 Full Frontend Developer report: `dusty_research/frontend_developer_report_2026-06-30.md`.
+
+---
+
+### Section 20: AEO Foundations Infrastructure Pass (AEO Foundations Architect)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 20.1 AEO Foundation Decision
+
+Dusty's site should be discoverable, parseable, and actionable for AI crawlers, citation engines, and browsing agents before running more advanced AI citation or agentic search passes.
+
+#### 20.2 Changes Implemented
+
+- Rebuilt `robots.txt` with AI crawler access policy.
+- Added `llms-full.txt`.
+- Expanded `llms.txt`.
+- Added Markdown alternatives for the business summary and both guide pages.
+- Added `agent-permissions.json` and `.well-known/agent-permissions.json`.
+- Added `mcp-actions.json` and `.well-known/mcp-actions.json`.
+- Added `AGENTS.md` with agent behavior guidance.
+- Added alternate Markdown links to homepage and guide pages.
+- Updated service worker cache version and included AI-readable assets.
+
+#### 20.3 Agent Permission Rules
+
+Agents may read, summarize, cite, and help compose a first text. Agents may not submit forms, initiate SMS/calls, confirm appointments, quote final repair prices, or process payments without explicit user action.
+
+#### 20.4 Remaining AEO Work
+
+- Verify public deployment returns 200 for all AEO files.
+- Check server logs for AI crawler activity.
+- Query AI browsing systems after indexing to compare answers.
+- Review and update discovery files quarterly.
+
+Full AEO Foundations report: `dusty_research/aeo_foundations_report_2026-06-30.md`.

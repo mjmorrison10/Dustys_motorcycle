@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, and Frontend Developer passes complete. Next: AEO / Accessibility QA / service pages.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, and AEO Foundations passes complete. Next: AI Citation / Accessibility QA / service pages.
 
 ---
 
@@ -36,7 +36,7 @@
 | 9 | Add actual PDF lead magnet files | 🔄 In progress | Draft printable HTML guide assets created; PDF design/export still optional after Dusty approval | Offer & Lead Gen, Content Creator |
 | 10 | Set up conversion tracking (Google Analytics, event tags) | 🔄 In progress | CTA/dataLayer hooks added; needs GA4/GTM measurement ID | Analytics, SEO |
 | 11 | Run technical SEO audit (speed, mobile, accessibility) | ✅ Done | SEO Specialist pass completed; JSON-LD validated; WebP assets added; full Lighthouse still recommended post-deploy | SEO, QA |
-| 12 | Implement AEO/llms.txt for AI search visibility | ✅ Done | Added root `llms.txt` and robots reference | AEO Foundations |
+| 12 | Implement AEO/llms.txt for AI search visibility | ✅ Done | Added AI-aware robots, `llms.txt`, `llms-full.txt`, Markdown alternatives, agent permissions, action declarations | AEO Foundations |
 
 ### SHOULD DO (Important / Post-Launch Optimization)
 
@@ -128,6 +128,7 @@
 - ✅ Content Creator pass completed: two real printable guide pages, homepage guide links, guide analytics events, sitemap/llms updates, 90-day content calendar
 - ✅ UI Designer pass completed: reusable icon cards, guide badges, contact action group, card elevation tokens, hover consistency, reduced inline visual styling
 - ✅ Frontend Developer pass completed: manifest, service worker, PWA icons, guide-page event tracking, guide prefetch, content-visibility render optimization
+- ✅ AEO Foundations Architect pass completed: AI-aware robots, llms-full, Markdown alternatives, agent permissions, action declarations, AGENTS.md, service-worker AEO cache updates
 
 ---
 

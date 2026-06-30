@@ -1,0 +1,33 @@
+{
+  "schema_version": "2026-06-30",
+  "name": "Dusty's Motorcycle Service & Repair actions",
+  "site": "https://dustysmoto.com/",
+  "actions": [
+    {
+      "id": "compose_sms_quote_request",
+      "type": "user_initiated_sms",
+      "label": "Text Dusty a photo for a quote",
+      "phone_e164": "+17147879453",
+      "template": "Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?",
+      "requires_user_confirmation": true
+    },
+    {
+      "id": "open_contact_section",
+      "type": "navigate",
+      "label": "Open contact section",
+      "url": "https://dustysmoto.com/#contact"
+    },
+    {
+      "id": "open_pre_purchase_checklist",
+      "type": "navigate",
+      "label": "Open used motorcycle pre-purchase checklist",
+      "url": "https://dustysmoto.com/guides/pre-purchase-motorcycle-inspection-checklist.html"
+    },
+    {
+      "id": "open_ride_ready_checklist",
+      "type": "navigate",
+      "label": "Open Santiago Canyon ride-ready checklist",
+      "url": "https://dustysmoto.com/guides/santiago-canyon-ride-ready-checklist.html"
+    }
+  ]
+}

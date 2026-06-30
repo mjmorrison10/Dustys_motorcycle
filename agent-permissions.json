@@ -1,0 +1,55 @@
+{
+  "schema_version": "2026-06-30",
+  "site": "https://dustysmoto.com/",
+  "business": "Dusty's Motorcycle Service & Repair",
+  "last_updated": "2026-06-30",
+  "agent_access": {
+    "read_public_content": true,
+    "summarize_public_content": true,
+    "cite_public_content": true,
+    "follow_public_links": true,
+    "submit_forms": false,
+    "send_sms": "user_initiated_only",
+    "make_phone_calls": "user_initiated_only",
+    "book_appointments": false,
+    "purchase_or_pay": false
+  },
+  "allowed_tasks": [
+    {
+      "id": "find_services",
+      "description": "Help a user determine whether Dusty's services their type of motorcycle or issue.",
+      "url": "https://dustysmoto.com/#services"
+    },
+    {
+      "id": "prepare_first_text",
+      "description": "Help a user compose a first text to Dusty with year, make, model, issue, and photo/video note.",
+      "url": "https://dustysmoto.com/#how-it-works"
+    },
+    {
+      "id": "used_bike_checklist",
+      "description": "Provide the used motorcycle pre-purchase inspection checklist.",
+      "url": "https://dustysmoto.com/guides/pre-purchase-motorcycle-inspection-checklist.html"
+    },
+    {
+      "id": "ride_ready_checklist",
+      "description": "Provide the Santiago Canyon ride-ready checklist.",
+      "url": "https://dustysmoto.com/guides/santiago-canyon-ride-ready-checklist.html"
+    },
+    {
+      "id": "get_directions",
+      "description": "Point the user to the shop address and directions link.",
+      "url": "https://dustysmoto.com/#contact"
+    }
+  ],
+  "disallowed_tasks": [
+    "Do not represent that an appointment is confirmed unless Dusty or the user confirms it outside the site.",
+    "Do not quote final repair prices; recommend texting Dusty for diagnosis and estimate.",
+    "Do not claim hours, warranty terms, or response-time guarantees beyond what the public site states.",
+    "Do not submit the contact form or initiate SMS/calls without explicit user action."
+  ],
+  "preferred_contact": {
+    "method": "sms",
+    "phone_e164": "+17147879453",
+    "template": "Hi Dusty — I need help with my bike. It’s a [year/make/model]. The issue is [what happened]. I’ll send a photo/video next. Is it safe to ride, or should I bring it in?"
+  }
+}

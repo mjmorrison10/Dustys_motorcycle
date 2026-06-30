@@ -477,3 +477,41 @@ The site should remain a lightweight static project, but it needed practical pro
 - PWA icon dimensions validated at 192x192 and 512x512.
 
 Full report saved as: `dusty_research/frontend_developer_report_2026-06-30.md`.
+
+---
+
+## AEO Foundations Architect Implementation Notes — 2026-06-30
+
+**Agency agent used:** AEO Foundations Architect from the Agency Agents app corpus.
+
+### AEO foundation finding
+
+The site already had `llms.txt`, semantic HTML, FAQ schema, and guide pages, but needed a fuller AI discovery and agent-readiness layer. The biggest gaps were AI-specific crawler rules, `llms-full.txt`, Markdown alternatives, agent permissions, and capability/action declarations.
+
+### Site changes applied
+
+- Rebuilt `robots.txt` with explicit AI crawler access policy.
+- Added `llms-full.txt` as fuller AI-readable site context.
+- Expanded `llms.txt` with AI discovery files and Markdown alternatives.
+- Added Markdown alternatives:
+  - `content/dustys-motorcycle-service.md`
+  - `content/pre-purchase-motorcycle-inspection-checklist.md`
+  - `content/santiago-canyon-ride-ready-checklist.md`
+- Added root and `.well-known` permission files:
+  - `agent-permissions.json`
+  - `.well-known/agent-permissions.json`
+- Added root and `.well-known` action declarations:
+  - `mcp-actions.json`
+  - `.well-known/mcp-actions.json`
+- Added `AGENTS.md` with public business facts and agent behavior guardrails.
+- Added alternate Markdown links to homepage and guide pages.
+- Updated `sw.js` cache to `dustys-moto-v2` and included AI-readable assets.
+
+### Validation
+
+- JSON files parse successfully.
+- Homepage JSON-LD still parses.
+- Sitemap XML still parses.
+- Local server returns 200 for `llms-full.txt`, permissions/action JSON, Markdown content, robots, and service worker.
+
+Full report saved as: `dusty_research/aeo_foundations_report_2026-06-30.md`.
