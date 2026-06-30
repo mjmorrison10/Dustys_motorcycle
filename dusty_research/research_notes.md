@@ -573,3 +573,33 @@ The site already had AEO discovery files and action JSON, but the page DOM did n
 The form still points to `YOUR_FORM_ID`, so service-form completion remains blocked until a real endpoint is configured. Agents should prefer the user-confirmed SMS action until then.
 
 Full report saved as: `dusty_research/agentic_search_optimizer_report_2026-06-30.md`.
+
+---
+
+## Senior Developer Implementation Notes — 2026-06-30
+
+**Agency agent used:** Senior Developer from the Agency Agents app corpus.
+
+### Senior development finding
+
+The homepage had accumulated useful behavior from previous passes, but the inline JavaScript needed hardening and polish. The Senior Developer pass focused on maintainability, graceful optional-element handling, smoother scroll behavior, and premium micro-interaction quality without adding a framework or build step.
+
+### Site changes applied
+
+- Refactored homepage JavaScript into a guarded IIFE.
+- Added `$`, `$$`, and `pushEvent()` helper functions.
+- Added guards for optional DOM elements so future page variants do not break if a section is missing.
+- Consolidated analytics dispatch for CTA clicks, form submit, and copy-template interactions.
+- Added a subtle top scroll-progress indicator with brand orange gradient.
+- Updated scroll handling to use `requestAnimationFrame` and a passive scroll listener.
+- Improved button transition targeting and added `will-change: transform` for smoother interaction polish.
+- Bumped service worker cache from `dustys-moto-v3` to `dustys-moto-v4`.
+
+### Validation
+
+- Homepage JSON-LD still parses.
+- Sitemap XML still parses.
+- Main inline JavaScript passes `node --check`.
+- Homepage and service worker serve locally.
+
+Full report saved as: `dusty_research/senior_developer_report_2026-06-30.md`.

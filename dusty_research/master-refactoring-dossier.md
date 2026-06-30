@@ -1208,3 +1208,33 @@ The site should not only be discoverable/citable by AI systems; it should expose
 The contact form cannot be fully agent-completable until `YOUR_FORM_ID` is replaced with a real endpoint. The manifest marks this as blocked and recommends SMS fallback.
 
 Full Agentic Search Optimizer report: `dusty_research/agentic_search_optimizer_report_2026-06-30.md`.
+
+---
+
+### Section 23: Senior Developer Hardening & Polish Pass (Senior Developer)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 23.1 Development Decision
+
+Keep the project static and no-build, but harden the homepage JavaScript and add lightweight premium interaction polish.
+
+#### 23.2 Changes Implemented
+
+- Refactored homepage script into a guarded IIFE.
+- Added helper utilities for DOM selection and analytics dispatch.
+- Added optional-element guards around menu, FAQ, form, copy helper, observers, WebMCP, and service worker behavior.
+- Added brand-aligned scroll progress indicator.
+- Updated scroll handling with `requestAnimationFrame` and passive listener.
+- Improved button transition specificity and motion smoothness.
+- Bumped service worker cache to `dustys-moto-v4`.
+
+#### 23.3 Remaining Development Work
+
+- Add real form endpoint and success/error states.
+- Extract shared JS/CSS if the static site grows further.
+- Run Lighthouse after deployment.
+- Add automated smoke tests for JSON, sitemap, service worker, and required AEO files.
+
+Full Senior Developer report: `dusty_research/senior_developer_report_2026-06-30.md`.

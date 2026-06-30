@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dustys-moto-v3';
+const CACHE_NAME = 'dustys-moto-v4';
 const STATIC_ASSETS = [
   '/',
   '/index.html',

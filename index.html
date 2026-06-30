@@ -94,6 +94,25 @@
       transition: transform 0.2s ease;
     }
     .skip-link:focus { transform: translateY(0); }
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 2001;
+      background: transparent;
+      pointer-events: none;
+    }
+    .scroll-progress span {
+      display: block;
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--orange), #ffb088);
+      box-shadow: 0 0 16px rgba(242,101,34,0.55);
+      transform-origin: left center;
+      transition: width 120ms linear;
+    }
     :focus-visible {
       outline: 3px solid var(--orange);
       outline-offset: 3px;
@@ -159,7 +178,8 @@
       border: none;
       border-radius: var(--radius);
       cursor: pointer;
-      transition: all 0.25s ease;
+      transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+      will-change: transform;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -799,6 +819,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
 
   <header>
     <div class="container nav-wrap">
@@ -1593,174 +1614,177 @@
   </script>
 
   <script>
-    // Mobile menu
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileNav = document.getElementById('mobileNav');
-    menuBtn.addEventListener('click', () => {
-      mobileNav.classList.toggle('active');
-      const isOpen = mobileNav.classList.contains('active');
-      menuBtn.textContent = isOpen ? '✕' : '☰';
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-    });
-    document.querySelectorAll('#mobileNav a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('active');
-        menuBtn.textContent = '☰';
-        menuBtn.setAttribute('aria-expanded', 'false');
-      });
-    });
+    (() => {
+      'use strict';
 
-    // FAQ accordion
-    document.querySelectorAll('.faq-q').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isActive = item.classList.contains('active');
-        document.querySelectorAll('.faq-item').forEach(i => {
-          i.classList.remove('active');
-          const button = i.querySelector('.faq-q');
-          if (button) button.setAttribute('aria-expanded', 'false');
-        });
-        if (!isActive) {
-          item.classList.add('active');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-
-    // Fade-up animations on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-    // Active section state for desktop navigation
-    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
-    const sectionMap = Array.from(navAnchors)
-      .map(link => document.querySelector(link.getAttribute('href')))
-      .filter(Boolean);
-    const navObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navAnchors.forEach(link => {
-            const isActive = link.getAttribute('href') === `#${entry.target.id}`;
-            link.classList.toggle('active', isActive);
-            if (isActive) link.setAttribute('aria-current', 'page');
-            else link.removeAttribute('aria-current');
-          });
-        }
-      });
-    }, { threshold: 0.35, rootMargin: '-120px 0px -50% 0px' });
-    sectionMap.forEach(section => navObserver.observe(section));
-
-    // Dynamic year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Form handler (placeholder)
-    const form = document.getElementById('serviceForm');
-    form.addEventListener('submit', (e) => {
-      if (form.action.includes('YOUR_FORM_ID')) {
-        e.preventDefault();
-        alert('Thanks for your request! This is a demo form — please connect it to Formspree, Netlify, or your CRM before launch.');
-      }
-    });
-
-
-    // Analytics-ready CTA event hooks (works when GA4/GTM is added later)
-    window.dataLayer = window.dataLayer || [];
-    document.querySelectorAll('[data-event]').forEach(el => {
-      el.addEventListener('click', () => {
-        window.dataLayer.push({ event: el.dataset.event, link_url: el.href || null });
+      const $ = (selector, root = document) => root.querySelector(selector);
+      const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+      const pushEvent = (event, payload = {}) => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event, ...payload });
         if (typeof window.gtag === 'function') {
-          window.gtag('event', el.dataset.event, { link_url: el.href || null });
+          window.gtag('event', event, payload);
         }
-      });
-    });
-    form.addEventListener('submit', () => {
-      window.dataLayer.push({ event: 'form_submit', form_id: 'serviceForm' });
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'form_submit', { form_id: 'serviceForm' });
+      };
+
+      const menuBtn = $('#menuBtn');
+      const mobileNav = $('#mobileNav');
+      if (menuBtn && mobileNav) {
+        const setMenuState = (isOpen) => {
+          mobileNav.classList.toggle('active', isOpen);
+          menuBtn.textContent = isOpen ? '✕' : '☰';
+          menuBtn.setAttribute('aria-expanded', String(isOpen));
+        };
+        menuBtn.addEventListener('click', () => setMenuState(!mobileNav.classList.contains('active')));
+        $$('#mobileNav a').forEach(link => link.addEventListener('click', () => setMenuState(false)));
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && mobileNav.classList.contains('active')) setMenuState(false);
+        });
       }
-    });
 
-
-    // Research-backed helper: reduce hesitation before first text
-    const copyTextTemplate = document.getElementById('copyTextTemplate');
-    const textTemplate = document.getElementById('textTemplate');
-    const copyStatus = document.getElementById('copyStatus');
-    if (copyTextTemplate && textTemplate && copyStatus) {
-      copyTextTemplate.addEventListener('click', async () => {
-        const text = textTemplate.textContent.trim();
-        try {
-          if (navigator.clipboard && window.isSecureContext) {
-            await navigator.clipboard.writeText(text);
-          } else {
-            const temp = document.createElement('textarea');
-            temp.value = text;
-            temp.setAttribute('readonly', '');
-            temp.style.position = 'absolute';
-            temp.style.left = '-9999px';
-            document.body.appendChild(temp);
-            temp.select();
-            document.execCommand('copy');
-            document.body.removeChild(temp);
+      $$('.faq-q').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.parentElement;
+          const isActive = item?.classList.contains('active');
+          $$('.faq-item').forEach(i => {
+            i.classList.remove('active');
+            const button = $('.faq-q', i);
+            if (button) button.setAttribute('aria-expanded', 'false');
+          });
+          if (item && !isActive) {
+            item.classList.add('active');
+            btn.setAttribute('aria-expanded', 'true');
           }
-          copyStatus.textContent = 'Copied. Paste it into a text to Dusty and add your photo.';
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({ event: 'copy_text_template_click' });
-        } catch (err) {
-          copyStatus.textContent = 'Could not copy automatically. You can still select the message above.';
-        }
+        });
       });
-    }
 
-    // Header shadow on scroll
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
-        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
-      } else {
-        header.style.boxShadow = 'none';
-      }
-    });
-
-    // WebMCP progressive enhancement for browser agents (draft support varies)
-    if ('mcpActions' in navigator) {
-      try {
-        navigator.mcpActions.register({
-          id: 'compose-sms-quote-request',
-          name: 'Text Dusty a Photo for a Quote',
-          description: 'Prepare a user-confirmed SMS to Dusty with bike year, make, model, issue description, and photo/video note.',
-          parameters: {
-            type: 'object',
-            required: ['bike', 'issue'],
-            properties: {
-              bike: { type: 'string', description: 'Motorcycle year, make, and model' },
-              issue: { type: 'string', description: 'What happened or what the rider needs help with' },
-              rideable: { type: 'string', description: 'Whether the bike is currently safe or possible to ride' }
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
             }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+        $$('.fade-up').forEach(el => observer.observe(el));
+
+        const navAnchors = $$('.nav-links a[href^="#"]');
+        const sectionMap = navAnchors
+          .map(link => $(link.getAttribute('href')))
+          .filter(Boolean);
+        const navObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              navAnchors.forEach(link => {
+                const isActive = link.getAttribute('href') === `#${entry.target.id}`;
+                link.classList.toggle('active', isActive);
+                if (isActive) link.setAttribute('aria-current', 'page');
+                else link.removeAttribute('aria-current');
+              });
+            }
+          });
+        }, { threshold: 0.35, rootMargin: '-120px 0px -50% 0px' });
+        sectionMap.forEach(section => navObserver.observe(section));
+      } else {
+        $$('.fade-up').forEach(el => el.classList.add('visible'));
+      }
+
+      const year = $('#year');
+      if (year) year.textContent = new Date().getFullYear();
+
+      const form = $('#serviceForm');
+      if (form) {
+        form.addEventListener('submit', (event) => {
+          pushEvent('form_submit', { form_id: 'serviceForm' });
+          if (form.action.includes('YOUR_FORM_ID')) {
+            event.preventDefault();
+            alert('Thanks for your request! This is a demo form — please connect it to Formspree, Netlify, or your CRM before launch.');
           }
         });
-      } catch (err) {
-        // WebMCP support is optional; declarative attributes remain available.
       }
-    }
 
-
-    // Progressive enhancement: cache static shell for repeat visitors
-    if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch(() => {
-          // Service worker is optional; site works normally without it.
-        });
+      $$('[data-event]').forEach(el => {
+        el.addEventListener('click', () => pushEvent(el.dataset.event, { link_url: el.href || null }));
       });
-    }
 
+      const copyTextTemplate = $('#copyTextTemplate');
+      const textTemplate = $('#textTemplate');
+      const copyStatus = $('#copyStatus');
+      if (copyTextTemplate && textTemplate && copyStatus) {
+        copyTextTemplate.addEventListener('click', async () => {
+          const text = textTemplate.textContent.trim();
+          try {
+            if (navigator.clipboard && window.isSecureContext) {
+              await navigator.clipboard.writeText(text);
+            } else {
+              const temp = document.createElement('textarea');
+              temp.value = text;
+              temp.setAttribute('readonly', '');
+              temp.style.position = 'absolute';
+              temp.style.left = '-9999px';
+              document.body.appendChild(temp);
+              temp.select();
+              document.execCommand('copy');
+              document.body.removeChild(temp);
+            }
+            copyStatus.textContent = 'Copied. Paste it into a text to Dusty and add your photo.';
+            pushEvent('copy_text_template_click');
+          } catch (err) {
+            copyStatus.textContent = 'Could not copy automatically. You can still select the message above.';
+          }
+        });
+      }
+
+      const header = $('header');
+      const progressBar = $('#scrollProgressBar');
+      let ticking = false;
+      const updateScrollUi = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        if (header) header.style.boxShadow = scrollTop > 20 ? '0 4px 20px rgba(0,0,0,0.3)' : 'none';
+        if (progressBar) {
+          const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+          progressBar.style.width = `${Math.min(100, Math.max(0, (scrollTop / max) * 100))}%`;
+        }
+        ticking = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateScrollUi);
+          ticking = true;
+        }
+      }, { passive: true });
+      updateScrollUi();
+
+      if ('mcpActions' in navigator) {
+        try {
+          navigator.mcpActions.register({
+            id: 'compose-sms-quote-request',
+            name: 'Text Dusty a Photo for a Quote',
+            description: 'Prepare a user-confirmed SMS to Dusty with bike year, make, model, issue description, and photo/video note.',
+            parameters: {
+              type: 'object',
+              required: ['bike', 'issue'],
+              properties: {
+                bike: { type: 'string', description: 'Motorcycle year, make, and model' },
+                issue: { type: 'string', description: 'What happened or what the rider needs help with' },
+                rideable: { type: 'string', description: 'Whether the bike is currently safe or possible to ride' }
+              }
+            }
+          });
+        } catch (err) {
+          // WebMCP support is optional; declarative attributes remain available.
+        }
+      }
+
+      if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {
+            // Service worker is optional; site works normally without it.
+          });
+        });
+      }
+    })();
   </script>
 
   <div class="mobile-cta-bar">
