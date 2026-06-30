@@ -1364,3 +1364,37 @@ The goal is not influencer-style motorcycle content. The goal is local trust, re
 Track posts published, profile visits, calls/texts from social, website clicks, guide clicks, top-performing content, and leads mentioning social.
 
 Full Social Media Strategist report: `dusty_research/social_media_strategist_report_2026-06-30.md`.
+
+---
+
+### Section 28: Instagram Curation Pass (Instagram Curator)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 28.1 Instagram Strategy Decision
+
+Dusty’s Instagram should be the visual proof channel for the website promise:
+
+> **Text a Photo. Get a Straight Answer.**
+
+The account should prioritize real repairs, quick education, ride-ready safety, used-bike buyer protection, and local trust.
+
+#### 28.2 Changes Implemented
+
+- Added `social_assets/dustys_instagram_curator_playbook.md`.
+- Added Instagram aesthetic rules and grid rhythm.
+- Added profile name/bio recommendations.
+- Added six highlight categories and cover direction.
+- Added 9-post grid launch plan.
+- Added Reels scripts and carousel templates.
+- Added Story sticker ideas, hashtag sets, community rules, and weekly metrics.
+
+#### 28.3 Recommended Format Mix
+
+- Reels: 40%.
+- Carousels: 30%.
+- Single image posts: 20%.
+- Stories: 10%+.
+
+Full Instagram Curator report: `dusty_research/instagram_curator_report_2026-06-30.md`.

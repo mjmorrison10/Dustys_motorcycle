@@ -738,3 +738,44 @@ Dusty's should use social media to prove the shop is real, local, honest, and ea
 Created 12 ready-to-post social concepts across four weeks, including text-photo CTA education, Santiago Canyon prep, used-bike inspection tips, all-makes service proof, brake/chain safety posts, veteran-owned local trust, and review/social proof themes.
 
 Full report saved as: `dusty_research/social_media_strategist_report_2026-06-30.md`.
+
+---
+
+## Instagram Curator Implementation Notes — 2026-06-30
+
+**Agency agent used:** Instagram Curator from the Agency Agents app corpus.
+
+### Instagram strategy
+
+Dusty’s Instagram should become the visual proof layer for the website strategy. The core behavior to train is: **if something feels off, text Dusty a photo.** Instagram content should use real shop work, quick repair education, Santiago Canyon prep, and no-BS trust proof — not dealership polish.
+
+### Files added
+
+- `social_assets/dustys_instagram_curator_playbook.md`
+- `dusty_research/instagram_curator_report_2026-06-30.md`
+
+### Playbook contents
+
+- Instagram aesthetic system.
+- Profile name and bio recommendations.
+- Highlight strategy:
+  - Text Dusty
+  - Repairs
+  - Ride Ready
+  - Used Bikes
+  - Reviews
+  - Location
+- Format mix:
+  - Reels 40%
+  - Carousels 30%
+  - Single images 20%
+  - Stories 10%+
+- 9-post grid launch plan.
+- Reel scripts.
+- Carousel templates.
+- Story stickers and engagement prompts.
+- Hashtag sets.
+- Community management rules.
+- Weekly Instagram metrics.
+
+Full report saved as: `dusty_research/instagram_curator_report_2026-06-30.md`.
