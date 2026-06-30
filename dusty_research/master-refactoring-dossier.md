@@ -1398,3 +1398,30 @@ The account should prioritize real repairs, quick education, ride-ready safety, 
 - Stories: 10%+.
 
 Full Instagram Curator report: `dusty_research/instagram_curator_report_2026-06-30.md`.
+
+---
+
+### Section 29: Reddit Community Strategy Pass (Reddit Community Builder)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 29.1 Reddit Strategy Decision
+
+Reddit should be used carefully as a trust-building channel. The strategy is to be helpful first, transparent about affiliation, and never spam or fake recommendations.
+
+#### 29.2 Changes Implemented
+
+- Added `social_assets/dustys_reddit_community_playbook.md`.
+- Added `social_assets/dustys_reddit_response_bank.md`.
+- Added disclosure language for Reddit comments.
+- Added 90/10 participation rule.
+- Added community research targets.
+- Added high-value comment templates and response bank.
+- Added 30-day warm-up plan and 60-day success metrics.
+
+#### 29.3 Key Rule
+
+Do not market on Reddit like a brand. Participate like a helpful mechanic who happens to be affiliated with Dusty’s, and disclose that affiliation whenever the shop is mentioned.
+
+Full Reddit Community Builder report: `dusty_research/reddit_community_builder_report_2026-06-30.md`.

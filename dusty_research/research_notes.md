@@ -779,3 +779,37 @@ Dusty’s Instagram should become the visual proof layer for the website strateg
 - Weekly Instagram metrics.
 
 Full report saved as: `dusty_research/instagram_curator_report_2026-06-30.md`.
+
+---
+
+## Reddit Community Builder Implementation Notes — 2026-06-30
+
+**Agency agent used:** Reddit Community Builder from the Agency Agents app corpus.
+
+### Reddit strategy
+
+Reddit should be treated as a long-term trust channel, not a lead-spam channel. Dusty’s should become a helpful motorcycle repair voice first and mention the shop only when directly relevant, transparently disclosed, and useful.
+
+### Files added
+
+- `social_assets/dustys_reddit_community_playbook.md`
+- `social_assets/dustys_reddit_response_bank.md`
+- `dusty_research/reddit_community_builder_report_2026-06-30.md`
+
+### Playbook contents
+
+- Reddit positioning and disclosure language.
+- Communities to research before posting.
+- 90/10 participation rule.
+- High-value comment templates.
+- Educational post ideas.
+- What not to do.
+- Mention/reputation monitoring.
+- 30-day warm-up plan.
+- 60-day success metrics.
+
+### Response bank contents
+
+Response templates for safety questions, mechanic-selection questions, used-bike buying, Orange/OC mechanic recommendations, chain noise, brake issues, huge repair quotes, and pre-purchase inspection value.
+
+Full report saved as: `dusty_research/reddit_community_builder_report_2026-06-30.md`.
