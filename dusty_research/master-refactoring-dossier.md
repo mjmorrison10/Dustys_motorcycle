@@ -2065,3 +2065,22 @@ The static site architecture is performance-friendly, but real Core Web Vitals a
 - Selected core local assets: ~579 KB.
 
 Full Performance Benchmarker report: `dusty_research/performance_benchmarker_report_2026-06-30.md`.
+
+---
+
+### Section 55: Workflow Optimization Pass (Workflow Optimizer)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 55.1 Workflow Decision
+
+Dusty’s next bottleneck is execution cadence, not strategy. The business needs a small operating rhythm for lead intake, follow-up, reviews, content, and measurement.
+
+#### 55.2 Changes Implemented
+
+- Added `workflow_assets/dustys_workflow_optimization_report.md`.
+- Added SOP-01 through SOP-05 for lead intake, safety escalation, post-service review/referral, weekly lead review, and publishing/claims approval.
+- Added automation opportunities and phased implementation roadmap.
+
+Full Workflow Optimizer report: `dusty_research/workflow_optimizer_report_2026-06-30.md`.

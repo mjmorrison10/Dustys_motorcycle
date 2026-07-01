@@ -1636,3 +1636,36 @@ The site has a good static performance posture: no framework bundle, no build ov
 Run Lighthouse/Core Web Vitals after deployment and again after GA4/GTM or pixels are installed.
 
 Full report saved as: `dusty_research/performance_benchmarker_report_2026-06-30.md`.
+
+---
+
+## Workflow Optimizer Implementation Notes — 2026-06-30
+
+**Agency agent used:** Workflow Optimizer from the Agency Agents app corpus.
+
+### Workflow strategy
+
+Dusty has enough strategy. The immediate need is a small weekly operating system that protects response time, lead quality, review velocity, and owner focus.
+
+### Files added
+
+- `workflow_assets/dustys_workflow_optimization_report.md`
+- `workflow_assets/SOP-01-new-lead-intake.md`
+- `workflow_assets/SOP-02-safety-concern-escalation.md`
+- `workflow_assets/SOP-03-post-service-review-referral.md`
+- `workflow_assets/SOP-04-weekly-lead-marketing-review.md`
+- `workflow_assets/SOP-05-publishing-claims-approval.md`
+- `dusty_research/workflow_optimizer_report_2026-06-30.md`
+
+### Core workflow
+
+New lead → triage → category → next step → job → check-in → review/referral → weekly learning loop.
+
+### Operating rhythm
+
+- Daily 10-minute lead response/logging routine.
+- Twice-weekly 15-minute social/GBP/content routine.
+- Weekly 20-minute lead/review/experiment review.
+- Monthly 45-minute strategy/listing/content review.
+
+Full report saved as: `dusty_research/workflow_optimizer_report_2026-06-30.md`.
