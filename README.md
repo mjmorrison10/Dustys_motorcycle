@@ -1,89 +1,155 @@
-# Dusty's Motorcycle Service & Repair — Website Package
+# Dusty's Motorcycle Service & Repair — Digital Lead Engine
 
-## Overview
+> Static, no-build website and operating system for Dusty's Motorcycle Service & Repair in Orange, CA. The site is designed to convert local riders into text-first leads: **text a photo, get a straight answer, approve before we wrench.**
 
-A high-converting, SEO-optimized, single-page website built for **Dusty's Motorcycle Service & Repair** in Orange, CA. Designed to outrank local competitors, establish trust immediately, and convert visitors into phone calls, texts, and booking form submissions.
+## What this repo contains
 
-## Files
+This repository is more than a landing page. It now contains the public website plus strategy, growth, customer support, analytics, paid media, social, AEO, and operational playbooks created through specialist agent passes.
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Complete single-page website (HTML, CSS, JS) |
-| `images/hero_bg.jpg` | AI-generated hero background (garage scene) |
-| `images/yelp_1.jpg` | ATV/quad photo (from Yelp) |
-| `images/yelp_2.jpg` | Dusty's logo (from Yelp) |
-| `images/yelp_3.jpg` | Shop interior — Harleys on lifts (from Yelp) |
-| `images/yelp_4.jpg` | Wide shop interior (from Yelp) |
-| `images/yelp_5.jpg` | Cruisers/choppers (from Yelp) |
-| `images/yelp_6.jpg` | Yamaha dirt bike (from Yelp) |
-| `images/yelp_7.jpg` | Dirt bike wheelie action (from Yelp) |
-| `images/yelp_8.jpg` | Honda CRF race bike (from Yelp) |
-| `images/favicon.png` | Favicon generated from logo |
+## Quick start
 
-## Key Features
+Run the site locally from the repo root:
 
-- **Veteran-owned trust signals** throughout hero, trust bar, and footer.
-- **Real customer testimonials** sourced from Yelp, Google, and Nextdoor.
-- **All-makes positioning** to differentiate from KTM/sport-bike-only competitors.
-- **Mobile-first responsive design** with smooth animations.
-- **Local SEO schema markup** for Google rich snippets.
-- **Click-to-call, text-friendly, and booking form CTAs**.
-- **FAQ accordion** addressing common rider concerns.
-- **Google Maps embed** with verified address.
+```bash
+python3 -m http.server 8080
+```
 
-## Pre-Launch Checklist
+Open:
 
-### Technical
-- [ ] Replace `YOUR_FORM_ID` in the contact form with a real Formspree / Netlify / CRM endpoint.
-- [ ] Verify all image paths work after deployment.
-- [ ] Set up Google Analytics 4 or Plausible tracking.
-- [ ] Test mobile navigation on iOS and Android.
-- [ ] Run Lighthouse audit (target: 90+ performance, 100 accessibility, 100 SEO, 100 best practices).
-- [ ] Set up HTTPS / SSL certificate.
-- [ ] Configure 301 redirects from old `dustysmotorcycleserviceandrepair.business.site` if applicable.
+```text
+http://127.0.0.1:8080/
+```
 
-### Content & SEO
-- [ ] Confirm exact operating hours and update in schema + footer + contact section.
-- [ ] Resolve address discrepancy: ensure **130 S Lemon St, Orange, CA 92866** is used everywhere.
-- [ ] Update Google Business Profile, Yelp, Facebook, Nextdoor, and Birdeye with the correct address and hours.
-- [ ] Add Google Business Profile / Yelp review widgets to website if desired.
-- [ ] Write 3–5 blog posts targeting keywords (e.g., "vintage motorcycle repair Orange CA", "pre-purchase motorcycle inspection Orange CA").
-- [ ] Create `/services/` sub-pages for individual services (long-term SEO play).
+No build step is required. The site is plain HTML/CSS/JS.
 
-### Business Operations
-- [ ] Set up a dedicated business text line or call-answering service to solve phone responsiveness issue.
-- [ ] Define and publish a formal service warranty (website currently states 90-day parts & labor).
-- [ ] Create an Instagram content calendar (before/after bikes, shop life, tips).
-- [ ] Reactivate Facebook page with consistent posting.
-- [ ] Claim and optimize Birdeye profile (86 reviews currently unclaimed).
-- [ ] Implement a review-request system (email/SMS after service completion).
+## Primary public files
 
-## Suggested Domain Setup
+| Path | Purpose |
+|---|---|
+| `index.html` | Main homepage / lead-capture site |
+| `sitemap.xml` | Search sitemap including guide pages |
+| `robots.txt` | Search + AI crawler access policy |
+| `llms.txt` | Concise AI-readable site summary |
+| `llms-full.txt` | Expanded AI-readable site context |
+| `manifest.webmanifest` | PWA metadata |
+| `sw.js` | Service worker static cache |
+| `AGENTS.md` | Public agent guidance |
+| `agent-permissions.json` | Agent permission declaration |
+| `mcp-actions.json` | Agentic action declaration |
 
-- Primary domain: `dustysmoto.com` (already owned)
-- Redirect `www.dustysmoto.com` to root or vice versa.
-- Set up Google Search Console and Bing Webmaster Tools.
-- Submit sitemap (generate one if site expands beyond single page).
+## Public guide pages
 
-## Conversion Tracking
+| Page | Purpose |
+|---|---|
+| `guides/pre-purchase-motorcycle-inspection-checklist.html` | Used-bike buyer checklist |
+| `guides/santiago-canyon-ride-ready-checklist.html` | Ride-ready safety checklist |
+| `guides/how-to-choose-motorcycle-mechanic-orange-ca.html` | AI/search-friendly mechanic selection guide |
+| `guides/motorcycle-repair-pricing-orange-ca.html` | Pricing transparency guide |
+| `guides/refer-a-rider.html` | Referral share page |
 
-Add these events to your analytics platform:
-- Click on "Call Now" / "Call (714) 787-9453" buttons → `phone_call_click`
-- Click on "Get Directions" → `directions_click`
-- Contact form submission → `service_form_submit`
-- Click on service cards → `service_interest`
+Markdown alternatives live in `content/` for AI/search/agent parsing.
 
-## Competitive Advantage This Site Creates
+## Key conversion paths
 
-| Competitor Weakness | How This Site Wins |
-|---------------------|-------------------|
-| Fast Performance Cycles: small review base | Leverage 86+ reviews and veteran story |
-| Inside Line Moto: KTM niche | Position as all-makes, all-eras |
-| Pedro's: lower rating, Santa Ana | Higher rating + local Orange location |
-| Gustin Motorsports: booked 1+ month | Emphasize quick turnaround, owner-operated |
-| Mach 1: cash-only complaint, busy | Promote transparent pricing, text/booking options |
+Primary conversion actions:
 
-## Contact
+- `hero_text_photo_click`
+- `mobile_cta_bar_click`
+- `contact_sms_click`
+- `contact_phone_call_click`
+- `form_submit`
+- `prototype_text_builder_sms_click`
+- `get_directions_click`
 
-Built by the Hivemind Web Development Company for Dusty's Motorcycle Service & Repair.
-Owner: Dustin D. | Phone: (714) 787-9453 | Address: 130 S Lemon St, Orange, CA 92866
+Important: `form_submit` is not production-ready until `YOUR_FORM_ID` is replaced with a real endpoint.
+
+## Main blocking items before scaling
+
+1. Replace `YOUR_FORM_ID` with a real Formspree / Netlify / CRM endpoint.
+2. Install and verify GA4/GTM.
+3. Confirm address and hours with Dusty.
+4. Update Google Business Profile, Yelp, Facebook, Nextdoor, Birdeye, Apple Maps, and Bing Places.
+5. Set up SMS auto-reply / lead response workflow.
+6. Approve warranty, pricing, and guide PDF language.
+7. Run Lighthouse / accessibility QA after deployment.
+
+## Documentation map
+
+| Path | Purpose |
+|---|---|
+| `docs/DEVELOPER_HANDOFF.md` | Developer setup, validation, and architecture notes |
+| `docs/MAINTENANCE_GUIDE.md` | How to safely update the site and operating assets |
+| `docs/ASSET_INVENTORY.md` | Directory map and content ownership |
+| `dusty_research/executive_summary_2026-06-30.md` | Executive-level project summary |
+| `dusty_research/master-refactoring-dossier.md` | Full strategy dossier |
+| `IMPLEMENTATION_TRACKER.md` | Root task/status tracker |
+| `dusty_research/implementation_tracker.md` | Research-folder tracker copy |
+
+## Directory overview
+
+| Directory | Contents |
+|---|---|
+| `images/` | Site images, WebP assets, PWA icons |
+| `guides/` | Public HTML guide pages |
+| `content/` | Markdown alternatives for guides/business context |
+| `dusty_research/` | Agent reports, dossier, research notes, trackers |
+| `analytics_assets/` | Measurement plan, event taxonomy, lead log, weekly report template |
+| `customer_service_assets/` | Support scripts, FAQ responses, escalation log |
+| `customer_success_assets/` | Review/referral workflow and customer tracker |
+| `email_assets/` | Email lifecycle strategy and sequence specs |
+| `growth_assets/` | Growth experiment backlog and dashboard spec |
+| `intelligence_assets/` | X/Twitter monitoring queries and evidence log templates |
+| `paid_media_assets/` | Paid search/social strategy, copy, negative keywords, campaign CSVs |
+| `pricing_assets/` | Pricing strategy and owner worksheet |
+| `product_assets/` | Roadmap, launch-readiness PRD, backlog |
+| `sales_assets/` | Sales engineering, coaching, objection handling |
+| `social_assets/` | Social, Instagram, Reddit, LinkedIn, X/Twitter playbooks |
+| `support_assets/` | Support responder macros and interaction templates |
+| `video_assets/` | Video optimization, scripts, editing workflow |
+| `visual_assets/` | Image prompt and photo direction library |
+
+## Validation commands
+
+Run before committing major changes:
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+import json, re, xml.etree.ElementTree as ET
+s = Path('index.html').read_text()
+for block in re.findall(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', s, re.S):
+    json.loads(block)
+ET.parse('sitemap.xml')
+for f in ['agent-permissions.json', 'mcp-actions.json', 'manifest.webmanifest']:
+    json.loads(Path(f).read_text())
+print('Core JSON-LD, sitemap, and JSON files are valid')
+PY
+```
+
+Check the main script syntax:
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+import re
+s = Path('index.html').read_text()
+Path('/tmp/dusty-main.js').write_text(re.findall(r'<script>(.*?)</script>', s, re.S)[-1])
+PY
+node --check /tmp/dusty-main.js
+```
+
+## Deployment notes
+
+The repo is designed for any static host. After deployment:
+
+- verify `/`, `/sitemap.xml`, `/robots.txt`, `/llms.txt`, `/llms-full.txt`, `/mcp-actions.json`, and guide pages return `200`;
+- test SMS links on iOS and Android;
+- test phone and directions links;
+- verify service worker cache after version bumps;
+- submit sitemap in Google Search Console and Bing Webmaster Tools.
+
+## Business contact
+
+Dusty's Motorcycle Service & Repair  
+130 S Lemon St, Orange, CA 92866  
+Phone/text: (714) 787-9453
