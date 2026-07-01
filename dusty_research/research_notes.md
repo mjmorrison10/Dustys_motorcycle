@@ -890,3 +890,36 @@ Dusty’s primary conversion channel should remain SMS. Email should support che
 Do not launch email campaigns until SPF, DKIM, DMARC, unsubscribe handling, consent source/date, and suppression lists are configured.
 
 Full report saved as: `dusty_research/email_marketing_strategist_report_2026-06-30.md`.
+
+---
+
+## Pricing Analyst Implementation Notes — 2026-06-30
+
+**Agency agent used:** Pricing Analyst from the Agency Agents app corpus.
+
+### Pricing strategy
+
+Dusty should not compete as the cheapest motorcycle mechanic in Orange County. The recommended position is fair independent-shop pricing with honest diagnosis, no phantom repairs, quote-before-wrenching, and owner-operated trust.
+
+### Files added
+
+- `guides/motorcycle-repair-pricing-orange-ca.html`
+- `content/motorcycle-repair-pricing-orange-ca.md`
+- `pricing_assets/dustys_pricing_strategy_playbook.md`
+- `pricing_assets/dustys_pricing_worksheet.md`
+- `dusty_research/pricing_analyst_report_2026-06-30.md`
+
+### Site changes
+
+- Added public pricing transparency guide without publishing unapproved prices.
+- Added FAQPage schema for pricing-intent questions.
+- Added homepage Free Guides card for the pricing guide.
+- Added `guide_pricing_click` event hook.
+- Updated sitemap, llms files, agent permissions, MCP actions, and service worker cache.
+- Bumped service worker cache to `dustys-moto-v7`.
+
+### Owner inputs still needed
+
+Actual public pricing requires Dusty approval for labor rate, diagnostic minimum, service menu prices, parts policy, rush premiums, inspection package scope, and discount/referral policy.
+
+Full report saved as: `dusty_research/pricing_analyst_report_2026-06-30.md`.

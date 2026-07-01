@@ -73,6 +73,13 @@
       "description": "Use the homepage text builder prototype to compose a first SMS with bike details, issue, and rideability state.",
       "requires_user_confirmation": true,
       "url": "https://dustysmoto.com/#how-it-works"
+    },
+    {
+      "id": "open_pricing_guide",
+      "type": "navigate",
+      "label": "Open motorcycle repair pricing guide",
+      "url": "https://dustysmoto.com/guides/motorcycle-repair-pricing-orange-ca.html",
+      "description": "Open the pricing transparency guide explaining what affects motorcycle repair cost and how Dusty estimates work."
     }
   ],
   "version": "1.0-draft",

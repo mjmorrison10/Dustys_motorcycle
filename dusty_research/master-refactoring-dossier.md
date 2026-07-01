@@ -1484,3 +1484,30 @@ Email should support Dusty’s text-first business model, not replace it. The pr
 - Form endpoint live and tested.
 
 Full Email Marketing Strategist report: `dusty_research/email_marketing_strategist_report_2026-06-30.md`.
+
+---
+
+### Section 32: Pricing Strategy Pass (Pricing Analyst)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 32.1 Pricing Decision
+
+Dusty should not compete on being the cheapest shop. The defensible pricing position is fair independent-shop pricing with honest diagnosis, no phantom repairs, quote-before-wrenching, and owner-operated trust.
+
+#### 32.2 Changes Implemented
+
+- Added public pricing guide: `guides/motorcycle-repair-pricing-orange-ca.html`.
+- Added Markdown alternative: `content/motorcycle-repair-pricing-orange-ca.md`.
+- Added internal pricing playbook: `pricing_assets/dustys_pricing_strategy_playbook.md`.
+- Added owner pricing worksheet: `pricing_assets/dustys_pricing_worksheet.md`.
+- Added pricing guide card to homepage Free Guides section.
+- Added FAQPage schema for pricing-intent questions.
+- Updated sitemap, llms, agent permissions, MCP actions, and service worker cache.
+
+#### 32.3 Owner Inputs Needed
+
+Dusty still needs to approve labor rate, diagnostic minimum, common service prices, parts policy, inspection package scope, rush premium, and discount/referral rules before any public price menu is published.
+
+Full Pricing Analyst report: `dusty_research/pricing_analyst_report_2026-06-30.md`.

@@ -44,6 +44,11 @@
       "id": "choose_mechanic_guide",
       "description": "Help a user evaluate how to choose a motorcycle mechanic in Orange, CA.",
       "url": "https://dustysmoto.com/guides/how-to-choose-motorcycle-mechanic-orange-ca.html"
+    },
+    {
+      "id": "pricing_guide",
+      "description": "Help a user understand what affects motorcycle repair pricing and how to request an estimate from Dusty.",
+      "url": "https://dustysmoto.com/guides/motorcycle-repair-pricing-orange-ca.html"
     }
   ],
   "disallowed_tasks": [
