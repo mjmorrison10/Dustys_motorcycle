@@ -1,0 +1,10 @@
+theme,query,exclude_terms,priority,review_cadence,owner
+brand_exact,"\"Dusty's Motorcycle\" OR \"Dustys Motorcycle\" OR \"Dusty's Moto\"","jobs,hiring",high,weekly,Dusty
+local_repair_demand,"(\"motorcycle mechanic\" OR \"motorcycle repair\") (\"Orange CA\" OR \"Orange County\" OR \"OC\")","bicycle,car,auto",high,weekly,Twitter Engager
+orange_circle,"(\"motorcycle\" OR \"bike\") (\"Orange Circle\" OR \"Orange Traffic Circle\")","bicycle",medium,weekly,Social
+santiago_canyon,"\"Santiago Canyon\" motorcycle OR rider OR bike","bicycle",medium,weekly_weekends,Social
+used_bike_inspection,"(\"used motorcycle\" OR \"Marketplace bike\") (inspection OR mechanic OR \"red flag\")","car,bicycle",medium,weekly,Content
+harley_repair,"\"Harley repair\" (\"Orange\" OR \"Orange County\" OR \"OC\")","dealership-only",medium,weekly,PPC/Social
+sportbike_service,"(\"sportbike\" OR \"CBR\" OR \"GSXR\" OR \"R6\") (repair OR mechanic OR service) (\"Orange County\" OR \"OC\")","racing-only",low,monthly,Content
+competitors,"\"Motorcycle Tire Center\" OR \"CycleDoctor\" OR \"Pedro's Motorcycle Repair\" OR \"Gustin Motorsports\"","duplicates",medium,monthly,Strategy
+reputation_risk,"(\"Dusty's\" OR \"Dustys\") (ripoff OR scam OR complaint OR bad OR issue)","non-moto Dusty's",high,weekly,Dusty

@@ -1,0 +1,2 @@
+date_collected,post_url,author_handle,author_type,timestamp_utc,query_used,theme,sentiment,risk_level,summary,recommended_action,owner,status
+2026-06-30,https://x.com/example/status/000,@example,public_placeholder,2026-06-30T00:00:00Z,brand_exact,brand_health,neutral,low,Example row only,Replace with real public evidence during monitoring,Dusty,template

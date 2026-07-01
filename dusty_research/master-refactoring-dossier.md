@@ -1781,3 +1781,24 @@ X/Twitter should be used for real-time rider education and local conversation. D
 - Added four reusable educational threads.
 
 Full Twitter Engager report: `dusty_research/twitter_engager_report_2026-06-30.md`.
+
+---
+
+### Section 43: X/Twitter Intelligence Monitoring Pass (X/Twitter Intelligence Analyst)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 43.1 Intelligence Decision
+
+Dusty needs an evidence-first monitoring system for X/Twitter before making claims about sentiment, trends, or lead opportunities. Public/authorized data only; preserve URLs, timestamps, queries, and confidence.
+
+#### 43.2 Changes Implemented
+
+- Added `intelligence_assets/dustys_x_twitter_intelligence_plan.md`.
+- Added `intelligence_assets/dustys_x_twitter_query_matrix.csv`.
+- Added `intelligence_assets/dustys_x_twitter_evidence_log_template.csv`.
+- Added `intelligence_assets/dustys_x_twitter_crisis_monitoring_protocol.md`.
+- Added query themes, alert thresholds, evidence fields, weekly review workflow, and crisis severity levels.
+
+Full X/Twitter Intelligence Analyst report: `dusty_research/x_twitter_intelligence_analyst_report_2026-06-30.md`.

@@ -1266,3 +1266,32 @@ Dusty’s X/Twitter presence should focus on real-time motorcycle education, loc
 Threads for “What to Text a Mechanic,” “Used Bike Red Flags,” “Before Santiago Canyon,” and “Quote Before We Wrench.”
 
 Full report saved as: `dusty_research/twitter_engager_report_2026-06-30.md`.
+
+---
+
+## X/Twitter Intelligence Analyst Implementation Notes — 2026-06-30
+
+**Agency agent used:** X/Twitter Intelligence Analyst from the Agency Agents app corpus.
+
+### Intelligence strategy
+
+No live X/Twitter API or authorized export was available, so this pass created the monitoring system rather than claiming live mention/sentiment results. Dusty now has a query matrix, evidence log, monitoring plan, and crisis protocol for public X/Twitter intelligence.
+
+### Files added
+
+- `intelligence_assets/dustys_x_twitter_intelligence_plan.md`
+- `intelligence_assets/dustys_x_twitter_query_matrix.csv`
+- `intelligence_assets/dustys_x_twitter_evidence_log_template.csv`
+- `intelligence_assets/dustys_x_twitter_crisis_monitoring_protocol.md`
+- `dusty_research/x_twitter_intelligence_analyst_report_2026-06-30.md`
+
+### Monitoring themes
+
+- Brand health.
+- Local motorcycle repair demand.
+- Used-bike buyer pain.
+- Ride-ready / Santiago Canyon safety.
+- Competitor mentions.
+- Reputation risk.
+
+Full report saved as: `dusty_research/x_twitter_intelligence_analyst_report_2026-06-30.md`.
