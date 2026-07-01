@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, and Pricing Analyst passes complete. Next: Accessibility QA / service pages / form endpoint.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, and Sales Engineer passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -141,6 +141,7 @@
 - ✅ LinkedIn Content Creator pass completed: owner-led LinkedIn playbook, profile headline/About drafts, content pillars, 30-day calendar, post drafts, carousel concept, engagement plan
 - ✅ Email Marketing Strategist pass completed: CRM/ESP attribute map, segmentation architecture, five lifecycle sequences, email templates, deliverability checklist, metrics framework
 - ✅ Pricing Analyst pass completed: public pricing transparency guide, Markdown alternative, pricing strategy playbook, owner pricing worksheet, pricing FAQ schema, guide card, discovery/action updates
+- ✅ Sales Engineer pass completed: technical discovery playbook, triage questions, lead categories, text intake talk tracks, objection battlecards, quote process, sales metrics
 
 ---
 

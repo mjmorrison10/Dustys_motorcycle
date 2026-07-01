@@ -923,3 +923,43 @@ Dusty should not compete as the cheapest motorcycle mechanic in Orange County. T
 Actual public pricing requires Dusty approval for labor rate, diagnostic minimum, service menu prices, parts policy, rush premiums, inspection package scope, and discount/referral policy.
 
 Full report saved as: `dusty_research/pricing_analyst_report_2026-06-30.md`.
+
+---
+
+## Sales Engineer Implementation Notes — 2026-06-30
+
+**Agency agent used:** Sales Engineer from the Agency Agents app corpus.
+
+### Sales engineering strategy
+
+Dusty’s sales process should feel like technical diagnosis, not sales. The goal is to win the rider’s technical trust before asking for the job.
+
+### Files added
+
+- `sales_assets/dustys_sales_engineering_playbook.md`
+- `sales_assets/dustys_objection_battlecards.md`
+- `dusty_research/sales_engineer_report_2026-06-30.md`
+
+### Playbook contents
+
+- Lead qualification framework.
+- First-pass triage questions.
+- Lead categories:
+  - quick service,
+  - diagnostic,
+  - safety concern,
+  - pre-purchase,
+  - custom / vintage,
+  - not a fit.
+- Text intake talk tracks.
+- Technical discovery by service type.
+- Objection handling.
+- Competitive positioning.
+- Quote process.
+- Sales engineering metrics.
+
+### Battlecard contents
+
+Battlecards for dealership comparison, cheaper competitor quote, price-by-text requests, DIY objections, and “is it safe to ride?” questions.
+
+Full report saved as: `dusty_research/sales_engineer_report_2026-06-30.md`.

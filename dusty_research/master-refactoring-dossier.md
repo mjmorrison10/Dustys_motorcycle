@@ -1511,3 +1511,30 @@ Dusty should not compete on being the cheapest shop. The defensible pricing posi
 Dusty still needs to approve labor rate, diagnostic minimum, common service prices, parts policy, inspection package scope, rush premium, and discount/referral rules before any public price menu is published.
 
 Full Pricing Analyst report: `dusty_research/pricing_analyst_report_2026-06-30.md`.
+
+---
+
+### Section 33: Sales Engineering / Technical Discovery Pass (Sales Engineer)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 33.1 Sales Engineering Decision
+
+Dusty’s lead conversion process should feel like technical diagnosis rather than sales. The goal is to turn vague rider inquiries into clear categories: quick service, diagnostic, safety concern, pre-purchase, custom/vintage, or not-a-fit.
+
+#### 33.2 Changes Implemented
+
+- Added `sales_assets/dustys_sales_engineering_playbook.md`.
+- Added `sales_assets/dustys_objection_battlecards.md`.
+- Added triage questions and lead categories.
+- Added text intake talk tracks.
+- Added discovery prompts by service type.
+- Added objection handling and competitive battlecards.
+- Added quote process and metrics.
+
+#### 33.3 Core Sales Rule
+
+Win technical trust first. Do not guess, overpromise safety, or quote final prices from vague symptoms. Ask for year/make/model, what changed, when it happens, and photo/video evidence.
+
+Full Sales Engineer report: `dusty_research/sales_engineer_report_2026-06-30.md`.
