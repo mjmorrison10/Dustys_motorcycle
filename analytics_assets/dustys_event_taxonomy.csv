@@ -1,0 +1,19 @@
+event_name,event_category,primary_or_secondary,business_meaning,ga4_conversion,recommended_parameters,owner,status
+hero_text_photo_click,lead_intent,primary,Hero SMS lead intent,yes,"link_url,page_path,source",Web,implemented_dataLayer
+mobile_cta_bar_click,lead_intent,primary,Sticky mobile CTA SMS lead intent,yes,"link_url,page_path,source",Web,implemented_dataLayer
+contact_sms_click,lead_intent,primary,Contact section SMS lead intent,yes,"link_url,page_path,source",Web,implemented_dataLayer
+contact_phone_call_click,lead_intent,primary,Phone call click lead intent,yes,"link_url,page_path,source",Web,implemented_dataLayer
+form_submit,lead,primary,Service inquiry form submitted,yes,"form_id,page_path,source",Web,implemented_but_endpoint_blocked
+get_directions_click,local_intent,primary,Directions click / local visit intent,yes,"link_url,page_path,source",Web,implemented_dataLayer
+copy_text_template_click,micro_conversion,secondary,User copied first text template,no,"page_path",Web,implemented_dataLayer
+prototype_text_builder_update,micro_conversion,secondary,User interacted with text builder,no,"has_bike,has_issue,rideable_state",Web,implemented_dataLayer
+prototype_text_builder_sms_click,lead_intent,primary,Text builder generated SMS click,yes,"link_url,page_path",Web,implemented_dataLayer
+guide_pre_purchase_click,content_intent,secondary,Pre-purchase guide click,no,"link_url,page_path",Web,implemented_dataLayer
+guide_ride_ready_click,content_intent,secondary,Ride-ready guide click,no,"link_url,page_path",Web,implemented_dataLayer
+guide_choose_mechanic_click,content_intent,secondary,Mechanic chooser guide click,no,"link_url,page_path",Web,implemented_dataLayer
+guide_pricing_click,content_intent,secondary,Pricing guide click,no,"link_url,page_path",Web,implemented_dataLayer
+referral_sms_share_click,referral,primary,Referral SMS share click,yes,"link_url,page_path",Web,implemented_on_referral_page
+referral_copy_click,referral,secondary,Referral text copy click,no,"page_path",Web,implemented_on_referral_page
+referral_copy_success,referral,primary,Referral text copied successfully,yes,"page_path",Web,implemented_on_referral_page
+footer_referral_click,referral,secondary,Footer referral page click,no,"link_url,page_path",Web,implemented_dataLayer
+guide_sms_click,lead_intent,primary,Guide page SMS click,yes,"link_url,page_path",Web,implemented_on_guides

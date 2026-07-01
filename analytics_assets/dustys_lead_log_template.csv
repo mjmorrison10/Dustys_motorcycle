@@ -1,0 +1,2 @@
+date,lead_id,source,source_detail,channel,name,phone,email,bike,service_interest,issue_summary,photo_video_included,timeline,local_area,lead_quality_score,next_step,status,quoted,booked,completed_job,revenue,review_requested,review_received,notes
+2026-06-30,example-001,website,homepage,sms,Example Rider,714-000-0000,,2018 Honda CBR500R,repair,chain noise,true,this-week,true,9,request drop-off,new_lead,false,false,false,,false,false,Example row only
