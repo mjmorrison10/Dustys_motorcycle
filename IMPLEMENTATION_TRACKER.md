@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: 33 specialist passes, Executive Summary, Product Manager roadmap, and Customer Success system complete. Next: Accessibility QA / form endpoint / tracking / owner operational approvals.
+**Current phase**: 33 specialist passes, Executive Summary, Product Manager roadmap, Customer Success, and Customer Service systems complete. Next: Accessibility QA / form endpoint / tracking / owner operational approvals.
 
 ---
 
@@ -156,6 +156,7 @@
 - ✅ Executive Summary Generator pass completed: C-suite summary of 33 agent passes, 5 guide pages, 6 Markdown alternatives, 40 assets/playbooks, business impact, blockers, and 30-day next steps
 - ✅ Product Manager pass completed: Now/Next/Later roadmap, launch-readiness PRD, prioritized backlog CSV, launch gate, explicit not-building-yet decisions
 - ✅ Customer Success Manager pass completed: post-service playbook, review/referral workflow, customer success tracker CSV, handoff checklist, complaint recovery, reminder cadence, weekly CS review
+- ✅ Customer Service pass completed: frontline service playbook, FAQ response bank, safety/pricing scripts, complaint handling, public response templates, escalation log CSV
 
 ---
 

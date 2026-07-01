@@ -1,0 +1,2 @@
+date,customer,bike,channel,issue_type,summary,safety_related,public_complaint,owner,next_step,due_date,status,notes
+2026-06-30,Example Rider,2018 Honda CBR500R,text,post_service_concern,Example row only,false,false,Dusty,review details and follow up,2026-07-01,open,Replace with real escalations

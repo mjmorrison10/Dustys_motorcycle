@@ -1410,3 +1410,35 @@ Dusty’s customer success opportunity is post-service follow-up. Every successf
 - Tracker CSV.
 
 Full report saved as: `dusty_research/customer_success_manager_report_2026-06-30.md`.
+
+---
+
+## Customer Service Implementation Notes — 2026-06-30
+
+**Agency agent used:** Customer Service from the Agency Agents app corpus.
+
+### Customer service strategy
+
+Dusty’s customer service should be fast, human, and safety-conscious. Every rider should feel heard, safe, and clear on the next step.
+
+### Files added
+
+- `customer_service_assets/dustys_customer_service_playbook.md`
+- `customer_service_assets/dustys_faq_response_bank.md`
+- `customer_service_assets/dustys_customer_service_escalation_log.csv`
+- `dusty_research/customer_service_report_2026-06-30.md`
+
+### Customer service assets created
+
+- Phone/text/form greetings.
+- Inquiry categories.
+- Safety boundary script.
+- Pricing question script.
+- Complaint handling protocol.
+- Public social complaint reply.
+- Review/referral scripts.
+- Escalation rules.
+- FAQ response bank.
+- Escalation log CSV.
+
+Full report saved as: `dusty_research/customer_service_report_2026-06-30.md`.
