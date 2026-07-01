@@ -1104,3 +1104,36 @@ Paid media should remain paused until tracking, form endpoint, GBP/listing clean
 - Track SMS, call, form, directions, guide, text-builder, and offline booked-job conversions.
 
 Full report saved as: `dusty_research/ppc_campaign_strategist_report_2026-06-30.md`.
+
+---
+
+## Paid Social Strategist Implementation Notes — 2026-06-30
+
+**Agency agent used:** Paid Social Strategist from the Agency Agents app corpus.
+
+### Paid social strategy
+
+Dusty should not start paid social with broad cold prospecting. Paid social should begin with retargeting and trust reinforcement: website visitors, guide visitors, Instagram/Facebook engagers, and video viewers once volume exists.
+
+### Files added
+
+- `paid_media_assets/dustys_paid_social_strategy.md`
+- `paid_media_assets/dustys_paid_social_creative_brief.md`
+- `dusty_research/paid_social_strategist_report_2026-06-30.md`
+
+### Campaign structure
+
+1. Meta Retargeting: Text a Photo.
+2. Used-Bike Buyer Retargeting.
+3. Ride-Ready Retargeting.
+4. Engagement Boost Test.
+
+### Creative concepts
+
+- Weird Noise Before the Ride?
+- Buying a Used Bike?
+- Before Santiago Canyon
+- No-Upsell Promise
+- Real Shop Proof
+
+Full report saved as: `dusty_research/paid_social_strategist_report_2026-06-30.md`.

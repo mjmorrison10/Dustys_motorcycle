@@ -1656,3 +1656,31 @@ Do not launch PPC until paid-media readiness blockers are fixed. Once ready, sta
 4. Brand Defense, only if needed.
 
 Full PPC Campaign Strategist report: `dusty_research/ppc_campaign_strategist_report_2026-06-30.md`.
+
+---
+
+### Section 38: Paid Social Strategy Pass (Paid Social Strategist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 38.1 Paid Social Decision
+
+Do not launch broad cold paid social first. Start with retargeting and engagement audiences after tracking/readiness blockers are fixed.
+
+#### 38.2 Changes Implemented
+
+- Added `paid_media_assets/dustys_paid_social_strategy.md`.
+- Added `paid_media_assets/dustys_paid_social_creative_brief.md`.
+- Added Meta retargeting funnel architecture.
+- Added campaign concepts for text-photo, used-bike buyer, ride-ready, no-upsell, and real shop proof angles.
+- Added budget test plan, audience exclusions, UTMs, and kill criteria.
+
+#### 38.3 Recommended First Paid Social Campaigns
+
+1. Meta Retargeting — Text a Photo.
+2. Used-Bike Buyer Retargeting.
+3. Ride-Ready Retargeting.
+4. Engagement Boost Test.
+
+Full Paid Social Strategist report: `dusty_research/paid_social_strategist_report_2026-06-30.md`.
