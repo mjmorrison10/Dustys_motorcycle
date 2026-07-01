@@ -1137,3 +1137,34 @@ Dusty should not start paid social with broad cold prospecting. Paid social shou
 - Real Shop Proof
 
 Full report saved as: `dusty_research/paid_social_strategist_report_2026-06-30.md`.
+
+---
+
+## Ad Creative Strategist Implementation Notes — 2026-06-30
+
+**Agency agent used:** Ad Creative Strategist from the Agency Agents app corpus.
+
+### Creative strategy
+
+Dusty’s strongest ad creative is specific, local, and trust-reducing: **Text a photo. Get a straight answer. Quote before we wrench.** The creative should avoid dealership polish and avoid promising exact pricing without diagnosis.
+
+### Files added
+
+- `paid_media_assets/dustys_ad_creative_strategy.md`
+- `paid_media_assets/dustys_ad_copy_matrix.csv`
+- `dusty_research/ad_creative_strategist_report_2026-06-30.md`
+
+### Creative assets created
+
+- Google RSA headlines and descriptions.
+- Pre-purchase inspection ad copy.
+- Quick service ad copy.
+- RSA pinning guidance.
+- Sitelink copy.
+- Callout extensions.
+- Structured snippets.
+- Meta/Instagram ad copy concepts.
+- Creative testing hypotheses.
+- Creative QA checklist.
+
+Full report saved as: `dusty_research/ad_creative_strategist_report_2026-06-30.md`.

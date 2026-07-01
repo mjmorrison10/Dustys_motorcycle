@@ -1,0 +1,18 @@
+platform,campaign_angle,asset_type,copy,notes
+Google Search,Repair Orange,headline,Motorcycle Repair Orange,Local intent
+Google Search,Repair Orange,headline,Text a Photo for a Quote,Primary CTA
+Google Search,Repair Orange,headline,No Phantom Repairs,Trust angle
+Google Search,Repair Orange,headline,Quote Before We Wrench,Trust angle
+Google Search,Repair Orange,headline,Veteran-Owned Moto Shop,Authority
+Google Search,Repair Orange,headline,Near Orange Traffic Circle,Local landmark
+Google Search,Repair Orange,description,"Text year/make/model, issue, and a photo. Get a straight answer from Dusty.",Primary description
+Google Search,Repair Orange,description,"Veteran-owned motorcycle repair in Orange, CA. No upsells. Quote before we wrench.",Trust description
+Google Search,Pre-Purchase,headline,Used Bike Inspection,Buyer intent
+Google Search,Pre-Purchase,headline,Before You Buy That Bike,Curiosity
+Google Search,Pre-Purchase,headline,Don't Buy a Lemon,Fear/avoidance
+Google Search,Pre-Purchase,description,"Buying used? Text Dusty the listing and photos before you hand over cash.",Primary description
+Meta,Text a Photo,primary_text,"Weird noise, leak, wobble, or brake issue? You don’t need perfect mechanic words. Text Dusty the year/make/model and a photo. No phantom repairs. No upsells. Quote before we wrench.",Retargeting
+Meta,Text a Photo,headline,Text a Photo. Get a Straight Answer.,Core promise
+Meta,Used Bike,primary_text,"Buying a used motorcycle? Don’t inherit someone else’s problem. Check VIN, tires, brakes, fork seals, chain, cold start, and leaks before you hand over cash.",Buyer protection
+Meta,Ride Ready,primary_text,"Heading toward Santiago Canyon? Check tires, brakes, chain, fluids, lights, and throttle before the ride. If something feels off, text Dusty a photo.",Seasonal/local
+Meta,No Upsell,primary_text,"A good mechanic tells you what’s required now — and what can wait. No phantom repairs. No surprise wrenching. Quote before we wrench.",Trust angle

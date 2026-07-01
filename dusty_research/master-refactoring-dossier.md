@@ -1684,3 +1684,36 @@ Do not launch broad cold paid social first. Start with retargeting and engagemen
 4. Engagement Boost Test.
 
 Full Paid Social Strategist report: `dusty_research/paid_social_strategist_report_2026-06-30.md`.
+
+---
+
+### Section 39: Ad Creative Strategy Pass (Ad Creative Strategist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 39.1 Creative Decision
+
+Paid ad creative should repeat the most specific trust-reducing promise:
+
+> **Text a photo. Get a straight answer. Quote before we wrench.**
+
+#### 39.2 Changes Implemented
+
+- Added `paid_media_assets/dustys_ad_creative_strategy.md`.
+- Added `paid_media_assets/dustys_ad_copy_matrix.csv`.
+- Added Google RSA headline/description banks.
+- Added sitelink, callout, and structured snippet copy.
+- Added Meta/Instagram ad copy concepts.
+- Added creative testing plan and QA checklist.
+
+#### 39.3 Creative Angles
+
+1. Text a Photo.
+2. No Phantom Repairs.
+3. Canyon Ready.
+4. Used-Bike Protection.
+5. Veteran-Owned Local.
+6. All Makes & Eras.
+
+Full Ad Creative Strategist report: `dusty_research/ad_creative_strategist_report_2026-06-30.md`.
