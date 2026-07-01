@@ -1071,3 +1071,36 @@ Dusty should not scale paid ads yet. The offer and landing page are strong, but 
 3. Meta retargeting only, not cold prospecting.
 
 Full report saved as: `dusty_research/paid_media_auditor_report_2026-06-30.md`.
+
+---
+
+## PPC Campaign Strategist Implementation Notes — 2026-06-30
+
+**Agency agent used:** PPC Campaign Strategist from the Agency Agents app corpus.
+
+### PPC strategy
+
+Paid media should remain paused until tracking, form endpoint, GBP/listing cleanup, lead source logging, and response capacity are ready. Once ready, Dusty’s first PPC structure should be tight, local, and high-intent: motorcycle repair, pre-purchase inspection, selected quick services, and brand defense only if needed.
+
+### Files added
+
+- `paid_media_assets/dustys_ppc_campaign_strategy.md`
+- `paid_media_assets/dustys_ppc_build_sheet.csv`
+- `paid_media_assets/dustys_negative_keyword_list.txt`
+- `dusty_research/ppc_campaign_strategist_report_2026-06-30.md`
+
+### Campaign architecture
+
+1. High-Intent Motorcycle Repair.
+2. Pre-Purchase Motorcycle Inspection.
+3. Quick Service Search Test.
+4. Brand Defense if needed.
+
+### Strategy details
+
+- Start exact/phrase match only.
+- Use manual CPC or Maximize Clicks with CPC cap while data is low.
+- Move to Maximize Conversions only after meaningful qualified conversion volume.
+- Track SMS, call, form, directions, guide, text-builder, and offline booked-job conversions.
+
+Full report saved as: `dusty_research/ppc_campaign_strategist_report_2026-06-30.md`.

@@ -1629,3 +1629,30 @@ Do not scale paid media yet. Fix measurement, form endpoint, Google Business Pro
 3. Meta Retargeting — Guide Visitors / Used-Bike Buyers.
 
 Full Paid Media Auditor report: `dusty_research/paid_media_auditor_report_2026-06-30.md`.
+
+---
+
+### Section 37: PPC Campaign Architecture Pass (PPC Campaign Strategist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 37.1 PPC Strategy Decision
+
+Do not launch PPC until paid-media readiness blockers are fixed. Once ready, start with small, local, high-intent search campaigns and only scale after qualified lead cost and booked-job rate are known.
+
+#### 37.2 Changes Implemented
+
+- Added `paid_media_assets/dustys_ppc_campaign_strategy.md`.
+- Added `paid_media_assets/dustys_ppc_build_sheet.csv`.
+- Added `paid_media_assets/dustys_negative_keyword_list.txt`.
+- Added campaign structure, keyword/ad group plan, RSA copy bank, budget allocation, bidding phases, conversion hierarchy, Microsoft Ads plan, and optimization cadence.
+
+#### 37.3 Recommended First Campaigns
+
+1. High-Intent Motorcycle Repair.
+2. Pre-Purchase Motorcycle Inspection.
+3. Quick Service Search Test, only if capacity/pricing are confirmed.
+4. Brand Defense, only if needed.
+
+Full PPC Campaign Strategist report: `dusty_research/ppc_campaign_strategist_report_2026-06-30.md`.

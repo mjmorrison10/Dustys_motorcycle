@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, Sales Coach, Growth Hacker, and Paid Media Auditor passes complete. Next: Accessibility QA / service pages / form endpoint.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, Sales Coach, Growth Hacker, Paid Media Auditor, and PPC Campaign Strategist passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -145,6 +145,7 @@
 - ✅ Sales Coach pass completed: coaching playbook, call/text review scorecard, five behavior focus areas, weekly lead review cadence, role plays, pipeline coaching stages, coaching metrics
 - ✅ Growth Hacker pass completed: referral share page, growth experiment backlog, dashboard spec, North Star metric, referral events, discovery/action updates, service-worker cache v8
 - ✅ Paid Media Auditor pass completed: paid readiness audit, tracking requirements, Google/Meta launch checklists, keywords/negatives, campaign blueprint, UTM convention, kill criteria
+- ✅ PPC Campaign Strategist pass completed: PPC campaign architecture, build sheet CSV, negative keyword list, RSA copy bank, budget/bidding strategy, conversion hierarchy, Microsoft Ads plan
 
 ---
 
