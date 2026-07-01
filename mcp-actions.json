@@ -80,6 +80,13 @@
       "label": "Open motorcycle repair pricing guide",
       "url": "https://dustysmoto.com/guides/motorcycle-repair-pricing-orange-ca.html",
       "description": "Open the pricing transparency guide explaining what affects motorcycle repair cost and how Dusty estimates work."
+    },
+    {
+      "id": "open_referral_page",
+      "type": "navigate",
+      "label": "Open refer-a-rider page",
+      "url": "https://dustysmoto.com/guides/refer-a-rider.html",
+      "description": "Open a referral share page with copyable text to send Dusty\u2019s number to another rider."
     }
   ],
   "version": "1.0-draft",

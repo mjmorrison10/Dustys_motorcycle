@@ -49,6 +49,11 @@
       "id": "pricing_guide",
       "description": "Help a user understand what affects motorcycle repair pricing and how to request an estimate from Dusty.",
       "url": "https://dustysmoto.com/guides/motorcycle-repair-pricing-orange-ca.html"
+    },
+    {
+      "id": "referral_share",
+      "description": "Help a user share Dusty\u2019s contact info with another rider using the referral page.",
+      "url": "https://dustysmoto.com/guides/refer-a-rider.html"
     }
   ],
   "disallowed_tasks": [

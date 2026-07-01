@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, and Sales Coach passes complete. Next: Accessibility QA / service pages / form endpoint.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, Sales Coach, and Growth Hacker passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -143,6 +143,7 @@
 - ✅ Pricing Analyst pass completed: public pricing transparency guide, Markdown alternative, pricing strategy playbook, owner pricing worksheet, pricing FAQ schema, guide card, discovery/action updates
 - ✅ Sales Engineer pass completed: technical discovery playbook, triage questions, lead categories, text intake talk tracks, objection battlecards, quote process, sales metrics
 - ✅ Sales Coach pass completed: coaching playbook, call/text review scorecard, five behavior focus areas, weekly lead review cadence, role plays, pipeline coaching stages, coaching metrics
+- ✅ Growth Hacker pass completed: referral share page, growth experiment backlog, dashboard spec, North Star metric, referral events, discovery/action updates, service-worker cache v8
 
 ---
 

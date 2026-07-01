@@ -1565,3 +1565,39 @@ Dusty’s lead conversion should improve through coaching real inbound interacti
 Coach one behavior at a time. Review real interactions weekly, rewrite one better response, and follow up to see whether the behavior changed.
 
 Full Sales Coach report: `dusty_research/sales_coach_report_2026-06-30.md`.
+
+---
+
+### Section 35: Growth Experimentation Pass (Growth Hacker)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 35.1 Growth Decision
+
+Dusty’s growth should be driven by a local loop: useful content, trust, text-first leads, great service, reviews/referrals, and more local discovery. Paid ads should wait until measurement and organic conversion are working.
+
+#### 35.2 Changes Implemented
+
+- Added referral share page: `guides/refer-a-rider.html`.
+- Added Markdown alternative: `content/refer-a-rider.md`.
+- Added `growth_assets/dustys_growth_experiment_backlog.md`.
+- Added `growth_assets/dustys_growth_dashboard_spec.md`.
+- Added footer referral link.
+- Added referral analytics events.
+- Updated sitemap, llms, agent permissions, MCP actions, and service worker cache.
+
+#### 35.3 North Star Metric
+
+Qualified text/form leads per month that include year/make/model + issue + photo/video.
+
+#### 35.4 Top Growth Priorities
+
+1. GA4/GTM event tracking.
+2. Lead source capture.
+3. Weekly lead log.
+4. Referral share page test.
+5. GBP weekly posts.
+6. Review request workflow.
+
+Full Growth Hacker report: `dusty_research/growth_hacker_report_2026-06-30.md`.

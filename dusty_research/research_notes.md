@@ -1001,3 +1001,41 @@ For Dusty’s, sales coaching is not about pressure. It is about improving the f
 The call/text review scorecard helps review real inbound interactions and identify one behavior to improve next time.
 
 Full report saved as: `dusty_research/sales_coach_report_2026-06-30.md`.
+
+---
+
+## Growth Hacker Implementation Notes — 2026-06-30
+
+**Agency agent used:** Growth Hacker from the Agency Agents app corpus.
+
+### Growth strategy
+
+Dusty’s growth loop should be: useful content → trust → text-first lead → good service → review/referral → more local discovery. The North Star metric is qualified text/form leads per month that include year/make/model + issue + photo/video.
+
+### Files added
+
+- `guides/refer-a-rider.html`
+- `content/refer-a-rider.md`
+- `growth_assets/dustys_growth_experiment_backlog.md`
+- `growth_assets/dustys_growth_dashboard_spec.md`
+- `dusty_research/growth_hacker_report_2026-06-30.md`
+
+### Site changes
+
+- Added referral share page with copyable/shareable referral text.
+- Added footer link to “Refer a Rider.”
+- Added events:
+  - `referral_sms_share_click`
+  - `referral_copy_click`
+  - `referral_copy_success`
+  - `footer_referral_click`
+- Updated sitemap, llms files, agent permissions, MCP actions, and service worker cache.
+- Bumped service worker cache to `dustys-moto-v8`.
+
+### Growth assets
+
+- ICE-scored experiment backlog.
+- North Star metric and growth dashboard spec.
+- 4-week recommended growth sprint.
+
+Full report saved as: `dusty_research/growth_hacker_report_2026-06-30.md`.
