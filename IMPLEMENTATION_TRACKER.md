@@ -32,9 +32,9 @@
 | 5 | Add sticky mobile CTA bar | ✅ Done | Bottom-fixed "Text Dusty — Get a Quote" bar | Dossier Section 8 |
 | 6 | Update title/meta/OG tags for local SEO | ✅ Done | "Orange Traffic Circle" now in title, description, keywords | SEO, Dossier |
 | 7 | Update schema hours to Mon–Sun 9am–7pm | ✅ Done | LocalBusiness JSON-LD updated | Dossier |
-| 8 | Replace `YOUR_FORM_ID` with real form endpoint | ⏸ Blocked | Need Dusty to choose Formspree / Netlify / CRM | Offer & Lead Gen |
+| 8 | Replace `YOUR_FORM_ID` with real form endpoint | ⏸ Blocked | Inline success/error states implemented; still need Dusty to choose Formspree / Netlify / CRM endpoint | Offer & Lead Gen |
 | 9 | Add actual PDF lead magnet files | 🔄 In progress | Draft printable HTML guide assets created; PDF design/export still optional after Dusty approval | Offer & Lead Gen, Content Creator |
-| 10 | Set up conversion tracking (Google Analytics, event tags) | 🔄 In progress | CTA/dataLayer hooks added; needs GA4/GTM measurement ID | Analytics, SEO |
+| 10 | Set up conversion tracking (Google Analytics, event tags) | 🔄 In progress | CTA/dataLayer hooks and safe GA4/GTM loader added; needs real measurement/container ID | Analytics, SEO |
 | 11 | Run technical SEO audit (speed, mobile, accessibility) | ✅ Done | SEO Specialist pass completed; JSON-LD validated; WebP assets added; full Lighthouse still recommended post-deploy | SEO, QA |
 | 12 | Implement AEO/llms.txt for AI search visibility | ✅ Done | Added AI-aware robots, `llms.txt`, `llms-full.txt`, Markdown alternatives, agent permissions, action declarations | AEO Foundations |
 
@@ -42,7 +42,7 @@
 
 | # | Task | Status | Notes | Agent Source |
 |---|------|--------|-------|--------------|
-| 1 | Create service-specific landing pages | ☐ Not started | `/vintage-motorcycle-repair/`, `/pre-purchase-inspection/`, etc. | SEO Specialist |
+| 1 | Create service-specific landing pages | 🔄 In progress | Pre-purchase inspection service page created; other service pages still pending | SEO Specialist, Product Manager |
 | 2 | Build blog content for local SEO keywords | ☐ Not started | Target "motorcycle repair Orange CA", "Santiago Canyon mechanic" | SEO Specialist, Content Creator |
 | 3 | Add review widgets or embed live Google/Yelp reviews | ☐ Not started | Reduces reliance on static testimonials | UX, CRO |
 | 4 | Add before/after photo gallery | ☐ Not started | Use Dusty's Instagram footage | Visual Storyteller |
@@ -166,6 +166,7 @@
 - ✅ Workflow Optimizer pass completed: workflow optimization report, 5 SOPs, daily/twice-weekly/weekly/monthly operating cadence, automation opportunities, execution roadmap
 - ✅ Senior Project Manager pass completed: launch execution plan, RACI, 30-day launch sprint, P0 task owners/dependencies/acceptance criteria, scope boundaries
 - ✅ Code Reviewer pass completed: duplicate copy-event fixed, copy success event added, text-builder analytics debounced, service-worker cache v9, source validation rerun
+- ✅ Website change implementation completed: form status states, GA4/GTM scaffold, pre-purchase service page, QA scripts, sitemap/llms/MCP/event updates
 
 ---
 

@@ -18,3 +18,8 @@ referral_copy_success,referral,primary,Referral text copied successfully,yes,"pa
 footer_referral_click,referral,secondary,Footer referral page click,no,"link_url,page_path",Web,implemented_dataLayer
 guide_sms_click,lead_intent,primary,Guide page SMS click,yes,"link_url,page_path",Web,implemented_on_guides
 copy_text_template_success,micro_conversion,secondary,User successfully copied first text template,no,"page_path",Web,implemented_dataLayer
+form_submit_success,lead,primary,Service inquiry form successfully sent,yes,"form_id,page_path,source",Web,implemented_pending_endpoint
+form_submit_error,lead_error,secondary,Service inquiry form failed to send,no,"form_id,message,page_path",Web,implemented_pending_endpoint
+form_submit_blocked,lead_error,secondary,Service inquiry blocked because endpoint is missing,no,"form_id,reason,page_path",Web,implemented_until_endpoint_connected
+service_pre_purchase_page_click,content_intent,secondary,Pre-purchase service page click,no,"link_url,page_path",Web,implemented_dataLayer
+service_pre_purchase_sms_click,lead_intent,primary,Pre-purchase service page SMS click,yes,"link_url,page_path",Web,implemented_on_service_page

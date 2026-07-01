@@ -2129,3 +2129,28 @@ The static site architecture is appropriate and source validation passes, but an
 Form endpoint, GA4/GTM, browser screenshots, and manual assistive-technology QA remain unresolved.
 
 Full Code Reviewer report: `dusty_research/code_reviewer_report_2026-06-30.md`.
+
+---
+
+### Section 58: Website Change Implementation Pass
+
+**Date:** 2026-07-01  
+**Status:** Applied directly to the repository.
+
+#### 58.1 Changes Implemented
+
+- Added inline form success/error states and accessible form status live region.
+- Added progressive form submission logic for future real endpoint.
+- Added GA4/GTM analytics scaffold using `window.DUSTYS_ANALYTICS` with empty IDs until real IDs are available.
+- Added dedicated pre-purchase inspection service page and Markdown alternative.
+- Updated homepage links, sitemap, llms files, agent permissions, MCP actions, service worker cache, and analytics taxonomy.
+- Added static QA and optional Playwright screenshot capture scripts.
+
+#### 58.2 Validation
+
+- Static validation passes.
+- JSON-LD, sitemap XML, JSON manifests, and event taxonomy parse.
+- Homepage and new service page JS pass syntax checks.
+- Local server returns 200 for homepage, new service page, Markdown alternative, and QA README.
+
+Full report: `dusty_research/website_change_implementation_report_2026-07-01.md`.

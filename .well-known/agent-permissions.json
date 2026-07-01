@@ -54,6 +54,11 @@
       "id": "referral_share",
       "description": "Help a user share Dusty\u2019s contact info with another rider using the referral page.",
       "url": "https://dustysmoto.com/guides/refer-a-rider.html"
+    },
+    {
+      "id": "pre_purchase_service_page",
+      "description": "Help a user learn about Dusty\u2019s pre-purchase motorcycle inspection service in Orange, CA.",
+      "url": "https://dustysmoto.com/services/pre-purchase-motorcycle-inspection-orange-ca.html"
     }
   ],
   "disallowed_tasks": [

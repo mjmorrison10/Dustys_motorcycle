@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dustys-moto-v9';
+const CACHE_NAME = 'dustys-moto-v10';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -24,7 +24,9 @@ const STATIC_ASSETS = [
   '/guides/motorcycle-repair-pricing-orange-ca.html',
   '/content/motorcycle-repair-pricing-orange-ca.md',
   '/guides/refer-a-rider.html',
-  '/content/refer-a-rider.md'
+  '/content/refer-a-rider.md',
+  '/services/pre-purchase-motorcycle-inspection-orange-ca.html',
+  '/content/pre-purchase-motorcycle-inspection-orange-ca.md'
 ];
 
 self.addEventListener('install', (event) => {

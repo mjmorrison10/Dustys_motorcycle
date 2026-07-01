@@ -26,6 +26,14 @@
   <link rel="prefetch" href="guides/how-to-choose-motorcycle-mechanic-orange-ca.html">
   <link rel="prefetch" href="guides/motorcycle-repair-pricing-orange-ca.html">
   <link rel="prefetch" href="guides/refer-a-rider.html">
+  <link rel="prefetch" href="services/pre-purchase-motorcycle-inspection-orange-ca.html">
+  <script>
+    // Set these after GA4/GTM accounts are created. Empty values safely disable loading.
+    window.DUSTYS_ANALYTICS = {
+      ga4Id: '',
+      gtmId: ''
+    };
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -768,6 +776,20 @@
     .form-group textarea { min-height: 120px; resize: vertical; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
     .form-note { font-size: 0.8rem; color: var(--gray); margin-top: 14px; }
+    .form-status {
+      display: none;
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+      color: var(--light-gray);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .form-status.active { display: block; }
+    .form-status.success { border-color: rgba(34,197,94,0.45); background: rgba(34,197,94,0.1); }
+    .form-status.error { border-color: rgba(196,30,58,0.55); background: rgba(196,30,58,0.12); }
 
     /* Map */
     .map-section { padding: 0; }
@@ -1120,7 +1142,7 @@
           <div class="service-body">
             <h3>Pre-Purchase Inspections</h3>
             <p>Buying used? Don't get stuck with someone else's problem. We inspect the bike before you hand over cash.</p>
-            <a href="#contact">Book Inspection →</a>
+            <a href="services/pre-purchase-motorcycle-inspection-orange-ca.html" data-event="service_pre_purchase_page_click">Learn About Inspections →</a>
           </div>
         </div>
       </div>
@@ -1482,6 +1504,7 @@
               <textarea id="message" name="message" placeholder="Tell us about the issue, symptoms, or project..." data-mcp-param="message" data-mcp-description="Description of the issue, symptoms, project, or question."></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%" data-mcp-submit="true" data-mcp-description="Submit the service inquiry form. This does not authorize repair work.">SEND DUSTY A MESSAGE</button>
+            <div class="form-status" id="serviceFormStatus" role="status" aria-live="polite"></div>
             <p class="form-note" id="serviceFormHelp"><strong>No work starts from this form.</strong> You’ll get a reply first, then a clear estimate before any wrenching begins.</p>
             <p class="form-note">We usually reply within 30 minutes during shop hours. For urgent needs, call or text (714) 787-9453.</p>
           </form>
@@ -1515,7 +1538,7 @@
             <li><a href="#services">Repair & Diagnostics</a></li>
             <li><a href="#services">Full Rebuilds</a></li>
             <li><a href="#services">Performance Tuning</a></li>
-            <li><a href="#services">Pre-Purchase Inspections</a></li>
+            <li><a href="services/pre-purchase-motorcycle-inspection-orange-ca.html">Pre-Purchase Inspections</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -1781,6 +1804,30 @@
           window.gtag('event', event, payload);
         }
       };
+      const loadAnalytics = () => {
+        const config = window.DUSTYS_ANALYTICS || {};
+        if (config.gtmId && !document.querySelector('[data-dusty-gtm]')) {
+          const gtm = document.createElement('script');
+          gtm.async = true;
+          gtm.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(config.gtmId)}`;
+          gtm.dataset.dustyGtm = 'true';
+          document.head.appendChild(gtm);
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+        }
+        if (config.ga4Id && !document.querySelector('[data-dusty-ga4]')) {
+          const ga4 = document.createElement('script');
+          ga4.async = true;
+          ga4.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(config.ga4Id)}`;
+          ga4.dataset.dustyGa4 = 'true';
+          document.head.appendChild(ga4);
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+          window.gtag('js', new Date());
+          window.gtag('config', config.ga4Id);
+        }
+      };
+      loadAnalytics();
 
       const menuBtn = $('#menuBtn');
       const mobileNav = $('#mobileNav');
@@ -1849,12 +1896,39 @@
       if (year) year.textContent = new Date().getFullYear();
 
       const form = $('#serviceForm');
+      const formStatus = $('#serviceFormStatus');
+      const setFormStatus = (message, type = 'info') => {
+        if (!formStatus) return;
+        formStatus.textContent = message;
+        formStatus.className = `form-status active ${type}`;
+      };
       if (form) {
-        form.addEventListener('submit', (event) => {
+        form.addEventListener('submit', async (event) => {
+          event.preventDefault();
           pushEvent('form_submit', { form_id: 'serviceForm' });
           if (form.action.includes('YOUR_FORM_ID')) {
-            event.preventDefault();
-            alert('Thanks for your request! This is a demo form — please connect it to Formspree, Netlify, or your CRM before launch.');
+            setFormStatus('The online form is not connected yet. Please text Dusty at (714) 787-9453 with your bike year/make/model, issue, and a photo or short video.', 'error');
+            pushEvent('form_submit_blocked', { form_id: 'serviceForm', reason: 'missing_endpoint' });
+            return;
+          }
+          const submitButton = form.querySelector('[type="submit"]');
+          if (submitButton) submitButton.disabled = true;
+          setFormStatus('Sending your message…', 'info');
+          try {
+            const response = await fetch(form.action, {
+              method: form.method || 'POST',
+              body: new FormData(form),
+              headers: { Accept: 'application/json' }
+            });
+            if (!response.ok) throw new Error(`Form endpoint returned ${response.status}`);
+            form.reset();
+            setFormStatus('Thanks — your message was sent. Dusty will reply during shop hours. If it is urgent or safety-related, text or call (714) 787-9453.', 'success');
+            pushEvent('form_submit_success', { form_id: 'serviceForm' });
+          } catch (err) {
+            setFormStatus('Something went wrong sending the form. Please text or call Dusty at (714) 787-9453 so the lead does not get missed.', 'error');
+            pushEvent('form_submit_error', { form_id: 'serviceForm', message: err.message });
+          } finally {
+            if (submitButton) submitButton.disabled = false;
           }
         });
       }

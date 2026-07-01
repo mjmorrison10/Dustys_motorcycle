@@ -1728,3 +1728,23 @@ The static site codebase is generally sound, but two analytics-quality issues we
 Form endpoint, GA4/GTM, browser screenshots, and manual assistive-technology QA remain unresolved.
 
 Full report saved as: `dusty_research/code_reviewer_report_2026-06-30.md`.
+
+---
+
+## Website Change Implementation Notes — 2026-07-01
+
+Implemented requested website changes after the recommendations review:
+
+- Added inline contact form success/error/status messaging.
+- Added progressive form submission logic for when a real endpoint is connected.
+- Added `form_submit_success`, `form_submit_error`, and `form_submit_blocked` events.
+- Added safe GA4/GTM config scaffold without inserting fake IDs.
+- Added dedicated pre-purchase inspection service page and Markdown alternative.
+- Updated homepage links, footer link, sitemap, llms files, agent permissions, MCP actions, service worker cache, and analytics taxonomy.
+- Added QA scripts:
+  - `qa/static_validate.py`
+  - `qa/playwright_capture.mjs`
+  - `qa/README.md`
+- Ran static validation successfully.
+
+Report saved as: `dusty_research/website_change_implementation_report_2026-07-01.md`.

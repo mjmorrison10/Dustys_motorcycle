@@ -87,6 +87,13 @@
       "label": "Open refer-a-rider page",
       "url": "https://dustysmoto.com/guides/refer-a-rider.html",
       "description": "Open a referral share page with copyable text to send Dusty\u2019s number to another rider."
+    },
+    {
+      "id": "open_pre_purchase_service_page",
+      "type": "navigate",
+      "label": "Open pre-purchase motorcycle inspection service page",
+      "url": "https://dustysmoto.com/services/pre-purchase-motorcycle-inspection-orange-ca.html",
+      "description": "Open the dedicated service page for pre-purchase motorcycle inspections in Orange, CA."
     }
   ],
   "version": "1.0-draft",
