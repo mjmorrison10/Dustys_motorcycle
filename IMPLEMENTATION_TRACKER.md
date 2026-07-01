@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: QA status remains NEEDS WORK, but workflow operating system is documented. Next gates: form endpoint, GA4/GTM, owner approvals, browser screenshots, Lighthouse/Core Web Vitals, manual AT validation, and weekly operating cadence adoption.
+**Current phase**: QA status remains NEEDS WORK; 30-day launch readiness sprint is now defined. Next gates: form endpoint, GA4/GTM, owner approvals, listings, SMS auto-reply, browser QA, Lighthouse/Core Web Vitals, manual AT validation.
 
 ---
 
@@ -164,6 +164,7 @@
 - ✅ Evidence Collector pass completed: static evidence scan, local server smoke checks, evidence matrix, QA status NEEDS WORK due missing screenshots/AT/deployed evidence
 - ✅ Performance Benchmarker pass completed: static performance baseline, file-size measurements CSV, performance budget, local smoke timings, Core Web Vitals validation gap documented
 - ✅ Workflow Optimizer pass completed: workflow optimization report, 5 SOPs, daily/twice-weekly/weekly/monthly operating cadence, automation opportunities, execution roadmap
+- ✅ Senior Project Manager pass completed: launch execution plan, RACI, 30-day launch sprint, P0 task owners/dependencies/acceptance criteria, scope boundaries
 
 ---
 
