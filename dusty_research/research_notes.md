@@ -1200,3 +1200,34 @@ Dusty’s video should show the problem immediately, explain what it means, and 
 - Five ready-to-shoot scripts.
 
 Full report saved as: `dusty_research/video_optimization_specialist_report_2026-06-30.md`.
+
+---
+
+## Short-Video Editing Coach Implementation Notes — 2026-06-30
+
+**Agency agent used:** Short-Video Editing Coach from the Agency Agents app corpus.
+
+### Editing strategy
+
+Dusty’s short videos should be fast, readable, and useful. Every frame should show the problem, explain the risk, prove the work, or drive the next step.
+
+### Files added
+
+- `video_assets/dustys_short_video_editing_workflow.md`
+- `video_assets/dustys_capcut_template_spec.md`
+- `dusty_research/short_video_editing_coach_report_2026-06-30.md`
+
+### Editing assets created
+
+- 15-second edit template.
+- 30-second edit template.
+- CapCut editing workflow.
+- Subtitle style rules.
+- Audio mix rules.
+- Color grade direction.
+- B-roll shot priorities.
+- Export settings.
+- Quality-control checklist.
+- CapCut template spec with track layout, text styles, presets, and variants.
+
+Full report saved as: `dusty_research/short_video_editing_coach_report_2026-06-30.md`.

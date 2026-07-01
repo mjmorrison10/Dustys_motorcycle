@@ -1740,3 +1740,24 @@ Dusty’s video content should prioritize retention and usefulness: show the iss
 - Added five ready-to-shoot short-form scripts.
 
 Full Video Optimization Specialist report: `dusty_research/video_optimization_specialist_report_2026-06-30.md`.
+
+---
+
+### Section 41: Short-Video Editing Workflow Pass (Short-Video Editing Coach)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 41.1 Editing Decision
+
+Dusty’s videos should be edited for clarity, retention, and authenticity. No logo intro, no dead air, no over-editing. The first frame should show a real problem or useful visual.
+
+#### 41.2 Changes Implemented
+
+- Added `video_assets/dustys_short_video_editing_workflow.md`.
+- Added `video_assets/dustys_capcut_template_spec.md`.
+- Added 15-second and 30-second edit structures.
+- Added CapCut workflow, subtitle style, audio, color, B-roll, export, and QC guidance.
+- Added CapCut template spec with track layout and reusable variants.
+
+Full Short-Video Editing Coach report: `dusty_research/short_video_editing_coach_report_2026-06-30.md`.
