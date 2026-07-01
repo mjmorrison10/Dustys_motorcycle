@@ -1,0 +1,11 @@
+priority,initiative,problem,owner,status,success_metric,dependency
+P0,Connect form endpoint,Form submissions blocked by YOUR_FORM_ID,Web/dev + Dusty,blocked,3 successful test submissions,Dusty chooses tool
+P0,Install GA4/GTM,Conversions not measurable,Web/dev,not_started,Primary events visible in DebugView,Measurement ID
+P0,GBP/NAP cleanup,Local listings inconsistent,Dusty/admin,not_started,Priority listings match canonical NAP,Owner access
+P0,SMS auto-reply,Missed leads while wrenching,Dusty,not_started,Auto-reply active during shop hours,Phone provider
+P0,Weekly lead log,No source/quality feedback loop,Dusty/admin,not_started,80% leads source-tagged,Operational habit
+P1,Pre-purchase service page,Inspection intent needs dedicated landing page,Web/dev,next,2-5 inspection leads/month,Scope/pricing approval
+P1,Review workflow,Reviews not systematically requested,Dusty/admin,next,8-15 reviews/month,GBP link
+P1,Guide PDFs,HTML guides not designed PDFs,Content/design,next,Approved downloadable PDFs,Dusty approval
+P2,Paid search test,High-intent demand not tested,Ads manager,later,Qualified CPL known,Tracking and response readiness
+P2,Online booking,Non-urgent scheduling friction,Dusty/web,later,Booked appointments without extra admin,Tool decision
