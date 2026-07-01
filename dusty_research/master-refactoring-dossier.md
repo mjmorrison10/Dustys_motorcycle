@@ -1761,3 +1761,23 @@ Dusty’s videos should be edited for clarity, retention, and authenticity. No l
 - Added CapCut template spec with track layout and reusable variants.
 
 Full Short-Video Editing Coach report: `dusty_research/short_video_editing_coach_report_2026-06-30.md`.
+
+---
+
+### Section 42: X/Twitter Engagement Strategy Pass (Twitter Engager)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 42.1 X/Twitter Strategy Decision
+
+X/Twitter should be used for real-time rider education and local conversation. Dusty should be helpful first and promotional only when directly relevant.
+
+#### 42.2 Changes Implemented
+
+- Added `social_assets/dustys_twitter_engagement_playbook.md`.
+- Added `social_assets/dustys_twitter_thread_bank.md`.
+- Added profile setup, tweet mix, daily engagement routine, monitoring queries, reply templates, crisis protocol, and weekly metrics.
+- Added four reusable educational threads.
+
+Full Twitter Engager report: `dusty_research/twitter_engager_report_2026-06-30.md`.

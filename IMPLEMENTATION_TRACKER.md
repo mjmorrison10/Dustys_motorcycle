@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, Sales Coach, Growth Hacker, Paid Media Auditor, PPC Campaign Strategist, Paid Social Strategist, Ad Creative Strategist, Video Optimization Specialist, and Short-Video Editing Coach passes complete. Next: Accessibility QA / service pages / form endpoint.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, Sales Coach, Growth Hacker, Paid Media Auditor, PPC Campaign Strategist, Paid Social Strategist, Ad Creative Strategist, Video Optimization Specialist, Short-Video Editing Coach, and Twitter Engager passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -150,6 +150,7 @@
 - ✅ Ad Creative Strategist pass completed: RSA headline/description banks, Meta ad copy, sitelinks/callouts/snippets, ad copy matrix CSV, testing hypotheses, creative QA checklist
 - ✅ Video Optimization Specialist pass completed: video optimization playbook, script bank, retention rules, repeatable series, Shorts/Reels metadata, YouTube chapters, thumbnail concepts
 - ✅ Short-Video Editing Coach pass completed: editing workflow, CapCut template spec, 15/30-sec structures, subtitle/audio/color/export standards, B-roll priorities, QC checklist
+- ✅ Twitter Engager pass completed: X/Twitter engagement playbook, profile setup, monitoring queries, reply templates, crisis protocol, weekly metrics, educational thread bank
 
 ---
 

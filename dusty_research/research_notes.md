@@ -1231,3 +1231,38 @@ Dusty’s short videos should be fast, readable, and useful. Every frame should 
 - CapCut template spec with track layout, text styles, presets, and variants.
 
 Full report saved as: `dusty_research/short_video_editing_coach_report_2026-06-30.md`.
+
+---
+
+## Twitter Engager Implementation Notes — 2026-06-30
+
+**Agency agent used:** Twitter Engager from the Agency Agents app corpus.
+
+### X/Twitter strategy
+
+Dusty’s X/Twitter presence should focus on real-time motorcycle education, local conversation, and helpful replies — not broadcast marketing. The recurring idea is: useful context beats perfect mechanic language; text a photo and get a straight answer.
+
+### Files added
+
+- `social_assets/dustys_twitter_engagement_playbook.md`
+- `social_assets/dustys_twitter_thread_bank.md`
+- `dusty_research/twitter_engager_report_2026-06-30.md`
+
+### Playbook contents
+
+- X/Twitter role.
+- Voice rules.
+- Profile setup.
+- Tweet mix.
+- Daily engagement routine.
+- Monitoring searches.
+- Reply templates.
+- Thread ideas.
+- Crisis/negative comment protocol.
+- Weekly metrics.
+
+### Thread bank contents
+
+Threads for “What to Text a Mechanic,” “Used Bike Red Flags,” “Before Santiago Canyon,” and “Quote Before We Wrench.”
+
+Full report saved as: `dusty_research/twitter_engager_report_2026-06-30.md`.
