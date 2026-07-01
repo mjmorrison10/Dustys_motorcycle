@@ -1442,3 +1442,35 @@ Dusty’s customer service should be fast, human, and safety-conscious. Every ri
 - Escalation log CSV.
 
 Full report saved as: `dusty_research/customer_service_report_2026-06-30.md`.
+
+---
+
+## Support Responder Implementation Notes — 2026-06-30
+
+**Agency agent used:** Support Responder from the Agency Agents app corpus.
+
+### Support strategy
+
+Customer Service established tone and general rules. Support Responder operationalizes day-to-day replies across text, phone, form, DM, and public comments. The goal is to resolve or route every inquiry with a safe, clear next step on first contact whenever possible.
+
+### Files added
+
+- `support_assets/dustys_support_responder_playbook.md`
+- `support_assets/dustys_support_macro_bank.md`
+- `support_assets/dustys_support_interaction_report_template.md`
+- `dusty_research/support_responder_report_2026-06-30.md`
+
+### Support assets created
+
+- Support priorities.
+- Response SLA targets.
+- Universal intake macro.
+- Channel-specific macros.
+- Support triage tags.
+- Escalation matrix.
+- First-contact resolution checklist.
+- Follow-up rules.
+- Knowledge base improvement loop.
+- Support interaction report template.
+
+Full report saved as: `dusty_research/support_responder_report_2026-06-30.md`.
