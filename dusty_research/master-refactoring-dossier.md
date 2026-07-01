@@ -1950,3 +1950,29 @@ The repository now needs to be understandable as a static website plus operating
 - Added owner approval rules for sensitive business claims and assets.
 
 Full Technical Writer report: `dusty_research/technical_writer_report_2026-06-30.md`.
+
+---
+
+### Section 51: Accessibility Audit Pass (Accessibility Auditor)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 51.1 Accessibility Decision
+
+The site has a strong accessibility foundation, but source-level fixes and a formal manual audit checklist were needed before final browser/assistive-technology QA.
+
+#### 51.2 Changes Implemented
+
+- Added `accessibility_assets/dustys_accessibility_audit_checklist.md`.
+- Added `dusty_research/accessibility_auditor_report_2026-06-30.md`.
+- Improved contrast in orange trust bar.
+- Added iframe title to Google Maps embed.
+- Added `rel="noopener noreferrer"` to external social links.
+- Added form-level `aria-describedby` for the “No work starts from this form” reassurance.
+
+#### 51.3 Remaining Accessibility Work
+
+Run real keyboard, VoiceOver, NVDA/JAWS, zoom, high contrast, and form success/error testing after deployment and form endpoint integration.
+
+Full Accessibility Auditor report: `dusty_research/accessibility_auditor_report_2026-06-30.md`.

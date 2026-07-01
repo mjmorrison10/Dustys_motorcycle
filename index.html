@@ -549,13 +549,13 @@
     }
     .trust-bar-item h4 {
       font-size: 2rem;
-      color: var(--white);
+      color: var(--black);
       margin-bottom: 4px;
     }
     .trust-bar-item p {
       font-size: 0.85rem;
-      color: rgba(255,255,255,0.9);
-      font-weight: 500;
+      color: var(--near-black);
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -1424,7 +1424,7 @@
           </div>
         </div>
         <div class="contact-form fade-up">
-          <form id="serviceForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+          <form id="serviceForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-describedby="serviceFormHelp"
             data-mcp-action="submit-service-inquiry"
             data-mcp-description="Submit a motorcycle service inquiry to Dusty. Provide name, phone, reply preference, timing, service needed, bike year/make/model, and issue description. No work is authorized by submitting this form."
             data-mcp-params='{"required":["name","phone","timeline","service"],"optional":["email","bike","reply_preference","message"],"notes":"Form endpoint is pending until YOUR_FORM_ID is replaced; agents should prefer user-initiated SMS until the endpoint is live."}'>
@@ -1482,7 +1482,7 @@
               <textarea id="message" name="message" placeholder="Tell us about the issue, symptoms, or project..." data-mcp-param="message" data-mcp-description="Description of the issue, symptoms, project, or question."></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%" data-mcp-submit="true" data-mcp-description="Submit the service inquiry form. This does not authorize repair work.">SEND DUSTY A MESSAGE</button>
-            <p class="form-note"><strong>No work starts from this form.</strong> You’ll get a reply first, then a clear estimate before any wrenching begins.</p>
+            <p class="form-note" id="serviceFormHelp"><strong>No work starts from this form.</strong> You’ll get a reply first, then a clear estimate before any wrenching begins.</p>
             <p class="form-note">We usually reply within 30 minutes during shop hours. For urgent needs, call or text (714) 787-9453.</p>
           </form>
         </div>
@@ -1491,7 +1491,7 @@
   </section>
 
   <section class="map-section">
-    <iframe class="map-frame" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.1234567890123!2d-117.8554666!3d33.7872324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd77100a9f45f%3A0x7eb52d94336c580c!2sDUSTY'S%20motorcycle%20service%20and%20repair!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"></iframe>
+    <iframe class="map-frame" title="Map to Dusty's Motorcycle Service and Repair in Orange, California" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.1234567890123!2d-117.8554666!3d33.7872324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd77100a9f45f%3A0x7eb52d94336c580c!2sDUSTY'S%20motorcycle%20service%20and%20repair!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"></iframe>
   </section>
 
   </main>
@@ -1503,9 +1503,9 @@
           <img src="images/yelp_2.webp" alt="Dusty's Motorcycle Service & Repair Logo" width="160" height="160" decoding="async">
           <p>Veteran-owned motorcycle repair in Orange, CA. Honest work, fair pricing, and all makes & models. Ride in, ride out.</p>
           <div class="socials">
-            <a href="https://www.instagram.com/dustysmotorcycleservice/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-            <a href="https://www.facebook.com/orangemotorcyclerepair/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-            <a href="https://www.yelp.com/biz/dustys-motorcycle-service-and-repair-orange" target="_blank" aria-label="Yelp"><svg viewBox="0 0 24 24"><path d="M15.89 13.5l4.95 1.68c.6.2.93.83.73 1.43l-.54 1.59c-.2.6-.83.93-1.43.73l-4.95-1.68c-.6-.2-.93-.83-.73-1.43l.54-1.59c.2-.6.83-.93 1.43-.73zm-4.9 2.5l-1.68 4.95c-.2.6-.83.93-1.43.73l-1.59-.54c-.6-.2-.93-.83-.73-1.43l1.68-4.95c.2-.6.83-.93 1.43-.73l1.59.54c.6.2.93.83.73 1.43zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 6.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5zm0 4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5z"/></svg></a>
+            <a href="https://www.instagram.com/dustysmotorcycleservice/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://www.facebook.com/orangemotorcyclerepair/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.yelp.com/biz/dustys-motorcycle-service-and-repair-orange" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><svg viewBox="0 0 24 24"><path d="M15.89 13.5l4.95 1.68c.6.2.93.83.73 1.43l-.54 1.59c-.2.6-.83.93-1.43.73l-4.95-1.68c-.6-.2-.93-.83-.73-1.43l.54-1.59c.2-.6.83-.93 1.43-.73zm-4.9 2.5l-1.68 4.95c-.2.6-.83.93-1.43.73l-1.59-.54c-.6-.2-.93-.83-.73-1.43l1.68-4.95c.2-.6.83-.93 1.43-.73l1.59.54c.6.2.93.83.73 1.43zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 6.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5zm0 4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5z"/></svg></a>
           </div>
         </div>
         <div class="footer-col">

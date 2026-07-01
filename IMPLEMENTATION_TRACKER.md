@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: 33 specialist passes, Executive Summary, Product Manager roadmap, Customer Success, Customer Service, Support Responder, and Technical Writer documentation complete. Next: Accessibility QA / form endpoint / tracking / owner operational approvals.
+**Current phase**: 33 specialist passes, Executive Summary, Product Manager roadmap, Customer Success, Customer Service, Support Responder, Technical Writer, and Accessibility Auditor passes complete. Next: form endpoint / tracking / owner operational approvals / manual AT validation.
 
 ---
 
@@ -159,6 +159,7 @@
 - ✅ Customer Service pass completed: frontline service playbook, FAQ response bank, safety/pricing scripts, complaint handling, public response templates, escalation log CSV
 - ✅ Support Responder pass completed: multi-channel support playbook, macro bank, triage tags, escalation matrix, first-contact checklist, support interaction report template
 - ✅ Technical Writer pass completed: README refresh, developer handoff, maintenance guide, asset inventory, validation commands, owner approval/documentation workflows
+- ✅ Accessibility Auditor pass completed: contrast fix, map iframe title, external link rel attributes, form aria-describedby, accessibility audit checklist, manual AT test plan
 
 ---
 

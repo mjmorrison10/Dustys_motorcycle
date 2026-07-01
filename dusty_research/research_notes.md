@@ -1505,3 +1505,32 @@ The repo had grown from a single landing page into a static website plus a large
 - Owner approval rules for pricing, warranty, hours, discounts, and identifiable customer media.
 
 Full report saved as: `dusty_research/technical_writer_report_2026-06-30.md`.
+
+---
+
+## Accessibility Auditor Implementation Notes — 2026-06-30
+
+**Agency agent used:** Accessibility Auditor from the Agency Agents app corpus.
+
+### Accessibility finding
+
+The site already had strong accessibility foundations from prior UX work, including skip link, landmarks, focus styles, reduced-motion support, form labels, FAQ state management, mobile menu state management, and live-region copy feedback. This pass fixed additional source-level barriers and created a manual audit checklist.
+
+### Files added/updated
+
+- Added `accessibility_assets/dustys_accessibility_audit_checklist.md`.
+- Added `dusty_research/accessibility_auditor_report_2026-06-30.md`.
+- Updated `index.html`.
+
+### Fixes applied
+
+- Improved orange trust-bar text contrast by changing small white text to black/near-black.
+- Added descriptive title to the Google Maps iframe.
+- Added `rel="noopener noreferrer"` to external social links.
+- Associated the contact form with its “No work starts from this form” note using `aria-describedby="serviceFormHelp"`.
+
+### Remaining manual tests
+
+Final accessibility sign-off requires real browser + assistive technology testing with keyboard-only navigation, VoiceOver/NVDA/JAWS, zoom, high contrast/forced colors, and form success/error states after the endpoint is connected.
+
+Full report saved as: `dusty_research/accessibility_auditor_report_2026-06-30.md`.
