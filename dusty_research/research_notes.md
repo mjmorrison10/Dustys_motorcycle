@@ -1534,3 +1534,42 @@ The site already had strong accessibility foundations from prior UX work, includ
 Final accessibility sign-off requires real browser + assistive technology testing with keyboard-only navigation, VoiceOver/NVDA/JAWS, zoom, high contrast/forced colors, and form success/error states after the endpoint is connected.
 
 Full report saved as: `dusty_research/accessibility_auditor_report_2026-06-30.md`.
+
+---
+
+## Reality Checker Implementation Notes — 2026-06-30
+
+**Agency agent used:** Reality Checker from the Agency Agents app corpus.
+
+### Reality verdict
+
+Status is **NEEDS WORK**, not production-ready. Static implementation is coherent and internally validated, but operational blockers remain: form endpoint, GA4/GTM, manual assistive-technology QA, GBP/NAP cleanup, SMS auto-reply, and owner approvals.
+
+### Files added
+
+- `qa_assets/dustys_reality_check_readiness_matrix.md`
+- `dusty_research/reality_checker_report_2026-06-30.md`
+
+### Evidence collected
+
+- Static HTML/guide files exist.
+- JSON-LD parses.
+- Sitemap XML parses.
+- Manifest/agent/MCP JSON parses.
+- No missing local asset references found in static scan.
+- Homepage has one H1.
+- No iframes missing title.
+- No `target="_blank"` links without `rel`.
+- No checked image tags missing `alt`.
+- Main inline JavaScript passes `node --check`.
+- Local server returned 200 for homepage and tested guide pages.
+
+### Blocking gaps
+
+- No real browser screenshot evidence due missing Playwright/Chromium.
+- No real screen reader testing.
+- Form endpoint still placeholder.
+- GA4/GTM not installed.
+- External listings require owner/admin validation.
+
+Full report saved as: `dusty_research/reality_checker_report_2026-06-30.md`.
