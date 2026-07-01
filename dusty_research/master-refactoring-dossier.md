@@ -1452,3 +1452,35 @@ LinkedIn should be owner-led thought leadership for Dusty as a veteran-owned loc
 > I run a veteran-owned motorcycle repair shop in Orange, CA. I write about honest service, small business ownership, motorcycle safety, and what riders should know before approving repairs.
 
 Full LinkedIn Content Creator report: `dusty_research/linkedin_content_creator_report_2026-06-30.md`.
+
+---
+
+### Section 31: Email Lifecycle Strategy Pass (Email Marketing Strategist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 31.1 Email Strategy Decision
+
+Email should support Dusty’s text-first business model, not replace it. The proper role of email is lifecycle follow-up: guide delivery, lead nurture, review requests, referrals, seasonal reminders, and inactive customer reactivation.
+
+#### 31.2 Changes Implemented
+
+- Added `email_assets/dustys_email_marketing_playbook.md`.
+- Added `email_assets/dustys_email_sequence_specs.md`.
+- Added CRM/ESP attribute map.
+- Added segment definitions.
+- Added five lifecycle sequence specs.
+- Added email copy templates.
+- Added deliverability checklist and metrics.
+
+#### 31.3 Required Before Launch
+
+- SPF, DKIM, and DMARC configured.
+- Consent source/date captured.
+- Unsubscribe link enabled.
+- Reply inbox monitored.
+- Hard bounce and complaint suppression active.
+- Form endpoint live and tested.
+
+Full Email Marketing Strategist report: `dusty_research/email_marketing_strategist_report_2026-06-30.md`.

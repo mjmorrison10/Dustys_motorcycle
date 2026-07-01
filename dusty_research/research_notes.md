@@ -850,3 +850,43 @@ LinkedIn should position Dusty as an owner/operator with a professional point of
 - LinkedIn metrics.
 
 Full report saved as: `dusty_research/linkedin_content_creator_report_2026-06-30.md`.
+
+---
+
+## Email Marketing Strategist Implementation Notes — 2026-06-30
+
+**Agency agent used:** Email Marketing Strategist from the Agency Agents app corpus.
+
+### Email strategy
+
+Dusty’s primary conversion channel should remain SMS. Email should support checklist delivery, lead follow-up, pre-purchase inspection nurture, review requests, referrals, seasonal ride-ready reminders, and inactive customer reactivation.
+
+### Files added
+
+- `email_assets/dustys_email_marketing_playbook.md`
+- `email_assets/dustys_email_sequence_specs.md`
+- `dusty_research/email_marketing_strategist_report_2026-06-30.md`
+
+### Playbook contents
+
+- Minimum viable email/CRM stack.
+- CRM → ESP attribute map.
+- Segment definitions.
+- Lifecycle sequence overview.
+- Email copy templates.
+- Deliverability checklist.
+- Metrics and benchmarks.
+
+### Sequence specs created
+
+1. New Lead Follow-Up.
+2. Pre-Purchase Inspection Nurture.
+3. Post-Service Review Request.
+4. Referral Ask.
+5. Seasonal Ride-Ready Reminder.
+
+### Key constraint
+
+Do not launch email campaigns until SPF, DKIM, DMARC, unsubscribe handling, consent source/date, and suppression lists are configured.
+
+Full report saved as: `dusty_research/email_marketing_strategist_report_2026-06-30.md`.
