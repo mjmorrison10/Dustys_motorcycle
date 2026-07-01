@@ -1601,3 +1601,31 @@ Qualified text/form leads per month that include year/make/model + issue + photo
 6. Review request workflow.
 
 Full Growth Hacker report: `dusty_research/growth_hacker_report_2026-06-30.md`.
+
+---
+
+### Section 36: Paid Media Readiness Audit (Paid Media Auditor)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 36.1 Paid Media Decision
+
+Do not scale paid media yet. Fix measurement, form endpoint, Google Business Profile/listing cleanup, lead source logging, and review workflow first.
+
+#### 36.2 Changes Implemented
+
+- Added `paid_media_assets/dustys_paid_media_audit_readiness.md`.
+- Added `paid_media_assets/dustys_paid_media_campaign_blueprint.md`.
+- Added required conversion event list.
+- Added Google Ads readiness checklist, keyword starters, and negative keyword list.
+- Added Meta retargeting readiness checklist.
+- Added landing page QA checklist, UTM convention, test budget, and kill criteria.
+
+#### 36.3 First Campaigns After Readiness
+
+1. Google Search — Motorcycle Repair Orange CA.
+2. Google Search — Pre-Purchase Inspection.
+3. Meta Retargeting — Guide Visitors / Used-Bike Buyers.
+
+Full Paid Media Auditor report: `dusty_research/paid_media_auditor_report_2026-06-30.md`.

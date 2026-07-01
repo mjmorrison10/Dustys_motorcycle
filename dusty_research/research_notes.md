@@ -1039,3 +1039,35 @@ Dusty’s growth loop should be: useful content → trust → text-first lead �
 - 4-week recommended growth sprint.
 
 Full report saved as: `dusty_research/growth_hacker_report_2026-06-30.md`.
+
+---
+
+## Paid Media Auditor Implementation Notes — 2026-06-30
+
+**Agency agent used:** Paid Media Auditor from the Agency Agents app corpus.
+
+### Paid media verdict
+
+Dusty should not scale paid ads yet. The offer and landing page are strong, but paid media should wait until GA4/GTM tracking, real form endpoint, GBP cleanup, lead source logging, and review workflow are operational.
+
+### Files added
+
+- `paid_media_assets/dustys_paid_media_audit_readiness.md`
+- `paid_media_assets/dustys_paid_media_campaign_blueprint.md`
+- `dusty_research/paid_media_auditor_report_2026-06-30.md`
+
+### Key blockers before spend
+
+- GA4/GTM not installed/tested.
+- Form still uses `YOUR_FORM_ID`.
+- Google Business Profile and local listings need cleanup.
+- Lead source tracking is not operational.
+- Review request workflow is not active.
+
+### Recommended first channels after readiness
+
+1. Google Search for high-intent repair terms.
+2. Google Search for pre-purchase inspection terms.
+3. Meta retargeting only, not cold prospecting.
+
+Full report saved as: `dusty_research/paid_media_auditor_report_2026-06-30.md`.
