@@ -1873,20 +1873,26 @@
         const rideable = protoRideable?.value || 'not sure if it is safe to ride';
         return `Hi Dusty — I need help with my bike. It’s a ${bike}. The issue is ${issue}. I’ll send a photo/video next. ${rideable}. Should I ride it, or bring it in?`;
       };
-      const updatePrototypeText = () => {
+      let textBuilderUpdateTimer = null;
+      const updatePrototypeText = ({ track = false } = {}) => {
         const text = buildPrototypeText();
         const template = $('#textTemplate');
         if (template) template.textContent = text;
         if (textBuilderSms) textBuilderSms.href = `sms:7147879453?body=${encodeURIComponent(text)}`;
-        pushEvent('prototype_text_builder_update', {
-          has_bike: Boolean(protoBike?.value.trim()),
-          has_issue: Boolean(protoIssue?.value.trim()),
-          rideable_state: protoRideable?.value || null
-        });
+        if (track) {
+          window.clearTimeout(textBuilderUpdateTimer);
+          textBuilderUpdateTimer = window.setTimeout(() => {
+            pushEvent('prototype_text_builder_update', {
+              has_bike: Boolean(protoBike?.value.trim()),
+              has_issue: Boolean(protoIssue?.value.trim()),
+              rideable_state: protoRideable?.value || null
+            });
+          }, 600);
+        }
       };
       [protoBike, protoIssue, protoRideable].filter(Boolean).forEach((field) => {
-        field.addEventListener('input', updatePrototypeText);
-        field.addEventListener('change', updatePrototypeText);
+        field.addEventListener('input', () => updatePrototypeText({ track: true }));
+        field.addEventListener('change', () => updatePrototypeText({ track: true }));
       });
       if (textBuilderSms) textBuilderSms.addEventListener('click', () => updatePrototypeText());
       $$('[data-prototype-feedback]').forEach((button) => {
@@ -1921,7 +1927,7 @@
               document.body.removeChild(temp);
             }
             copyStatus.textContent = 'Copied. Paste it into a text to Dusty and add your photo.';
-            pushEvent('copy_text_template_click');
+            pushEvent('copy_text_template_success');
           } catch (err) {
             copyStatus.textContent = 'Could not copy automatically. You can still select the message above.';
           }

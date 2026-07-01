@@ -17,3 +17,4 @@ referral_copy_click,referral,secondary,Referral text copy click,no,"page_path",W
 referral_copy_success,referral,primary,Referral text copied successfully,yes,"page_path",Web,implemented_on_referral_page
 footer_referral_click,referral,secondary,Footer referral page click,no,"link_url,page_path",Web,implemented_dataLayer
 guide_sms_click,lead_intent,primary,Guide page SMS click,yes,"link_url,page_path",Web,implemented_on_guides
+copy_text_template_success,micro_conversion,secondary,User successfully copied first text template,no,"page_path",Web,implemented_dataLayer
