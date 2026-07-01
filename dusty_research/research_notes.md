@@ -1378,3 +1378,35 @@ The project has enough strategy and assets. The product priority is now focus: m
 - Launch gate for form, tracking, listings, SMS auto-reply, lead log, and owner approvals.
 
 Full report saved as: `dusty_research/product_manager_report_2026-06-30.md`.
+
+---
+
+## Customer Success Manager Implementation Notes — 2026-06-30
+
+**Agency agent used:** Customer Success Manager from the Agency Agents app corpus.
+
+### Customer success strategy
+
+Dusty’s customer success opportunity is post-service follow-up. Every successful repair should create more trust after pickup through clear handoff, check-in, review request, referral ask, and repeat-service reminder.
+
+### Files added
+
+- `customer_success_assets/dustys_customer_success_playbook.md`
+- `customer_success_assets/dustys_review_referral_workflow.md`
+- `customer_success_assets/dustys_customer_success_tracker.csv`
+- `dusty_research/customer_success_manager_report_2026-06-30.md`
+
+### Customer success assets created
+
+- Rider lifecycle.
+- Post-service handoff checklist.
+- 2–7 day check-in workflow.
+- Review request workflow.
+- Referral workflow.
+- Customer health signals.
+- Service reminder cadence.
+- Complaint recovery playbook.
+- Weekly customer success review.
+- Tracker CSV.
+
+Full report saved as: `dusty_research/customer_success_manager_report_2026-06-30.md`.

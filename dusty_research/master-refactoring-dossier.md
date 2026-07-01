@@ -1868,3 +1868,23 @@ The next objective is not more strategy or more channels. It is operational laun
 Ready to scale only when form endpoint, GA4/GTM, listings, SMS auto-reply, weekly lead log, and warranty/pricing approvals are complete.
 
 Full Product Manager report: `dusty_research/product_manager_report_2026-06-30.md`.
+
+---
+
+### Section 47: Customer Success & Retention Pass (Customer Success Manager)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 47.1 Customer Success Decision
+
+Dusty’s customer success system should focus on post-service confidence, reviews, referrals, and repeat maintenance. Do not ask for reviews before confirming the customer is satisfied.
+
+#### 47.2 Changes Implemented
+
+- Added `customer_success_assets/dustys_customer_success_playbook.md`.
+- Added `customer_success_assets/dustys_review_referral_workflow.md`.
+- Added `customer_success_assets/dustys_customer_success_tracker.csv`.
+- Added rider lifecycle, handoff checklist, check-in workflow, review/referral workflow, health signals, reminder cadence, complaint recovery, and weekly review process.
+
+Full Customer Success Manager report: `dusty_research/customer_success_manager_report_2026-06-30.md`.

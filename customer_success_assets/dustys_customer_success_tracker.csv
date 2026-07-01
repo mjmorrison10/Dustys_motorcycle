@@ -1,0 +1,2 @@
+date,customer,bike,service_type,pickup_date,sentiment,unresolved_issue,checkin_sent,review_requested,review_received,referral_asked,repeat_reminder_due,next_action,owner,notes
+2026-06-30,Example Rider,2018 Honda CBR500R,chain service,2026-06-30,positive,false,false,false,false,false,2026-09-30,send 2-7 day check-in,Dusty,Example row only
