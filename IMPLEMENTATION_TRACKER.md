@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, Sales Coach, Growth Hacker, Paid Media Auditor, PPC Campaign Strategist, Paid Social Strategist, and Ad Creative Strategist passes complete. Next: Accessibility QA / service pages / form endpoint.
+**Current phase**: SEO, Persona Walkthrough, Brand Guardian, UX Architecture, UX Research, Content Creator, UI Designer, Frontend Developer, AEO Foundations, AI Citation, Agentic Search, Senior Developer, Rapid Prototyper, Visual Storyteller, Image Prompt Engineer, Social Media Strategist, Instagram Curator, Reddit Community Builder, LinkedIn Content Creator, Email Marketing Strategist, Pricing Analyst, Sales Engineer, Sales Coach, Growth Hacker, Paid Media Auditor, PPC Campaign Strategist, Paid Social Strategist, Ad Creative Strategist, and Video Optimization Specialist passes complete. Next: Accessibility QA / service pages / form endpoint.
 
 ---
 
@@ -148,6 +148,7 @@
 - ✅ PPC Campaign Strategist pass completed: PPC campaign architecture, build sheet CSV, negative keyword list, RSA copy bank, budget/bidding strategy, conversion hierarchy, Microsoft Ads plan
 - ✅ Paid Social Strategist pass completed: Meta retargeting strategy, paid social creative brief, warm audience architecture, budget test plan, UTMs, exclusions, kill criteria
 - ✅ Ad Creative Strategist pass completed: RSA headline/description banks, Meta ad copy, sitelinks/callouts/snippets, ad copy matrix CSV, testing hypotheses, creative QA checklist
+- ✅ Video Optimization Specialist pass completed: video optimization playbook, script bank, retention rules, repeatable series, Shorts/Reels metadata, YouTube chapters, thumbnail concepts
 
 ---
 

@@ -1168,3 +1168,35 @@ Dusty’s strongest ad creative is specific, local, and trust-reducing: **Text a
 - Creative QA checklist.
 
 Full report saved as: `dusty_research/ad_creative_strategist_report_2026-06-30.md`.
+
+---
+
+## Video Optimization Specialist Implementation Notes — 2026-06-30
+
+**Agency agent used:** Video Optimization Specialist from the Agency Agents app corpus.
+
+### Video strategy
+
+Dusty’s video should show the problem immediately, explain what it means, and end with “text Dusty a photo.” The first 3 seconds matter most — no logo intro, no “hey guys,” no dead air.
+
+### Files added
+
+- `video_assets/dustys_video_optimization_playbook.md`
+- `video_assets/dustys_video_script_bank.md`
+- `dusty_research/video_optimization_specialist_report_2026-06-30.md`
+
+### Video assets created
+
+- Retention rules.
+- 15-second and 30-second short-form structures.
+- Repeatable video series:
+  1. Would You Ride This?
+  2. Before You Buy That Bike
+  3. What This Means
+  4. Quote Before We Wrench
+- YouTube Shorts/Reels metadata templates.
+- YouTube long-form ideas and chapter structures.
+- Thumbnail concepts.
+- Five ready-to-shoot scripts.
+
+Full report saved as: `dusty_research/video_optimization_specialist_report_2026-06-30.md`.

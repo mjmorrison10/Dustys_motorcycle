@@ -1717,3 +1717,26 @@ Paid ad creative should repeat the most specific trust-reducing promise:
 6. All Makes & Eras.
 
 Full Ad Creative Strategist report: `dusty_research/ad_creative_strategist_report_2026-06-30.md`.
+
+---
+
+### Section 40: Video Optimization Pass (Video Optimization Specialist)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 40.1 Video Strategy Decision
+
+Dusty’s video content should prioritize retention and usefulness: show the issue immediately, explain what it means, and end with a text-photo CTA.
+
+#### 40.2 Changes Implemented
+
+- Added `video_assets/dustys_video_optimization_playbook.md`.
+- Added `video_assets/dustys_video_script_bank.md`.
+- Added retention rules and short-form pacing structures.
+- Added repeatable video series and metadata templates.
+- Added YouTube long-form ideas with chapter structures.
+- Added thumbnail concepts and video SEO defaults.
+- Added five ready-to-shoot short-form scripts.
+
+Full Video Optimization Specialist report: `dusty_research/video_optimization_specialist_report_2026-06-30.md`.
