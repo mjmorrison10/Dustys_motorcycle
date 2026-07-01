@@ -1,0 +1,19 @@
+asset,bytes,gzip_bytes,notes
+index.html,92856,21612,homepage shell
+guides/pre-purchase-motorcycle-inspection-checklist.html,10140,4004,guide page
+guides/santiago-canyon-ride-ready-checklist.html,10012,3875,guide page
+guides/how-to-choose-motorcycle-mechanic-orange-ca.html,10785,4015,guide page
+guides/motorcycle-repair-pricing-orange-ca.html,10085,3864,guide page
+guides/refer-a-rider.html,7299,2944,guide page
+sw.js,2052,773,service worker
+manifest.webmanifest,599,307,PWA manifest
+images/hero_bg.webp,188446,,hero image already compressed
+images/yelp_1.webp,38562,,guide/service image
+images/yelp_2.webp,59984,,logo image
+images/yelp_3.webp,23206,,shop image
+images/yelp_4.webp,24958,,shop image
+images/yelp_5.webp,14886,,bike image
+images/yelp_6.webp,17348,,bike image
+images/yelp_7.webp,29756,,ride image
+images/yelp_8.webp,37612,,bike image
+TOTAL_SELECTED_ASSETS,578586,,selected local core assets

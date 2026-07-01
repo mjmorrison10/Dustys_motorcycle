@@ -2038,3 +2038,30 @@ Static validation is not enough for production approval. The project remains **N
 - No production-host verification.
 
 Full Evidence Collector report: `dusty_research/evidence_collector_report_2026-06-30.md`.
+
+---
+
+### Section 54: Performance Baseline Pass (Performance Benchmarker)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 54.1 Performance Decision
+
+The static site architecture is performance-friendly, but real Core Web Vitals are not certified until deployed Lighthouse/browser testing is performed.
+
+#### 54.2 Changes Implemented
+
+- Added `performance_assets/dustys_performance_budget.md`.
+- Added `performance_assets/dustys_performance_measurements_2026-06-30.csv`.
+- Added static file-size baseline and local smoke timing report.
+- Defined performance budgets for homepage, guide pages, hero image, service worker, third-party scripts, and future images.
+
+#### 54.3 Key Baseline
+
+- Homepage gzip: ~21.6 KB.
+- Hero image: ~188 KB WebP.
+- Largest guide gzip: ~4.0 KB.
+- Selected core local assets: ~579 KB.
+
+Full Performance Benchmarker report: `dusty_research/performance_benchmarker_report_2026-06-30.md`.

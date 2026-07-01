@@ -1606,3 +1606,33 @@ Status is **NEEDS WORK**. Static checks are clean, but visual QA evidence could 
 - No deployed public URL verification.
 
 Full report saved as: `dusty_research/evidence_collector_report_2026-06-30.md`.
+
+---
+
+## Performance Benchmarker Implementation Notes — 2026-06-30
+
+**Agency agent used:** Performance Benchmarker from the Agency Agents app corpus.
+
+### Performance finding
+
+The site has a good static performance posture: no framework bundle, no build overhead, lightweight guide pages, WebP images, and service worker caching. However, real Core Web Vitals are not proven because Lighthouse/Chrome/Playwright was unavailable in this environment.
+
+### Files added
+
+- `performance_assets/dustys_performance_budget.md`
+- `performance_assets/dustys_performance_measurements_2026-06-30.csv`
+- `dusty_research/performance_benchmarker_report_2026-06-30.md`
+
+### Baseline measurements
+
+- Homepage: 92,856 B raw / 21,612 B gzip.
+- Largest guide page: 10,785 B raw / 4,015 B gzip.
+- Hero WebP: 188,446 B.
+- Selected local core assets: 578,586 B.
+- Local server smoke checks returned 200 for homepage, selected guide pages, hero image, and service worker.
+
+### Remaining validation
+
+Run Lighthouse/Core Web Vitals after deployment and again after GA4/GTM or pixels are installed.
+
+Full report saved as: `dusty_research/performance_benchmarker_report_2026-06-30.md`.
