@@ -3,7 +3,7 @@
 **Purpose**: A living action list organized by owner and priority. Updated as we progress through each agent.
 
 **Last updated**: 2026-06-30
-**Current phase**: Reality Checker status: NEEDS WORK. Static system validated; next gates are form endpoint, GA4/GTM, owner operational approvals, browser QA, and manual AT validation.
+**Current phase**: Reality/Evidence QA status: NEEDS WORK. Static checks pass; next gates are screenshots, interaction captures, manual AT validation, deployed URL checks, form endpoint, GA4/GTM, and owner approvals.
 
 ---
 
@@ -161,6 +161,7 @@
 - ✅ Technical Writer pass completed: README refresh, developer handoff, maintenance guide, asset inventory, validation commands, owner approval/documentation workflows
 - ✅ Accessibility Auditor pass completed: contrast fix, map iframe title, external link rel attributes, form aria-describedby, accessibility audit checklist, manual AT test plan
 - ✅ Reality Checker pass completed: static validation, readiness matrix, production status NEEDS WORK, blocker list, evidence-based QA report
+- ✅ Evidence Collector pass completed: static evidence scan, local server smoke checks, evidence matrix, QA status NEEDS WORK due missing screenshots/AT/deployed evidence
 
 ---
 

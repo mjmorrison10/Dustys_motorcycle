@@ -1573,3 +1573,36 @@ Status is **NEEDS WORK**, not production-ready. Static implementation is coheren
 - External listings require owner/admin validation.
 
 Full report saved as: `dusty_research/reality_checker_report_2026-06-30.md`.
+
+---
+
+## Evidence Collector Implementation Notes — 2026-06-30
+
+**Agency agent used:** Evidence Collector from the Agency Agents app corpus.
+
+### Evidence verdict
+
+Status is **NEEDS WORK**. Static checks are clean, but visual QA evidence could not be collected because the Playwright capture script and Playwright/browser tooling are unavailable in this environment.
+
+### Files added
+
+- `qa_assets/dustys_evidence_collection_matrix.md`
+- `dusty_research/evidence_collector_report_2026-06-30.md`
+
+### Evidence collected
+
+- HTML inventory confirmed homepage + 5 guide pages.
+- Local server returned 200 for homepage, selected guides, `llms.txt`, and `mcp-actions.json`.
+- Static validation found 0 missing local asset references.
+- H1 count is 1 per checked HTML page.
+- Image alt, iframe title, external-link rel, JSON-LD, sitemap XML, and JSON manifest checks passed.
+
+### Evidence gaps
+
+- No screenshots.
+- No before/after interaction captures.
+- No `test-results.json`.
+- No screen reader transcript.
+- No deployed public URL verification.
+
+Full report saved as: `dusty_research/evidence_collector_report_2026-06-30.md`.
