@@ -963,3 +963,41 @@ Dusty’s sales process should feel like technical diagnosis, not sales. The goa
 Battlecards for dealership comparison, cheaper competitor quote, price-by-text requests, DIY objections, and “is it safe to ride?” questions.
 
 Full report saved as: `dusty_research/sales_engineer_report_2026-06-30.md`.
+
+---
+
+## Sales Coach Implementation Notes — 2026-06-30
+
+**Agency agent used:** Sales Coach from the Agency Agents app corpus.
+
+### Sales coaching strategy
+
+For Dusty’s, sales coaching is not about pressure. It is about improving the first customer conversation so every lead gets a clear, safe, trust-building next step.
+
+### Files added
+
+- `sales_assets/dustys_sales_coaching_playbook.md`
+- `sales_assets/dustys_call_text_review_scorecard.md`
+- `dusty_research/sales_coach_report_2026-06-30.md`
+
+### Coaching playbook contents
+
+- Coaching philosophy.
+- Five behaviors to coach:
+  1. fast acknowledgement,
+  2. complete triage,
+  3. safety boundary,
+  4. quote-before-wrenching,
+  5. follow-up discipline.
+- 15-minute weekly lead review cadence.
+- Text/call coaching scorecard.
+- Coaching questions.
+- Role plays.
+- Small-shop pipeline review framework.
+- Coaching metrics.
+
+### Scorecard contents
+
+The call/text review scorecard helps review real inbound interactions and identify one behavior to improve next time.
+
+Full report saved as: `dusty_research/sales_coach_report_2026-06-30.md`.

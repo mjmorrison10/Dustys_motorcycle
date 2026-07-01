@@ -1538,3 +1538,30 @@ Dusty’s lead conversion process should feel like technical diagnosis rather th
 Win technical trust first. Do not guess, overpromise safety, or quote final prices from vague symptoms. Ask for year/make/model, what changed, when it happens, and photo/video evidence.
 
 Full Sales Engineer report: `dusty_research/sales_engineer_report_2026-06-30.md`.
+
+---
+
+### Section 34: Sales Coaching System Pass (Sales Coach)
+
+**Date:** 2026-06-30  
+**Status:** Applied directly to the repository.
+
+#### 34.1 Coaching Decision
+
+Dusty’s lead conversion should improve through coaching real inbound interactions, not through pressure scripts. The coaching goal is for every lead to receive a clear, safe, trust-building next step.
+
+#### 34.2 Changes Implemented
+
+- Added `sales_assets/dustys_sales_coaching_playbook.md`.
+- Added `sales_assets/dustys_call_text_review_scorecard.md`.
+- Added five behavior focus areas: fast acknowledgement, complete triage, safety boundary, quote-before-wrenching, and follow-up discipline.
+- Added weekly lead review cadence.
+- Added call/text review scorecard.
+- Added four role plays.
+- Added small-shop pipeline review stages and coaching metrics.
+
+#### 34.3 Coaching Rule
+
+Coach one behavior at a time. Review real interactions weekly, rewrite one better response, and follow up to see whether the behavior changed.
+
+Full Sales Coach report: `dusty_research/sales_coach_report_2026-06-30.md`.
